@@ -103,7 +103,7 @@ export class PersonaDb {
         },
         {
             level: 8,
-            name: 'オバリオン',
+            name: 'オバリヨン',
             arcana: arcana.gusha,
         },
         {
@@ -152,7 +152,7 @@ export class PersonaDb {
         },
         {
             level: 49,
-            name: 'バグズ',
+            name: 'バグス',
             arcana: arcana.gusha,
         },
         {
@@ -628,7 +628,7 @@ export class PersonaDb {
         // },
         {
             level: 46,
-            name: 'フォルトナ',
+            name: 'フォルトゥナ',
             arcana: arcana.unmei,
         },
         {
@@ -783,7 +783,7 @@ export class PersonaDb {
         },
         {
             level: 62,
-            name: 'チェルノボグ',
+            name: 'チェルノポグ',
             arcana: arcana.shinigami,
         },
         // {
@@ -875,7 +875,7 @@ export class PersonaDb {
         },
         {
             level: 25,
-            name: 'フロウラス',
+            name: 'フラロウス',
             arcana: arcana.akuma,
         },
         {
