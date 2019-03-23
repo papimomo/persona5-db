@@ -1,17 +1,18 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Tab1Page } from './tab1.page';
+import { Tab1Page } from '../../tab1/tab1.page';
 
-describe('Tab1Page', () => {
+describe('PersonaRowPage', () => {
   let component: Tab1Page;
   let fixture: ComponentFixture<Tab1Page>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [Tab1Page],
+      declarations: [ Tab1Page ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    }).compileComponents();
+    })
+    .compileComponents();
   }));
 
   beforeEach(() => {
@@ -23,5 +24,4 @@ describe('Tab1Page', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-
 });

@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+            <img src="assets/{{persona.name}}.jpg" alt="">
+        </ion-card>
+        <div class="arcana">
+          {{persona.arcana}}  Lv:{{persona.level}}
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <ion-list class="fusion_list">
+          <ion-item *ngFor="let pair of fusionList">
+            <div class="fusion">
+                {{pair.first.name}} x {{pair.second.name}}
+            </div>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row class="element">
+      <!-- <ion-col auto>
+      </ion-col> -->
+      <ion-col col-1 >
+        <img src="assets/element/physical.png" height-min='10'>
+        {{persona.element.physical}}
+      </ion-col>
+      <ion-col col-1>
+        <img src="assets/element/gun.png" height-min='10'>
+        {{persona.element.gun}}
+      </ion-col>
+      <ion-col col-1>
+        <img src="assets/element/fire.png" height-min='10'>
+        {{persona.element.fire}}
+      </ion-col>
+      <ion-col col-1>
+        <img src="assets/element/ice.png" height-min='10'>
+        {{persona.element.ice}}
+      </ion-col>
+      <ion-col col-1>
+        <img src="assets/element/electric.png" height-min='10'>
+        {{persona.element.electric}}
+      </ion-col>
+      <ion-col col-1>
+        <img src="assets/element/wind.png" height-min='10'>
+        {{persona.element.wind}}
+      </ion-col>
+      <ion-col col-1>
+        <img src="assets/element/nuclear.png" height-min='10'>
+        {{persona.element.nuclear}}
+      </ion-col>
+      <ion-col col-1>
+        <img src="assets/element/psy.png" height-min='10'>
+        {{persona.element.psy}}
+      </ion-col>
+      <ion-col col-1>
+        <img src="assets/element/bless.png" height-min='10'>
+        {{persona.element.bless}}
+      </ion-col>
+      <ion-col col-1>
+        <img src="assets/element/curse.png" height-min='10'>
+        {{persona.element.curse}}
+      </ion-col>
+      <!-- <ion-col auto>
+      </ion-col> -->
+    </ion-row>
+  </ion-grid>
+
+  <!-- <ion-item>
+    スキル
+  </ion-item> -->
+  <ion-list>
+    <ion-card *ngFor="let skill of persona.skill" >
+      <app-skill [skill]=skill></app-skill>
+    </ion-card>
+  </ion-list>
+  
+</ion-content>
