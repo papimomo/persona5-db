@@ -10,6 +10,13 @@ export class SkillComponent implements OnInit {
   @Input() skill: any;
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
+  getCost() {
+    if (this.skill.skill.cp === undefined) {
+      return this.skill.skill.hp;
+    } else {
+      return this.skill.skill.cp;
+    }
+  }
 }

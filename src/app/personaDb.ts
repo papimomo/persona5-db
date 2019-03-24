@@ -99,7 +99,14 @@ export class PersonaDb {
                     skill: this.auto.gyakkyounokakugo,
                     level: 7
                 }
-            ]
+            ],
+            status: {
+                tikara: 5,
+                ma: 5,
+                tai: 3,
+                soku: 3,
+                un: 1
+            }
         },
         {
             level: 8,

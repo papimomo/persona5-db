@@ -14,3 +14,41 @@
     width: 100% !important;
     text-align: center !important;
 }
+.disp{
+    // background-color: blue;
+}
+.status_list{
+    margin:auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    width:100%;
+    // background-color: crimson;
+}
+.status{
+    margin-bottom:5px;
+}
+.status div{
+    // display: inline-block;
+    font-size:13px;
+    width: 100%;
+}
+
+.element img{
+    max-height: 15px;
+    min-height: 10px;
+}
+
+.skill_card{
+    max-width: 400px;
+    margin:auto;
+}
+
+.persona_img{
+    max-height: 500px;
+    max-width: 500px;
+}
+.row-eq-height {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% !important;
+}

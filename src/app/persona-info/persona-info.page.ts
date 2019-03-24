@@ -114,6 +114,15 @@ export class PersonaInfoPage implements OnInit {
     return fusionList;
   }
 
+  isBigWidesize() {
+    const width = window.parent.screen.width;
+    return width > 700;
+  }
+
+  isPortrait() {
+    const ori = screen.orientation;
+    return (ori.type === 'portrait-primary' || ori.type === 'portrait-secondary');
+  }
 
 
 }

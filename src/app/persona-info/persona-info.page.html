@@ -5,73 +5,107 @@
 </ion-header>
 
 <ion-content padding>
+
+    <!-- <div class="arcana">
+        {{persona.arcana}} Lv:{{persona.level}}
+      </div> -->
   <ion-grid>
     <ion-row>
-      <ion-col size="6">
-        <ion-card>
+      <ion-col *ngIf="!isPortrait()" size="3">
+
+      </ion-col>
+      <ion-col size="isPortrait()? 6: 3" class="row row-eq-height">
+        <div class="disp">
+          <ion-card class="persona_img">
             <img src="assets/persona/{{persona.name}}.jpg" alt="">
-        </ion-card>
-        <div class="arcana">
-          {{persona.arcana}}  Lv:{{persona.level}}
+          </ion-card>
         </div>
       </ion-col>
-      <ion-col size="6">
-        <ion-list class="fusion_list">
+      <ion-col size="isPortrait()? 6: 3" class="row row-eq-height">
+        <ion-list class="status_list">
+          <!-- <ion-item> -->
+          <div class="status">
+            <div>力 &nbsp;&nbsp; {{persona.status.tikara}}</div>
+            <ion-progress-bar max=99 [value]="persona.status.tikara / 100"></ion-progress-bar>
+          </div>
+          <div class="status">
+            <div>魔 &nbsp;&nbsp;      {{persona.status.ma}}</div>
+            <ion-progress-bar max=99 [value]="persona.status.ma / 100"></ion-progress-bar>
+          </div>
+          <div class="status">
+            <div>耐  &nbsp;&nbsp;     {{persona.status.tai}}</div>
+            <ion-progress-bar max=99 [value]="persona.status.tai / 100"></ion-progress-bar>
+          </div>
+          <div class="status">
+            <div>速   &nbsp;&nbsp;    {{persona.status.soku}}</div>
+            <ion-progress-bar max=99 [value]="persona.status.soku / 100"></ion-progress-bar>
+          </div>
+          <div class="status">
+            <div>運   &nbsp;&nbsp;    {{persona.status.un}}</div>
+            <ion-progress-bar max=99 [value]="persona.status.un / 100"></ion-progress-bar>
+          </div>
+
+          <!-- </ion-item> -->
+        </ion-list>
+        <!-- <ion-list class="fusion_list">
           <ion-item *ngFor="let pair of fusionList">
             <div class="fusion">
                 {{pair.first.name}} x {{pair.second.name}}
             </div>
           </ion-item>
-        </ion-list>
+        </ion-list> -->
+      </ion-col>
+      <ion-col *ngIf="!isPortrait()" size="3">
+
       </ion-col>
     </ion-row>
   </ion-grid>
   <ion-grid>
     <ion-row class="element">
-      <!-- <ion-col auto>
-      </ion-col> -->
-      <ion-col col-1 >
-        <img src="assets/element/physical.png" height-min='10'>
-        {{persona.element.physical}}
+      <ion-col auto *ngIf="isBigWidesize()">
       </ion-col>
       <ion-col col-1>
-        <img src="assets/element/gun.png" height-min='10'>
-        {{persona.element.gun}}
+        <img src="assets/element/physical.png">
+        <div>{{persona.element.physical}}</div>
       </ion-col>
       <ion-col col-1>
-        <img src="assets/element/fire.png" height-min='10'>
-        {{persona.element.fire}}
+        <img src="assets/element/gun.png">
+        <div>{{persona.element.gun}}</div>
       </ion-col>
       <ion-col col-1>
-        <img src="assets/element/ice.png" height-min='10'>
-        {{persona.element.ice}}
+        <img src="assets/element/fire.png">
+        <div>{{persona.element.fire}}</div>
       </ion-col>
       <ion-col col-1>
-        <img src="assets/element/electric.png" height-min='10'>
-        {{persona.element.electric}}
+        <img src="assets/element/ice.png">
+        <div>{{persona.element.ice}}</div>
       </ion-col>
       <ion-col col-1>
-        <img src="assets/element/wind.png" height-min='10'>
-        {{persona.element.wind}}
+        <img src="assets/element/electric.png">
+        <div>{{persona.element.electric}}</div>
       </ion-col>
       <ion-col col-1>
-        <img src="assets/element/nuclear.png" height-min='10'>
-        {{persona.element.nuclear}}
+        <img src="assets/element/wind.png">
+        <div>{{persona.element.wind}}</div>
+      </ion-col>
+      <ion-col col-1>
+        <img src="assets/element/nuclear.png">
+        <div>{{persona.element.nuclear}}</div>
       </ion-col>
       <ion-col col-1>
         <img src="assets/element/psy.png" height-min='10'>
-        {{persona.element.psy}}
+        <div>{{persona.element.psy}}</div>
       </ion-col>
       <ion-col col-1>
         <img src="assets/element/bless.png" height-min='10'>
-        {{persona.element.bless}}
+        <div>{{persona.element.bless}}</div>
       </ion-col>
       <ion-col col-1>
         <img src="assets/element/curse.png" height-min='10'>
-        {{persona.element.curse}}
+        <div>{{persona.element.curse}}</div>
       </ion-col>
-      <!-- <ion-col auto>
-      </ion-col> -->
+      <ion-col auto *ngIf="isBigWidesize()">
+      </ion-col>
     </ion-row>
   </ion-grid>
 
@@ -79,9 +113,26 @@
     スキル
   </ion-item> -->
   <ion-list>
-    <ion-card *ngFor="let skill of persona.skill" >
-      <app-skill [skill]=skill></app-skill>
-    </ion-card>
+    <div class="skill_card" *ngFor="let skill of persona.skill">
+      <ion-card>
+        <app-skill [skill]=skill></app-skill>
+      </ion-card>
+    </div>
   </ion-list>
-  
+
+  <!-- <ion-grid *ngIf="isBigWidesize()">
+    <ion-row>
+      <ion-col size="6">
+          <div class="skill_card" *ngFor="let skill of persona.skill">
+            <ion-card >
+              <app-skill [skill]=skill></app-skill>
+            </ion-card>
+          </div>
+      </ion-col>
+      <ion-col size="6">
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+
 </ion-content>
