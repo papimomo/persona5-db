@@ -79,7 +79,85 @@ enum autoSkill {
     syourinootakebi = '勝利の雄叫び',
     low_grow = 'ロウグロウ',
     middle_grow = 'ミドルグロウ',
-    high_grow = 'ハイグロウ'
+    high_grow = 'ハイグロウ',
+
+    buturi_mikiri = '物理見切り',
+    kyoku_buturi_mikiri = '極・物理見切り',
+    buturi_taisei = '物理耐性',
+    buturi_mukou = '物理無効',
+    buturi_hansya = '物理反射',
+    buturi_kyusyu = '物理吸収',
+    kaen_mikiri = '火炎見切り',
+    kyoku_kaen_mikiri = '極・火炎見切り',
+    kaen_taisei = '火炎耐性',
+    kaen_mukou = '火炎無効',
+    kaen_hansha = '火炎反射',
+    kaen_kyusyu = '火炎吸収',
+    hyouketu_mikiri = '氷結見切り',
+    kyoku_hyouketu_mikiri = '極・氷結見切り',
+    hyouketu_taisei = '氷結耐性',
+    hyouketu_mukou = '氷結無効',
+    hyouketu_hansha = '氷結反射',
+    hyouketu_kyusyu = '氷結吸収',
+    dengeki_mikiri = '電撃見切り',
+    kyoku_dengeki_mikiri = '極・電撃見切り',
+    dengeki_taisei = '電撃耐性',
+    dengeki_mukou = '電撃無効',
+    dengeki_hansya = '電撃反射',
+    // dengeki_kyusyu = '電撃吸収',
+    sippu_mikiri = '疾風見切り',
+    kyoku_sippu_mikiri = '極・疾風見切り',
+    sippu_taisei = '疾風耐性',
+    sippu_mukou = '疾風無効',
+    // sippu_hansya = '疾風反射',
+    sippu_kyusyu = '疾風吸収',
+    nenndou_mikiri = '念動見切り',
+    kyoku_nenndou_mikiri = '極・念動見切り',
+    nenndou_taisei = '念動耐性',
+    nenndou_mukou = '念動無効',
+    // nenndou_hansya = '念動反射',
+    nenndou_kyusyu = '念動吸収',
+    kakunetu_mikiri = '核熱見切り',
+    kyoku_kakunetu_mikiri = '極・核熱見切り',
+    kakunetu_taisei = '核熱耐性',
+    kakunetu_mukou = '核熱無効',
+    kakunetu_hansya = '核熱反射',
+    kakunetu_kyusyu = '核熱吸収',
+    syukuhuku_mikiri = '祝福見切り',
+    kyoku_syukuhuku_mikiri = '極・祝福見切り',
+    syukuhuku_taisei = '祝福耐性',
+    syukuhuku_mukou = '祝福無効',
+    // syukuhuku_hansya = '祝福反射',
+    syukuhuku_kyusyu = '祝福吸収',
+    juon_mikiri = '呪怨見切り',
+    kyoku_juon_mikiri = '極・呪怨見切り',
+    juon_taisei = '呪怨耐性',
+    juon_mukou = '呪怨無効',
+    juon_hansya = '呪怨反射',
+    juon_kyusyu = '呪怨吸収',
+    ari_dance = 'アリ・ダンス',
+    daitenshinokago = '大天使の加護',
+
+    memai_taisei = '目眩耐性',
+    memai_mukou = '目眩無効',
+    boukyaku_taisei = '忘却耐性',
+    boukyaku_mukou = '忘却無効',
+    konran_taisei = '混乱耐性',
+    konran_mukou = '混乱無効',
+    suimin_taisei = '睡眠耐性',
+    suimin_mukou = '睡眠無効',
+    kyohu_taisei = '恐怖耐性',
+    kyohu_mukou = '恐怖無効',
+    zetubou_taisei = '絶望耐性',
+    zetubou_mukou = '絶望無効',
+    gekido_taisei = '激怒耐性',
+    gekido_mukou = '激怒無効',
+    sennou_taisei = '洗脳耐性',
+    sennou_mukou = '洗脳無効',
+    hudoushin = '不動心',
+    seishintaisei = '精神耐性',
+
+
 }
 
 
@@ -689,6 +767,600 @@ export class AutoSkill {
         relative: undefined,
     };
 
+    buturi_mikiri = {
+        element: element.auto,
+        name: autoSkill.buturi_mikiri,
+        hp: undefined,
+        cp: undefined,
+        info: '物理属性の攻撃に対する回避率が２倍になる',
+        relative: undefined,
+    };
+    kyoku_buturi_mikiri = {
+        element: element.auto,
+        name: autoSkill.kyoku_buturi_mikiri,
+        hp: undefined,
+        cp: undefined,
+        info: '物理属性の攻撃に対する回避率が３倍になる。見切りとの効果累積なし',
+        relative: undefined,
+    };
+    buturi_taisei = {
+        element: element.auto,
+        name: autoSkill.buturi_taisei,
+        hp: undefined,
+        cp: undefined,
+        info: '物理属性の攻撃に強くなる。弱点だった場合は弱点を消す',
+        relative: undefined,
+    };
+    buturi_mukou = {
+        element: element.auto,
+        name: autoSkill.buturi_mukou,
+        hp: undefined,
+        cp: undefined,
+        info: '物理属性の攻撃を無効にする',
+        relative: undefined,
+    };
+    buturi_hansya = {
+        element: element.auto,
+        name: autoSkill.buturi_hansya,
+        hp: undefined,
+        cp: undefined,
+        info: '物理属性の攻撃を反射する',
+        relative: undefined,
+    };
+    buturi_kyusyu = {
+        element: element.auto,
+        name: autoSkill.buturi_kyusyu,
+        hp: undefined,
+        cp: undefined,
+        info: '物理属性の攻撃を吸収する',
+        relative: undefined,
+    };
+    kaen_mikiri = {
+        element: element.auto,
+        name: autoSkill.kaen_mikiri,
+        hp: undefined,
+        cp: undefined,
+        info: '火炎属性の攻撃に対する回避率が２倍になる',
+        relative: undefined,
+    };
+    kyoku_kaen_mikiri = {
+        element: element.auto,
+        name: autoSkill.kyoku_kaen_mikiri,
+        hp: undefined,
+        cp: undefined,
+        info: '火炎属性の攻撃に対する回避率が３倍になる。見切りとの効果累積なし',
+        relative: undefined,
+    };
+    kaen_taisei = {
+        element: element.auto,
+        name: autoSkill.kaen_taisei,
+        hp: undefined,
+        cp: undefined,
+        info: '火炎属性の攻撃に強くなる。弱点だった場合は弱点を消す',
+        relative: undefined,
+    };
+    kaen_mukou = {
+        element: element.auto,
+        name: autoSkill.kaen_mukou,
+        hp: undefined,
+        cp: undefined,
+        info: '火炎属性の攻撃を無効にする',
+        relative: undefined,
+    };
+    kaen_hansha = {
+        element: element.auto,
+        name: autoSkill.kaen_hansha,
+        hp: undefined,
+        cp: undefined,
+        info: '火炎属性の攻撃を反射する',
+        relative: undefined,
+    };
+    kaen_kyusyu ={
+        element: element.auto,
+        name: autoSkill.kaen_kyusyu,
+        hp: undefined,
+        cp: undefined,
+        info: '火炎属性の攻撃を吸収する',
+        relative: undefined,
+    };
+    hyouketu_mikiri = {
+        element: element.auto,
+        name: autoSkill.hyouketu_mikiri,
+        hp: undefined,
+        cp: undefined,
+        info: '氷結属性の攻撃に対する回避率が２倍になる',
+        relative: undefined,
+    };
+    kyoku_hyouketu_mikiri = {
+        element: element.auto,
+        name: autoSkill.kyoku_hyouketu_mikiri,
+        hp: undefined,
+        cp: undefined,
+        info: '氷結属性の攻撃に対する回避率が３倍になる。見切りとの効果累積なし',
+        relative: undefined,
+    };
+    hyouketu_taisei = {
+        element: element.auto,
+        name: autoSkill.hyouketu_taisei,
+        hp: undefined,
+        cp: undefined,
+        info: '氷結属性の攻撃に強くなる。弱点だった場合は弱点を消す',
+        relative: undefined,
+    };
+    hyouketu_mukou ={
+        element: element.auto,
+        name: autoSkill.hyouketu_mukou,
+        hp: undefined,
+        cp: undefined,
+        info: '氷結属性の攻撃を無効にする',
+        relative: undefined,
+    };
+    hyouketu_hansha = {
+        element: element.auto,
+        name: autoSkill.hyouketu_hansha,
+        hp: undefined,
+        cp: undefined,
+        info: '氷結属性の攻撃を反射する',
+        relative: undefined,
+    };
+    hyouketu_kyusyu = {
+        element: element.auto,
+        name: autoSkill.hyouketu_kyusyu,
+        hp: undefined,
+        cp: undefined,
+        info: '氷結属性の攻撃を吸収する',
+        relative: undefined,
+    };
+    dengeki_mikiri = {
+        element: element.auto,
+        name: autoSkill.dengeki_mikiri,
+        hp: undefined,
+        cp: undefined,
+        info: '電撃属性の攻撃に対する回避率が２倍になる',
+        relative: undefined,
+    };
+    kyoku_dengeki_mikiri = {
+        element: element.auto,
+        name: autoSkill.kyoku_dengeki_mikiri,
+        hp: undefined,
+        cp: undefined,
+        info: '電撃属性の攻撃に対する回避率が３倍になる。見切りとの効果累積なし',
+        relative: undefined,
+    };
+    dengeki_taisei = {
+        element: element.auto,
+        name: autoSkill.dengeki_taisei,
+        hp: undefined,
+        cp: undefined,
+        info: '電撃属性の攻撃に強くなる。弱点だった場合は弱点を消す',
+        relative: undefined,
+    };
+    dengeki_mukou = {
+        element: element.auto,
+        name: autoSkill.dengeki_mukou,
+        hp: undefined,
+        cp: undefined,
+        info: '電撃属性の攻撃を無効にする',
+        relative: undefined,
+    };
+    dengeki_hansya = {
+        element: element.auto,
+        name: autoSkill.dengeki_hansya,
+        hp: undefined,
+        cp: undefined,
+        info: '電撃属性の攻撃を反射する',
+        relative: undefined,
+    };
+    // dengeki_kyusyu ={
+    //     element: element.auto,
+    //     name: autoSkill.high_grow,
+    //     hp: undefined,
+    //     cp: undefined,
+    //     info: '戦闘に参加していなくても同じ経験値を入手する',
+    //     relative: undefined,
+    // };
+    sippu_mikiri = {
+        element: element.auto,
+        name: autoSkill.sippu_mikiri,
+        hp: undefined,
+        cp: undefined,
+        info: '疾風属性の攻撃を無効にする',
+        relative: undefined,
+    };
+    kyoku_sippu_mikiri = {
+        element: element.auto,
+        name: autoSkill.kyoku_sippu_mikiri,
+        hp: undefined,
+        cp: undefined,
+        info: '戦闘に参加していなくても同じ経験値を入手する',
+        relative: undefined,
+    };
+    sippu_taisei = {
+        element: element.auto,
+        name: autoSkill.sippu_taisei,
+        hp: undefined,
+        cp: undefined,
+        info: '疾風属性の攻撃に強くなる。弱点だった場合は弱点を消す',
+        relative: undefined,
+    };
+    sippu_mukou = {
+        element: element.auto,
+        name: autoSkill.sippu_mukou,
+        hp: undefined,
+        cp: undefined,
+        info: '疾風属性の攻撃を無効にする',
+        relative: undefined,
+    };
+    // sippu_hansya = {
+    //     element: element.auto,
+    //     name: autoSkill.high_grow,
+    //     hp: undefined,
+    //     cp: undefined,
+    //     info: '戦闘に参加していなくても同じ経験値を入手する',
+    //     relative: undefined,
+    // };
+    sippu_kyusyu = {
+        element: element.auto,
+        name: autoSkill.sippu_kyusyu,
+        hp: undefined,
+        cp: undefined,
+        info: '疾風属性の攻撃を吸収する',
+        relative: undefined,
+    };
+    nenndou_mikiri = {
+        element: element.auto,
+        name: autoSkill.nenndou_mikiri,
+        hp: undefined,
+        cp: undefined,
+        info: '念動属性の攻撃に対する回避率が２倍になる',
+        relative: undefined,
+    };
+    kyoku_nenndou_mikiri = {
+        element: element.auto,
+        name: autoSkill.kyoku_nenndou_mikiri,
+        hp: undefined,
+        cp: undefined,
+        info: '念動属性の攻撃に対する回避率が３倍になる。見切りとの効果累積なし',
+        relative: undefined,
+    };
+    nenndou_taisei = {
+        element: element.auto,
+        name: autoSkill.nenndou_taisei,
+        hp: undefined,
+        cp: undefined,
+        info: '念動属性の攻撃に強くなる。弱点だった場合は弱点を消す',
+        relative: undefined,
+    };
+    nenndou_mukou = {
+        element: element.auto,
+        name: autoSkill.nenndou_mukou,
+        hp: undefined,
+        cp: undefined,
+        info: '戦闘に参加していなくても同じ経験値を入手する',
+        relative: undefined,
+    };
+    // nenndou_hansya = {
+    //     element: element.auto,
+    //     name: autoSkill.high_grow,
+    //     hp: undefined,
+    //     cp: undefined,
+    //     info: '戦闘に参加していなくても同じ経験値を入手する',
+    //     relative: undefined,
+    // };
+    nenndou_kyusyu = {
+        element: element.auto,
+        name: autoSkill.nenndou_kyusyu,
+        hp: undefined,
+        cp: undefined,
+        info: '念動属性の攻撃を吸収する',
+        relative: undefined,
+    };
+    kakunetu_mikiri = {
+        element: element.auto,
+        name: autoSkill.kakunetu_mikiri,
+        hp: undefined,
+        cp: undefined,
+        info: '核熱属性の攻撃に対する回避率が２倍になる',
+        relative: undefined,
+    };
+    kyoku_kakunetu_mikiri = {
+        element: element.auto,
+        name: autoSkill.kyoku_kakunetu_mikiri,
+        hp: undefined,
+        cp: undefined,
+        info: '核熱属性の攻撃に対する回避率が３倍になる。見切りとの効果累積なし',
+        relative: undefined,
+    };
+    kakunetu_taisei = {
+        element: element.auto,
+        name: autoSkill.kakunetu_taisei,
+        hp: undefined,
+        cp: undefined,
+        info: '核熱属性の攻撃に強くなる。弱点だった場合は弱点を消す',
+        relative: undefined,
+    };
+    kakunetu_mukou = {
+        element: element.auto,
+        name: autoSkill.kakunetu_mukou,
+        hp: undefined,
+        cp: undefined,
+        info: '核熱属性の攻撃を無効にする',
+        relative: undefined,
+    };
+    kakunetu_hansya = {
+        element: element.auto,
+        name: autoSkill.kakunetu_hansya,
+        hp: undefined,
+        cp: undefined,
+        info: '核熱属性の攻撃を反射する',
+        relative: undefined,
+    };
+    kakunetu_kyusyu = {
+        element: element.auto,
+        name: autoSkill.kakunetu_kyusyu,
+        hp: undefined,
+        cp: undefined,
+        info: '核熱属性の攻撃を吸収する',
+        relative: undefined,
+    };
+    syukuhuku_mikiri ={
+        element: element.auto,
+        name: autoSkill.syukuhuku_mikiri,
+        hp: undefined,
+        cp: undefined,
+        info: '即死を除く祝福属性の攻撃に対する回避率が２倍になる',
+        relative: undefined,
+    };
+    kyoku_syukuhuku_mikiri = {
+        element: element.auto,
+        name: autoSkill.kyoku_syukuhuku_mikiri,
+        hp: undefined,
+        cp: undefined,
+        info: '即死を除く祝福属性に対する回避率が３倍になる。見切りとの効果累積なし',
+        relative: undefined,
+    };
+    syukuhuku_taisei = {
+        element: element.auto,
+        name: autoSkill.syukuhuku_taisei,
+        hp: undefined,
+        cp: undefined,
+        info: '祝福属性の攻撃に強くなる。弱点だった場合は弱点を消す',
+        relative: undefined,
+    };
+    syukuhuku_mukou = {
+        element: element.auto,
+        name: autoSkill.syukuhuku_mukou,
+        hp: undefined,
+        cp: undefined,
+        info: '祝福属性の攻撃を無効にする',
+        relative: undefined,
+    };
+    // syukuhuku_hansya = {
+    //     element: element.auto,
+    //     name: autoSkill.high_grow,
+    //     hp: undefined,
+    //     cp: undefined,
+    //     info: '戦闘に参加していなくても同じ経験値を入手する',
+    //     relative: undefined,
+    // };
+    syukuhuku_kyusyu = {
+        element: element.auto,
+        name: autoSkill.syukuhuku_kyusyu,
+        hp: undefined,
+        cp: undefined,
+        info: '祝福属性の攻撃を吸収する',
+        relative: undefined,
+    };
+    juon_mikiri = {
+        element: element.auto,
+        name: autoSkill.juon_mikiri,
+        hp: undefined,
+        cp: undefined,
+        info: '即死を除く呪怨属性の攻撃に対する回避率が２倍になる',
+        relative: undefined,
+    };
+    kyoku_juon_mikiri = {
+        element: element.auto,
+        name: autoSkill.kyoku_juon_mikiri,
+        hp: undefined,
+        cp: undefined,
+        info: '即死を除く祝福属性に対する回避率が３倍になる。見切りとの効果累積なし',
+        relative: undefined,
+    };
+    juon_taisei = {
+        element: element.auto,
+        name: autoSkill.juon_taisei,
+        hp: undefined,
+        cp: undefined,
+        info: '呪怨属性の攻撃に強くなる。弱点だった場合は弱点を消す',
+        relative: undefined,
+    };
+    juon_mukou = {
+        element: element.auto,
+        name: autoSkill.juon_mukou,
+        hp: undefined,
+        cp: undefined,
+        info: '呪怨属性の攻撃を無効にする',
+        relative: undefined,
+    };
+    juon_hansya = {
+        element: element.auto,
+        name: autoSkill.juon_hansya,
+        hp: undefined,
+        cp: undefined,
+        info: '呪怨属性の攻撃を反射する',
+        relative: undefined,
+    };
+    juon_kyusyu = {
+        element: element.auto,
+        name: autoSkill.juon_kyusyu,
+        hp: undefined,
+        cp: undefined,
+        info: '呪怨属性の攻撃を吸収する',
+        relative: undefined,
+    };
+    ari_dance = {
+        element: element.auto,
+        name: autoSkill.ari_dance,
+        hp: undefined,
+        cp: undefined,
+        info: '攻撃してくる敵の命中率が自動的に半分になる',
+        relative: undefined,
+    };
+    daitenshinokago = {
+        element: element.auto,
+        name: autoSkill.daitenshinokago,
+        hp: undefined,
+        cp: undefined,
+        info: '火炎・氷結・疾風・電撃・祝福・呪怨・核熱・念動の回避率が自動で２倍になる',
+        relative: undefined,
+    };
+
+    memai_taisei = {
+        element: element.auto,
+        name: autoSkill.memai_taisei,
+        hp: undefined,
+        cp: undefined,
+        info: '目眩にかかりにくくなる',
+        relative: undefined,
+    };
+    memai_mukou = {
+        element: element.auto,
+        name: autoSkill.memai_mukou,
+        hp: undefined,
+        cp: undefined,
+        info: '目眩にかからなくなる',
+        relative: undefined,
+    };
+    boukyaku_taisei = {
+        element: element.auto,
+        name: autoSkill.boukyaku_taisei,
+        hp: undefined,
+        cp: undefined,
+        info: '忘却にかかりにくくなる',
+        relative: undefined,
+    };
+    boukyaku_mukou = {
+        element: element.auto,
+        name: autoSkill.boukyaku_mukou,
+        hp: undefined,
+        cp: undefined,
+        info: '忘却にかからなくなる',
+        relative: undefined,
+    };
+    konran_taisei = {
+        element: element.auto,
+        name: autoSkill.konran_taisei,
+        hp: undefined,
+        cp: undefined,
+        info: '混乱にかかりにくくなる',
+        relative: undefined,
+    };
+    konran_mukou = {
+        element: element.auto,
+        name: autoSkill.konran_mukou,
+        hp: undefined,
+        cp: undefined,
+        info: '混乱にかからなくなる',
+        relative: undefined,
+    };
+    suimin_taisei = {
+        element: element.auto,
+        name: autoSkill.suimin_taisei,
+        hp: undefined,
+        cp: undefined,
+        info: '睡眠にかかりにくくなる',
+        relative: undefined,
+    };
+    suimin_mukou = {
+        element: element.auto,
+        name: autoSkill.suimin_mukou,
+        hp: undefined,
+        cp: undefined,
+        info: '睡眠にかからなくなる',
+        relative: undefined,
+    };
+    kyohu_taisei = {
+        element: element.auto,
+        name: autoSkill.kyohu_taisei,
+        hp: undefined,
+        cp: undefined,
+        info: '恐怖にかかりにくくなる',
+        relative: undefined,
+    };
+    kyohu_mukou = {
+        element: element.auto,
+        name: autoSkill.kyohu_mukou,
+        hp: undefined,
+        cp: undefined,
+        info: '恐怖にかからなくなる',
+        relative: undefined,
+    };
+    zetubou_taisei = {
+        element: element.auto,
+        name: autoSkill.zetubou_taisei,
+        hp: undefined,
+        cp: undefined,
+        info: '絶望にかかりにくくなる',
+        relative: undefined,
+    };
+    zetubou_mukou = {
+        element: element.auto,
+        name: autoSkill.zetubou_mukou,
+        hp: undefined,
+        cp: undefined,
+        info: '絶望にかからなくなる',
+        relative: undefined,
+    };
+    gekido_taisei = {
+        element: element.auto,
+        name: autoSkill.gekido_taisei,
+        hp: undefined,
+        cp: undefined,
+        info: '激怒にかかりにくくなる',
+        relative: undefined,
+    };
+    gekido_mukou = {
+        element: element.auto,
+        name: autoSkill.gekido_mukou,
+        hp: undefined,
+        cp: undefined,
+        info: '激怒にかからなくなる',
+        relative: undefined,
+    };
+    sennou_taisei = {
+        element: element.auto,
+        name: autoSkill.sennou_taisei,
+        hp: undefined,
+        cp: undefined,
+        info: '洗脳にかかりにくくなる',
+        relative: undefined,
+    };
+    sennou_mukou = {
+        element: element.auto,
+        name: autoSkill.sennou_mukou,
+        hp: undefined,
+        cp: undefined,
+        info: '洗脳にかからなくなる',
+        relative: undefined,
+    };
+    hudoushin = {
+        element: element.auto,
+        name: autoSkill.hudoushin,
+        hp: undefined,
+        cp: undefined,
+        info: '混乱・恐怖・激怒・絶望にかからなくなる',
+        relative: undefined,
+    };
+    seishintaisei = {
+        element: element.auto,
+        name: autoSkill.seishintaisei,
+        hp: undefined,
+        cp: undefined,
+        info: 'すべての状態異常にかかりにくくなる',
+        relative: undefined,
+    };
+
     autoSkillList: Array<Skill> = [
         this.seimitu_syageki,
         this.kyusyouti,
@@ -768,6 +1440,82 @@ export class AutoSkill {
         this.syourinootakebi,
         this.low_grow,
         this.middle_grow,
-        this.high_grow
+        this.high_grow,
+
+        this.buturi_mikiri,
+        this.kyoku_buturi_mikiri ,
+        this.buturi_taisei ,
+        this.buturi_mukou ,
+        this.buturi_hansya ,
+        this.buturi_kyusyu ,
+        this.kaen_mikiri ,
+        this.kyoku_kaen_mikiri ,
+        this.kaen_taisei ,
+        this.kaen_mukou ,
+        this.kaen_hansha ,
+        this.kaen_kyusyu ,
+        this.hyouketu_mikiri ,
+        this.kyoku_hyouketu_mikiri ,
+        this.hyouketu_taisei ,
+        this.hyouketu_mukou ,
+        this.hyouketu_hansha ,
+        this.hyouketu_kyusyu ,
+        this.dengeki_mikiri ,
+        this.kyoku_dengeki_mikiri ,
+        this.dengeki_taisei ,
+        this.dengeki_mukou ,
+        this.dengeki_hansya ,
+        // dengeki_kyusyu = '電撃吸収',
+        this.sippu_mikiri ,
+        this.kyoku_sippu_mikiri ,
+        this.sippu_taisei ,
+        this.sippu_mukou ,
+        // sippu_hansya = '疾風反射',
+        this.sippu_kyusyu ,
+        this.nenndou_mikiri ,
+        this.kyoku_nenndou_mikiri ,
+        this.nenndou_taisei ,
+        this.nenndou_mukou ,
+        // nenndou_hansya = '念動反射',
+        this.nenndou_kyusyu,
+        this.kakunetu_mikiri ,
+        this.kyoku_kakunetu_mikiri ,
+        this.kakunetu_taisei ,
+        this.kakunetu_mukou ,
+        this.kakunetu_hansya ,
+        this.kakunetu_kyusyu ,
+        this.syukuhuku_mikiri ,
+        this.kyoku_syukuhuku_mikiri ,
+        this.syukuhuku_taisei ,
+        this.syukuhuku_mukou ,
+        // syukuhuku_hansya = '祝福反射',
+        this.syukuhuku_kyusyu ,
+        this.juon_mikiri ,
+        this.kyoku_juon_mikiri ,
+        this.juon_taisei ,
+        this.juon_mukou ,
+        this.juon_hansya ,
+        this.juon_kyusyu ,
+        this.ari_dance ,
+        this.daitenshinokago ,
+    
+        this.memai_taisei ,
+        this.memai_mukou ,
+        this.boukyaku_taisei ,
+        this.boukyaku_mukou ,
+        this.konran_taisei ,
+        this.konran_mukou ,
+        this.suimin_taisei ,
+        this.suimin_mukou ,
+        this.kyohu_taisei ,
+        this.kyohu_mukou,
+        this.zetubou_taisei ,
+        this.zetubou_mukou ,
+        this.gekido_taisei ,
+        this.gekido_mukou ,
+        this.sennou_taisei ,
+        this.sennou_mukou ,
+        this.hudoushin ,
+        this.seishintaisei ,
     ]
 }
