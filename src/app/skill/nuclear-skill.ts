@@ -22,7 +22,7 @@ export class NuclearSkill {
     };
     fureira = {
         element: element.nuclear,
-        name: nuclearSkill.furei,
+        name: nuclearSkill.fureira,
         hp: undefined,
         cp: 8,
         info: '敵１体に核熱属性で中ダメージを与える。炎上凍結感電の敵に効果大',
@@ -30,7 +30,7 @@ export class NuclearSkill {
     };
     fureidain = {
         element: element.nuclear,
-        name: nuclearSkill.furei,
+        name: nuclearSkill.fureidain,
         hp: undefined,
         cp: 12,
         info: '敵１体に核熱属性で大ダメージを与える。炎上凍結感電の敵に効果大',
@@ -38,7 +38,7 @@ export class NuclearSkill {
     };
     mahafurei = {
         element: element.nuclear,
-        name: nuclearSkill.furei,
+        name: nuclearSkill.mahafurei,
         hp: undefined,
         cp: 10,
         info: '敵全体に核熱属性で小ダメージを与える。炎上凍結感電の敵に効果大',
@@ -46,7 +46,7 @@ export class NuclearSkill {
     };
     mahafureira = {
         element: element.nuclear,
-        name: nuclearSkill.furei,
+        name: nuclearSkill.mahafureira,
         hp: undefined,
         cp: 16,
         info: '敵全体に核熱属性で中ダメージを与える。炎上凍結感電の敵に効果大',
@@ -54,7 +54,7 @@ export class NuclearSkill {
     };
     mahafureidain = {
         element: element.nuclear,
-        name: nuclearSkill.furei,
+        name: nuclearSkill.mahafureidain,
         hp: undefined,
         cp: 22,
         info: '敵全体に核熱属性の大ダメージを与える。炎上凍結感電の敵に効果大',
@@ -62,7 +62,7 @@ export class NuclearSkill {
     };
     atmicfrea = {
         element: element.nuclear,
-        name: nuclearSkill.furei,
+        name: nuclearSkill.atmicfrea,
         hp: undefined,
         cp: 48,
         info: '敵１体に核熱属性で特大ダメージを与える。炎上凍結感電の敵に効果大',
@@ -70,7 +70,7 @@ export class NuclearSkill {
     };
     cozmicfrea = {
         element: element.nuclear,
-        name: nuclearSkill.furei,
+        name: nuclearSkill.cozmicfrea,
         hp: undefined,
         cp: 54,
         info: '敵全体に核熱属性の特大ダメージを与える。炎上凍結感電の敵に効果大',
