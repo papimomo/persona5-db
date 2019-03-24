@@ -60,6 +60,50 @@ export class PersonaDb {
     support = new SupportSkill();
     recovery = new RecoverySkill();
 
+    sample = {
+        element: {
+            physical: regist.normal,
+            gun: regist.normal,
+            fire: regist.normal,
+            ice: regist.normal,
+            electric: regist.normal,
+            wind: regist.normal,
+            psy: regist.normal,
+            nuclear: regist.normal,
+            bless: regist.normal,
+            curse: regist.normal,
+        },
+        skill: [
+            {
+                skill: this.curse.eiha,
+                level: 0
+            },
+            {
+                skill: this.physical.slash,
+                level: 2
+            },
+            {
+                skill: this.support.sukunda,
+                level: 4
+            },
+            {
+                skill: this.physical.yumemihari,
+                level: 5
+            },
+            {
+                skill: this.auto.gyakkyounokakugo,
+                level: 7
+            }
+        ],
+        status: {
+            ti: 2,
+            ma: 2,
+            ta: 2,
+            so: 3,
+            un: 1
+        }
+
+    }
 
     persona = [
         {
@@ -101,10 +145,10 @@ export class PersonaDb {
                 }
             ],
             status: {
-                tikara: 5,
-                ma: 5,
-                tai: 3,
-                soku: 3,
+                ti: 2,
+                ma: 2,
+                ta: 2,
+                so: 3,
                 un: 1
             }
         },
@@ -112,11 +156,98 @@ export class PersonaDb {
             level: 8,
             name: 'オバリヨン',
             arcana: arcana.gusha,
+            element: {
+                physical: regist.regist,
+                gun: regist.normal,
+                fire: regist.normal,
+                ice: regist.normal,
+                electric: regist.weak,
+                wind: regist.normal,
+                psy: regist.normal,
+                nuclear: regist.normal,
+                bless: regist.normal,
+                curse: regist.normal,
+            },
+            skill: [
+                {
+                    skill: this.gun.shidan,
+                    level: 0
+                },
+                {
+                    skill: this.support.sukunda,
+                    level: 0
+                },
+                {
+                    skill: this.physical.lucky_punch,
+                    level: 9
+                },
+                {
+                    skill: this.auto.kyohu_taisei,
+                    level: 10
+                },
+                {
+                    skill: this.support.dekaja,
+                    level: 12
+                }
+            ],
+            status: {
+                ti: 7,
+                ma: 3,
+                ta: 9,
+                so: 8,
+                un: 4
+            }
         },
         {
             level: 16,
             name: 'ハイピクシー',
             arcana: arcana.gusha,
+            element: {
+                physical: regist.normal,
+                gun: regist.weak,
+                fire: regist.normal,
+                ice: regist.normal,
+                electric: regist.regist,
+                wind: regist.regist,
+                psy: regist.normal,
+                nuclear: regist.weak,
+                bless: regist.normal,
+                curse: regist.normal,
+            },
+            skill: [
+                {
+                    skill: this.wind.garu,
+                    level: 0
+                },
+                {
+                    skill: this.recovery.media,
+                    level: 0
+                },
+                {
+                    skill: this.abState.dorumina,
+                    level: 0
+                },
+                {
+                    skill: this.recovery.diarama,
+                    level: 18
+                },
+                {
+                    skill: this.abState.tyouhatu,
+                    level: 19
+                },
+                {
+                    skill: this.wind.mahagaru,
+                    level: 20
+                }
+            ],
+            status: {
+                ti: 8,
+                ma: 14,
+                ta: 10,
+                so: 13,
+                un: 10
+            }
+
         },
         // {
         //     level: 20,
@@ -146,48 +277,482 @@ export class PersonaDb {
             level: 32,
             name: 'デカラビア',
             arcana: arcana.gusha,
+            element: {
+                physical: regist.weak,
+                gun: regist.normal,
+                fire: regist.reflect,
+                ice: regist.normal,
+                electric: regist.normal,
+                wind: regist.normal,
+                psy: regist.normal,
+                nuclear: regist.regist,
+                bless: regist.normal,
+                curse: regist.regist,
+            },
+            skill: [
+                {
+                    skill: this.fire.agirao,
+                    level: 0
+                },
+                {
+                    skill: this.abState.hukitunakotoba,
+                    level: 0
+                },
+                {
+                    skill: this.fire.maharagion,
+                    level: 33
+                },
+                {
+                    skill: this.auto.kaen_booster,
+                    level: 35
+                },
+                {
+                    skill: this.auto.kaen_mukou,
+                    level: 36
+                },
+                {
+                    skill: this.abState.devil_smile,
+                    level: 37
+                },
+                {
+                    skill: this.support.tetrakarn,
+                    level: 40
+                },
+            ],
+            status: {
+                ti: 21,
+                ma: 23,
+                ta: 19,
+                so: 22,
+                un: 18
+            }
         },
         {
             level: 38,
             name: 'レギオン',
             arcana: arcana.gusha,
+            element: {
+                physical: regist.regist,
+                gun: regist.regist,
+                fire: regist.regist,
+                ice: regist.normal,
+                electric: regist.normal,
+                wind: regist.normal,
+                psy: regist.regist,
+                nuclear: regist.normal,
+                bless: regist.weak,
+                curse: regist.none,
+            },
+            skill: [
+                {
+                    skill: this.physical.abaremakuri,
+                    level: 0
+                },
+                {
+                    skill: this.almight.kyuketu,
+                    level: 0
+                },
+                {
+                    skill: this.physical.negative_pile,
+                    level: 0
+                },
+                {
+                    skill: this.psy.psyo,
+                    level: 39
+                },
+                {
+                    skill: this.support.tetra_break,
+                    level: 40
+                },
+                {
+                    skill: this.auto.memai_mukou,
+                    level: 42
+                },
+            ],
+            status: {
+                ti: 24,
+                ma: 24,
+                ta: 30,
+                so: 23,
+                un: 20
+            }
+
         },
         {
             level: 42,
             name: 'オセ',
             arcana: arcana.gusha,
+            element: {
+                physical: regist.normal,
+                gun: regist.normal,
+                fire: regist.regist,
+                ice: regist.normal,
+                electric: regist.normal,
+                wind: regist.normal,
+                psy: regist.normal,
+                nuclear: regist.normal,
+                bless: regist.weak,
+                curse: regist.none,
+            },
+            skill: [
+                {
+                    skill: this.physical.onikagura,
+                    level: 0
+                },
+                {
+                    skill: this.auto.heavy_counter,
+                    level: 0
+                },
+                {
+                    skill: this.physical.samidare_giri,
+                    level: 43
+                },
+                {
+                    skill: this.support.mahatarukaja,
+                    level: 45
+                },
+                {
+                    skill: this.physical.heat_wave,
+                    level: 47
+                },
+            ],
+            status: {
+                ti: 32,
+                ma: 24,
+                ta: 25,
+                so: 31,
+                un: 21
+            }
         },
         {
             level: 49,
             name: 'バグス',
             arcana: arcana.gusha,
+            element: {
+                physical: regist.normal,
+                gun: regist.normal,
+                fire: regist.normal,
+                ice: regist.normal,
+                electric: regist.normal,
+                wind: regist.normal,
+                psy: regist.regist,
+                nuclear: regist.weak,
+                bless: regist.normal,
+                curse: regist.none,
+            },
+            skill: [
+                {
+                    skill: this.physical.miracle_punch,
+                    level: 0
+                },
+                {
+                    skill: this.support.mahasukunda,
+                    level: 0
+                },
+                {
+                    skill: this.psy.psydain,
+                    level: 0
+                },
+                {
+                    skill: this.auto.mahatarukaauto,
+                    level: 51
+                },
+                {
+                    skill: this.gun.triple_down,
+                    level: 52
+                },
+                {
+                    skill: this.auto.kyoku_buturi_mikiri,
+                    level: 54
+                },
+                {
+                    skill: this.auto.kyusokukaihuku,
+                    level: 55
+                },
+            ],
+            status: {
+                ti: 35,
+                ma: 33,
+                ta: 30,
+                so: 32,
+                un: 34
+            }
+
         },
         {
             level: 50,
             name: '水晶髑髏',
             arcana: arcana.gusha,
-            gousei: false
+            gousei: false,
+            element: {
+                        physical: regist.regist,
+                        gun: regist.none,
+                        fire: regist.reflect,
+                        ice: regist.reflect,
+                        electric: regist.reflect,
+                        wind: regist.reflect,
+                        psy: regist.reflect,
+                        nuclear: regist.reflect,
+                        bless: regist.normal,
+                        curse: regist.reflect,
+                    },
+                    skill: [
+                        {
+                            skill: this.fire.maharagidain,
+                            level: 0
+                        },
+                        {
+                            skill: this.ice.mahabufudain,
+                            level: 0
+                        },
+                        {
+                            skill: this.wind.mahagarudain,
+                            level: 0
+                        },
+                        {
+                            skill: this.electric.mahajiodain,
+                            level: 0
+                        },
+                        {
+                            skill: this.psy.mahapsydain,
+                            level: 0
+                        },
+                        {
+                            skill: this.nuclear.mahafureidain,
+                            level: 0
+                        },
+                        {
+                            skill: this.bless.mahakougaon,
+                            level: 0
+                        },
+                        {
+                            skill: this.curse.mahaeigaon,
+                            level: 0
+                        },
+                    ],
+                    status: {
+                        ti: 50,
+                        ma: 50,
+                        ta: 50,
+                        so: 50,
+                        un: 50
+                    }
+            
         },
         {
             level: 61,
             name: 'ディオニュソス',
             arcana: arcana.gusha,
+            element: {
+                        physical: regist.normal,
+                        gun: regist.normal,
+                        fire: regist.normal,
+                        ice: regist.normal,
+                        electric: regist.reflect,
+                        wind: regist.normal,
+                        psy: regist.normal,
+                        nuclear: regist.normal,
+                        bless: regist.regist,
+                        curse: regist.regist,
+                    },
+                    skill: [
+                        {
+                            skill: this.abState.narakunohadou,
+                            level: 0
+                        },
+                        {
+                            skill: this.physical.heat_wave,
+                            level: 0
+                        },
+                        {
+                            skill: this.psy.psydain,
+                            level: 0
+                        },
+                        {
+                            skill: this.support.terumopyurai,
+                            level: 62
+                        },
+                        {
+                            skill: this.fire.maharagidain,
+                            level: 65
+                        },
+                        {
+                            skill: this.recovery.amurita_syawa,
+                            level: 66
+                        },
+                    ],
+                    status: {
+                        ti: 35,
+                        ma: 41,
+                        ta: 38,
+                        so: 40,
+                        un: 36
+                    }
+            
         },
         {
             level: 67,
             name: 'ジャアクフロスト',
             arcana: arcana.gusha,
+            element: {
+                    physical: regist.normal,
+                    gun: regist.normal,
+                    fire: regist.reflect,
+                    ice: regist.drain,
+                    electric: regist.normal,
+                    wind: regist.normal,
+                    psy: regist.normal,
+                    nuclear: regist.none,
+                    bless: regist.normal,
+                    curse: regist.reflect,
+                },
+                skill: [
+                    {
+                        skill: this.ice.mahabufudain,
+                        level: 0
+                    },
+                    {
+                        skill: this.gun.one_shot_kill,
+                        level: 0
+                    },
+                    {
+                        skill: this.physical.miracle_punch,
+                        level: 0
+                    },
+                    {
+                        skill: this.auto.hyouketu_highbooster,
+                        level: 70
+                    },
+                    {
+                        skill: this.auto.kaen_hansha,
+                        level: 71
+                    },
+                    {
+                        skill: this.ice.diamonddust,
+                        level: 72
+                    },
+                ],
+                status: {
+                    ti: 44,
+                    ma: 46,
+                    ta: 41,
+                    so: 42,
+                    un: 35
+                }
+        
         },
         {
             level: 83,
             name: 'ヴィシュヌ',
             arcana: arcana.gusha,
+            element: {
+                    physical: regist.normal,
+                    gun: regist.normal,
+                    fire: regist.normal,
+                    ice: regist.normal,
+                    electric: regist.normal,
+                    wind: regist.normal,
+                    psy: regist.normal,
+                    nuclear: regist.normal,
+                    bless: regist.normal,
+                    curse: regist.normal,
+                },
+                skill: [
+                    {
+                        skill: this.almight.megidoraon,
+                        level: 0
+                    },
+                    {
+                        skill: this.wind.mahagarudain,
+                        level: 0
+                    },
+                    {
+                        skill: this.auto.ari_dance,
+                        level: 0
+                    },
+                    {
+                        skill: this.wind.shinkuha,
+                        level: 85
+                    },
+                    {
+                        skill: this.support.charge,
+                        level: 86
+                    },
+                    {
+                        skill: this.auto.kaen_hansha,
+                        level: 87
+                    },
+                    {
+                        skill: this.auto.shippu_highbooster,
+                        level: 88
+                    },
+                    {
+                        skill: this.gun.shikounomadan,
+                        level: 90
+                    },
+                ],
+                status: {
+                    ti: 56,
+                    ma: 51,
+                    ta: 49,
+                    so: 57,
+                    un: 43
+                }
+        
         },
         {
             level: 95,
             name: 'サタナエル',
             arcana: arcana.gusha,
+            element: {
+                    physical: regist.regist,
+                    gun: regist.regist,
+                    fire: regist.regist,
+                    ice: regist.regist,
+                    electric: regist.regist,
+                    wind: regist.regist,
+                    psy: regist.regist,
+                    nuclear: regist.regist,
+                    bless: regist.none,
+                    curse: regist.drain,
+                },
+                skill: [
+                    {
+                        skill: this.curse.mahaeigaon,
+                        level: 0
+                    },
+                    {
+                        skill: this.almight.megidoraon,
+                        level: 0
+                    },
+                    {
+                        skill: this.auto.seikan_tric,
+                        level: 0
+                    },
+                    {
+                        skill: this.gun.shikounomadan,
+                        level: 0
+                    },
+                    {
+                        skill: this.nuclear.cozmicfrea,
+                        level: 96
+                    },
+                    {
+                        skill: this.auto.syourinootakebi,
+                        level: 99
+                    },
+                ],
+                status: {
+                    ti: 63,
+                    ma: 60,
+                    ta: 57,
+                    so: 56,
+                    un: 56
+                }
+        
         },
+
+
         {
             level: 2,
             name: 'ジャックランタン',
