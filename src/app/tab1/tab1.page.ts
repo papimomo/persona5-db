@@ -12,7 +12,8 @@ export class Tab1Page {
   personalist: Array<any>;
   constructor(private router: Router) {
     const persona = new PersonaDb();
-    this.personalist = persona.persona.sort((one, two) => one.name > two.name ? 1 : -1);
+    // this.personalist = persona.persona.sort((one, two) => one.name > two.name ? 1 : -1);
+    this.personalist = persona.persona.sort((one, two) => one.level > two.level ? 1 : -1);
   }
 
   onItemClick(persona) {
