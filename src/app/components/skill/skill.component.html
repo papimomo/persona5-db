@@ -1,22 +1,22 @@
-<div>
+<ion-card class="base">
   <ion-grid class="grid">
     <ion-row>
       <ion-col size="10">
           <div class="name">
               <img class="element_img" src="assets/element/{{skill.skill.element}}.png">
-              {{skill.skill.name}} 
+              <ion-text color="dark">{{skill.skill.name}} </ion-text>
               <!-- &nbsp;&nbsp; ({{getCost()}}) -->
             </div>
       </ion-col>
       <ion-col>
         <div class="level" *ngIf="skill.level != 0">
-            Lv:{{skill.level}}
+          <ion-text color="dark">Lv:{{skill.level}}</ion-text>
         </div>
         <div class="level" *ngIf="skill.level == 0">
-            -
+          <ion-text color="dark">-</ion-text>
         </div>
       </ion-col>
     </ion-row>
   </ion-grid>
-  <div class="info">{{skill.skill.info}}</div>
-</div>
+  <ion-text color="dark" class="info">{{skill.skill.info}}</ion-text >
+</ion-card>
