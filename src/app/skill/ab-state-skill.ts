@@ -18,9 +18,6 @@ enum abStateSkill {
     brain_jack = 'ブレインジャック',
     devil_touch = 'デビルタッチ',
     devil_smile = 'デビルスマイル',
-    moujanonageki = '亡者の嘆き',
-    yodonda_toiki = '淀んだ吐息',
-    yodonda_kuuki = '淀んだ空気'
 }
 
 
@@ -36,7 +33,7 @@ export class AbStateSkill {
     };
     yamiyonosenkou = {
         element: element.ab_state,
-        name: abStateSkill.metubushi,
+        name: abStateSkill.yamiyonosenkou,
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で目眩状態にする',
@@ -44,7 +41,7 @@ export class AbStateSkill {
     };
     makajama = {
         element: element.ab_state,
-        name: abStateSkill.metubushi,
+        name: abStateSkill.makajama,
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で忘却状態にする',
@@ -52,7 +49,7 @@ export class AbStateSkill {
     };
     makajamaon = {
         element: element.ab_state,
-        name: abStateSkill.metubushi,
+        name: abStateSkill.makajamaon,
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で忘却状態にする',
@@ -60,7 +57,7 @@ export class AbStateSkill {
     };
     dorumina = {
         element: element.ab_state,
-        name: abStateSkill.metubushi,
+        name: abStateSkill.dorumina,
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で睡眠状態にする',
@@ -68,7 +65,7 @@ export class AbStateSkill {
     };
     sleep_song = {
         element: element.ab_state,
-        name: abStateSkill.metubushi,
+        name: abStateSkill.sleep_song,
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で睡眠状態にする',
@@ -76,7 +73,7 @@ export class AbStateSkill {
     };
     prinpa = {
         element: element.ab_state,
-        name: abStateSkill.metubushi,
+        name: abStateSkill.prinpa,
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で混乱状態にする',
@@ -84,7 +81,7 @@ export class AbStateSkill {
     };
     tentarahu = {
         element: element.ab_state,
-        name: abStateSkill.metubushi,
+        name: abStateSkill.tentarahu,
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で混乱状態にする',
@@ -92,7 +89,7 @@ export class AbStateSkill {
     };
     hukitunakotoba = {
         element: element.ab_state,
-        name: abStateSkill.metubushi,
+        name: abStateSkill.hukitunakotoba,
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で絶望状態にする',
@@ -100,7 +97,7 @@ export class AbStateSkill {
     };
     narakunohadou = {
         element: element.ab_state,
-        name: abStateSkill.metubushi,
+        name: abStateSkill.narakunohadou,
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で絶望状態にする',
@@ -108,7 +105,7 @@ export class AbStateSkill {
     };
     tyouhatu = {
         element: element.ab_state,
-        name: abStateSkill.metubushi,
+        name: abStateSkill.tyouhatu,
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で激怒状態にする',
@@ -116,7 +113,7 @@ export class AbStateSkill {
     };
     sensenhukoku = {
         element: element.ab_state,
-        name: abStateSkill.metubushi,
+        name: abStateSkill.sensenhukoku,
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で激怒状態にする',
@@ -124,7 +121,7 @@ export class AbStateSkill {
     };
     marinkarin = {
         element: element.ab_state,
-        name: abStateSkill.metubushi,
+        name: abStateSkill.marinkarin,
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で洗脳状態にする',
@@ -132,7 +129,7 @@ export class AbStateSkill {
     };
     brain_jack = {
         element: element.ab_state,
-        name: abStateSkill.metubushi,
+        name: abStateSkill.brain_jack,
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で洗脳状態にする',
@@ -140,7 +137,7 @@ export class AbStateSkill {
     };
     devil_touch = {
         element: element.ab_state,
-        name: abStateSkill.metubushi,
+        name: abStateSkill.devil_touch,
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で恐怖状態にする',
@@ -148,34 +145,10 @@ export class AbStateSkill {
     };
     devil_smile = {
         element: element.ab_state,
-        name: abStateSkill.metubushi,
+        name: abStateSkill.devil_smile,
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で恐怖状態にする',
-        relative: undefined,
-    };
-    moujanonageki = {
-        element: element.ab_state,
-        name: abStateSkill.metubushi,
-        hp: undefined,
-        cp: 28,
-        info: '恐怖状態の敵に即死効果を与える',
-        relative: undefined,
-    };
-    yodonda_toiki = {
-        element: element.ab_state,
-        name: abStateSkill.metubushi,
-        hp: undefined,
-        cp: 8,
-        info: '敵１体を状態異常にかかりやすくさせる',
-        relative: undefined,
-    };
-    yodonda_kuuki = {
-        element: element.ab_state,
-        name: abStateSkill.metubushi,
-        hp: undefined,
-        cp: 5,
-        info: '敵味方全体を状態異常にかかりやすくさせる',
         relative: undefined,
     };
 
@@ -196,9 +169,6 @@ export class AbStateSkill {
         this.brain_jack,
         this.devil_touch,
         this.devil_smile,
-        this.moujanonageki,
-        this.yodonda_toiki,
-        this.yodonda_kuuki
 
     ];
 

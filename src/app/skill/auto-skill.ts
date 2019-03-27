@@ -105,12 +105,12 @@ enum autoSkill {
     dengeki_mukou = '電撃無効',
     dengeki_hansya = '電撃反射',
     // dengeki_kyusyu = '電撃吸収',
-    sippu_mikiri = '疾風見切り',
-    kyoku_sippu_mikiri = '極・疾風見切り',
-    sippu_taisei = '疾風耐性',
-    sippu_mukou = '疾風無効',
+    shippu_mikiri = '疾風見切り',
+    kyoku_shippu_mikiri = '極・疾風見切り',
+    shippu_taisei = '疾風耐性',
+    shippu_mukou = '疾風無効',
     // sippu_hansya = '疾風反射',
-    sippu_kyusyu = '疾風吸収',
+    shippu_kyusyu = '疾風吸収',
     nenndou_mikiri = '念動見切り',
     kyoku_nenndou_mikiri = '極・念動見切り',
     nenndou_taisei = '念動耐性',
@@ -959,33 +959,33 @@ export class AutoSkill {
     //     info: '戦闘に参加していなくても同じ経験値を入手する',
     //     relative: undefined,
     // };
-    sippu_mikiri = {
+    shippu_mikiri = {
         element: element.auto,
-        name: autoSkill.sippu_mikiri,
+        name: autoSkill.shippu_mikiri,
         hp: undefined,
         cp: undefined,
         info: '疾風属性の攻撃を無効にする',
         relative: undefined,
     };
-    kyoku_sippu_mikiri = {
+    kyoku_shippu_mikiri = {
         element: element.auto,
-        name: autoSkill.kyoku_sippu_mikiri,
+        name: autoSkill.kyoku_shippu_mikiri,
         hp: undefined,
         cp: undefined,
         info: '戦闘に参加していなくても同じ経験値を入手する',
         relative: undefined,
     };
-    sippu_taisei = {
+    shippu_taisei = {
         element: element.auto,
-        name: autoSkill.sippu_taisei,
+        name: autoSkill.shippu_taisei,
         hp: undefined,
         cp: undefined,
         info: '疾風属性の攻撃に強くなる。弱点だった場合は弱点を消す',
         relative: undefined,
     };
-    sippu_mukou = {
+    shippu_mukou = {
         element: element.auto,
-        name: autoSkill.sippu_mukou,
+        name: autoSkill.shippu_mukou,
         hp: undefined,
         cp: undefined,
         info: '疾風属性の攻撃を無効にする',
@@ -999,9 +999,9 @@ export class AutoSkill {
     //     info: '戦闘に参加していなくても同じ経験値を入手する',
     //     relative: undefined,
     // };
-    sippu_kyusyu = {
+    shippu_kyusyu = {
         element: element.auto,
-        name: autoSkill.sippu_kyusyu,
+        name: autoSkill.shippu_kyusyu,
         hp: undefined,
         cp: undefined,
         info: '疾風属性の攻撃を吸収する',
@@ -1466,12 +1466,12 @@ export class AutoSkill {
         this.dengeki_mukou ,
         this.dengeki_hansya ,
         // dengeki_kyusyu = '電撃吸収',
-        this.sippu_mikiri ,
-        this.kyoku_sippu_mikiri ,
-        this.sippu_taisei ,
-        this.sippu_mukou ,
+        this.shippu_mikiri ,
+        this.kyoku_shippu_mikiri ,
+        this.shippu_taisei ,
+        this.shippu_mukou ,
         // sippu_hansya = '疾風反射',
-        this.sippu_kyusyu ,
+        this.shippu_kyusyu ,
         this.nenndou_mikiri ,
         this.kyoku_nenndou_mikiri ,
         this.nenndou_taisei ,

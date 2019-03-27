@@ -23,7 +23,7 @@ export class WindSkill {
     };
     garura = {
         element: element.wind,
-        name: windSkill.garu,
+        name: windSkill.garura,
         hp: undefined,
         cp: 6,
         info: '敵１体に疾風属性で中ダメージを与える',
@@ -31,7 +31,7 @@ export class WindSkill {
     };
     garudain = {
         element: element.wind,
-        name: windSkill.garu,
+        name: windSkill.garudain,
         hp: undefined,
         cp: 10,
         info: '敵１体に疾風属性で大ダメージを与える',
@@ -39,7 +39,7 @@ export class WindSkill {
     };
     mahagaru = {
         element: element.wind,
-        name: windSkill.garu,
+        name: windSkill.mahagaru,
         hp: undefined,
         cp: 8,
         info: '敵全体に疾風属性で小ダメージを与える',
@@ -47,7 +47,7 @@ export class WindSkill {
     };
     mahagarura = {
         element: element.wind,
-        name: windSkill.garu,
+        name: windSkill.mahagarura,
         hp: undefined,
         cp: 14,
         info: '敵全体に疾風属性で中ダメージを与える',
@@ -55,7 +55,7 @@ export class WindSkill {
     };
     mahagarudain = {
         element: element.wind,
-        name: windSkill.garu,
+        name: windSkill.mahagarudain,
         hp: undefined,
         cp: 20,
         info: '敵全体に疾風属性で大ダメージを与える',
@@ -63,7 +63,7 @@ export class WindSkill {
     };
     bannbutu_ryuten = {
         element: element.wind,
-        name: windSkill.garu,
+        name: windSkill.bannbutu_ryuten,
         hp: undefined,
         cp: 42,
         info: '敵１体に疾風属性で特大ダメージを与える',
@@ -71,7 +71,7 @@ export class WindSkill {
     };
     shinkuha = {
         element: element.wind,
-        name: windSkill.garu,
+        name: windSkill.shinkuha,
         hp: undefined,
         cp: 48,
         info: '敵全体に疾風属性で特大ダメージを与える',

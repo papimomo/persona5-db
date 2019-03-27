@@ -12,7 +12,7 @@ enum supportSkill {
     riberion = 'リベリオン',
     revolution = 'レボリューション',
     tetrakarn = 'テトラカーン',
-    maharakarn = 'マハラカーン',
+    makarakarn = 'マハラカーン',
     tetraja = 'テトラジャ',
     dekunda = 'デクンダ',
     bouennokabe = '防炎の壁',
@@ -131,9 +131,9 @@ export class SupportSkill {
         info: '味方１体に物理攻撃を１回反射するバリアを張る',
         relative: undefined,
     };
-    maharakarn = {
+    makarakarn = {
         element: element.support,
-        name: supportSkill.maharakarn,
+        name: supportSkill.makarakarn,
         hp: undefined,
         cp: 36,
         info: '味方１体に魔法攻撃を１回反射するバリアを張る',
@@ -360,7 +360,7 @@ export class SupportSkill {
         this.riberion,
         this.revolution,
         this.tetrakarn,
-        this.maharakarn,
+        this.makarakarn,
         this.tetraja,
         this.dekunda,
         this.bouennokabe,

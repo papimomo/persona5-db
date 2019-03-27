@@ -32,7 +32,7 @@ export class ElectricSkill {
     };
     jiodain = {
         element: element.electric,
-        name: electricSkill.jio,
+        name: electricSkill.jiodain,
         hp: undefined,
         cp: 12,
         info: '敵１体に電撃属性で大ダメージを与える。まれに敵を感電させる',
@@ -40,7 +40,7 @@ export class ElectricSkill {
     };
     mahajio = {
         element: element.electric,
-        name: electricSkill.jio,
+        name: electricSkill.mahajio,
         hp: undefined,
         cp: 10,
         info: '敵全体に電撃属性で小ダメージを与える。まれに敵を感電させる',
@@ -48,7 +48,7 @@ export class ElectricSkill {
     };
     mahajionga = {
         element: element.electric,
-        name: electricSkill.jio,
+        name: electricSkill.mahajionga,
         hp: undefined,
         cp: 16,
         info: '敵全体に電撃属性で中ダメージを与える。まれに敵を感電させる',
@@ -56,7 +56,7 @@ export class ElectricSkill {
     };
     mahajiodain = {
         element: element.electric,
-        name: electricSkill.jio,
+        name: electricSkill.mahajiodain,
         hp: undefined,
         cp: 22,
         info: '敵全体に電撃属性で大ダメージを与える。まれに敵を感電させる',
@@ -64,7 +64,7 @@ export class ElectricSkill {
     };
     shinrinokaminari = {
         element: element.electric,
-        name: electricSkill.jio,
+        name: electricSkill.shinrinokaminari,
         hp: undefined,
         cp: 48,
         info: '敵１体に電撃属性で特大ダメージを与える。まれに敵を感電させる',
@@ -72,7 +72,7 @@ export class ElectricSkill {
     };
     el_jihard = {
         element: element.electric,
-        name: electricSkill.jio,
+        name: electricSkill.el_jihard,
         hp: undefined,
         cp: 54,
         info: '敵全体に電撃属性で特大ダメージを与える。まれに敵を感電させる',
