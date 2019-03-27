@@ -3654,51 +3654,530 @@ export class PersonaDb {
             level: 3,
             name: 'アガシオン',
             arcana: arcana.sensya,
+            element: {
+                physical: regist.normal,
+                gun: regist.regist,
+                fire: regist.normal,
+                ice: regist.normal,
+                electric: regist.regist,
+                wind: regist.weak,
+                psy: regist.normal,
+                nuclear: regist.normal,
+                bless: regist.normal,
+                curse: regist.normal,
+            },
+            skill: [
+                {
+                    skill: this.recovery.dia,
+                    level: 0
+                },
+                {
+                    skill: this.recovery.bisedy,
+                    level: 0
+                },
+                {
+                    skill: this.physical.totugeki,
+                    level: 4
+                },
+                {
+                    skill: this.support.rakukaja,
+                    level: 6
+                },
+                {
+                    skill: this.electric.jio,
+                    level: 7
+                },
+                {
+                    skill: this.auto.dengeki_mikiri,
+                    level: 8
+                },
+            ],
+            status: {
+                ti: 3,
+                ma: 4,
+                ta: 5,
+                so: 7,
+                un: 3
+            }
+    
         },
         {
             level: 10,
             name: 'スライム',
             arcana: arcana.sensya,
+            element: {
+                physical: regist.regist,
+                gun: regist.normal,
+                fire: regist.weak,
+                ice: regist.normal,
+                electric: regist.normal,
+                wind: regist.weak,
+                psy: regist.normal,
+                nuclear: regist.normal,
+                bless: regist.normal,
+                curse: regist.normal,
+            },
+            skill: [
+                {
+                    skill: this.physical.totugeki,
+                    level: 0
+                },
+                {
+                    skill: this.abState.devil_touch,
+                    level: 0
+                },
+                {
+                    skill: this.curse.eiha,
+                    level: 11
+                },
+                {
+                    skill: this.support.bouennokabe,
+                    level: 13
+                },
+                {
+                    skill: this.physical.headbutt,
+                    level: 14
+                },
+            ],
+            status: {
+                ti: 9,
+                ma: 6,
+                ta: 11,
+                so: 6,
+                un: 5
+            }
+    
         },
         {
             level: 16,
             name: 'シーサー',
             arcana: arcana.sensya,
+            element: {
+                physical: regist.regist,
+                gun: regist.regist,
+                fire: regist.normal,
+                ice: regist.normal,
+                electric: regist.normal,
+                wind: regist.normal,
+                psy: regist.normal,
+                nuclear: regist.normal,
+                bless: regist.none,
+                curse: regist.weak,
+            },
+            skill: [
+                {
+                    skill: this.physical.nirenga,
+                    level: 0
+                },
+                {
+                    skill: this.physical.nouten_otoshi,
+                    level: 0
+                },
+                {
+                    skill: this.electric.jio,
+                    level: 0
+                },
+                {
+                    skill: this.physical.abaremakuri,
+                    level: 18
+                },
+                {
+                    skill: this.auto.juon_mikiri,
+                    level: 20
+                },
+                {
+                    skill: this.auto.dengeki_mikiri,
+                    level: 21
+                },
+            ],
+            status: {
+                ti: 13,
+                ma: 9,
+                ta: 12,
+                so: 13,
+                un: 8
+            }
+    
         },
         {
             level: 21,
             name: 'シキオウジ',
             arcana: arcana.sensya,
+            element: {
+                physical: regist.none,
+                gun: regist.none,
+                fire: regist.normal,
+                ice: regist.normal,
+                electric: regist.normal,
+                wind: regist.normal,
+                psy: regist.normal,
+                nuclear: regist.weak,
+                bless: regist.normal,
+                curse: regist.none,
+            },
+            skill: [
+                {
+                    skill: this.support.tarukaja,
+                    level: 0
+                },
+                {
+                    skill: this.abState.tyouhatu,
+                    level: 0
+                },
+                {
+                    skill: this.gun.shidan,
+                    level: 0
+                },
+                {
+                    skill: this.psy.mahapsy,
+                    level: 22
+                },
+                {
+                    skill: this.support.dekaja,
+                    level: 24
+                },
+                {
+                    skill: this.psy.psyo,
+                    level: 26
+                },
+                {
+                    skill: this.physical.onikagura,
+                    level: 27
+                },
+            ],
+            status: {
+                ti: 16,
+                ma: 14,
+                ta: 15,
+                so: 14,
+                un: 11
+            }
+    
         },
         {
             level: 25,
             name: 'キンキ',
             arcana: arcana.sensya,
+            element: {
+                physical: regist.regist,
+                gun: regist.regist,
+                fire: regist.normal,
+                ice: regist.normal,
+                electric: regist.normal,
+                wind: regist.normal,
+                psy: regist.weak,
+                nuclear: regist.normal,
+                bless: regist.normal,
+                curse: regist.normal,
+            },
+            skill: [
+                {
+                    skill: this.physical.kongou_happa,
+                    level: 0
+                },
+                {
+                    skill: this.support.rakukaja,
+                    level: 0
+                },
+                {
+                    skill: this.auto.syoutiyusokushin,
+                    level: 0
+                },
+                {
+                    skill: this.auto.nenndou_mikiri,
+                    level: 27
+                },
+                {
+                    skill: this.physical.sledge_hummer,
+                    level: 28
+                },
+                {
+                    skill: this.physical.bad_beat,
+                    level: 30
+                },
+                {
+                    skill: this.auto.heavy_counter,
+                    level: 31
+                },
+            ],
+            status: {
+                ti: 21,
+                ma: 13,
+                ta: 21,
+                so: 15,
+                un: 12
+            }
+    
         },
         {
             level: 31,
             name: 'アラミタマ',
             arcana: arcana.sensya,
+            element: {
+                physical: regist.regist,
+                gun: regist.normal,
+                fire: regist.normal,
+                ice: regist.weak,
+                electric: regist.normal,
+                wind: regist.normal,
+                psy: regist.normal,
+                nuclear: regist.normal,
+                bless: regist.normal,
+                curse: regist.normal,
+            },
+            skill: [
+                {
+                    skill: this.physical.miracle_punch,
+                    level: 0
+                },
+                {
+                    skill: this.nuclear.fureira,
+                    level: 0
+                },
+                {
+                    skill: this.abState.tyouhatu,
+                    level: 0
+                },
+                {
+                    skill: this.support.riberion,
+                    level: 32
+                },
+                {
+                    skill: this.support.maharakunda,
+                    level: 33
+                },
+                {
+                    skill: this.auto.gekido_up,
+                    level: 35
+                },
+            ],
+            status: {
+                ti: 20,
+                ma: 19,
+                ta: 20,
+                so: 20,
+                un: 21
+            }
+    
         },
         {
             level: 39,
             name: 'ホワイトライダー',
             arcana: arcana.sensya,
+            element: {
+                physical: regist.normal,
+                gun: regist.normal,
+                fire: regist.none,
+                ice: regist.weak,
+                electric: regist.normal,
+                wind: regist.normal,
+                psy: regist.normal,
+                nuclear: regist.normal,
+                bless: regist.none,
+                curse: regist.reflect,
+            },
+            skill: [
+                {
+                    skill: this.gun.triple_down,
+                    level: 0
+                },
+                {
+                    skill: this.abState.devil_touch,
+                    level: 0
+                },
+                {
+                    skill: this.physical.onikagura,
+                    level: 0
+                },
+                {
+                    skill: this.auto.seimitu_syageki,
+                    level: 41
+                },
+                {
+                    skill: this.curse.mahaeiga,
+                    level: 42
+                },
+                {
+                    skill: this.support.mahasukukaja,
+                    level: 43
+                },
+                {
+                    skill: this.almight.yodonda_toiki,
+                    level: 44
+                },
+                {
+                    skill: this.auto.ab_state_up,
+                    level: 44
+                },
+            ],
+            status: {
+                ti: 24,
+                ma: 24,
+                ta: 25,
+                so: 26,
+                un: 25
+            }
+    
         },
         {
             level: 55,
             name: 'ケルベロス',
             arcana: arcana.sensya,
+            element: {
+                physical: regist.normal,
+                gun: regist.normal,
+                fire: regist.drain,
+                ice: regist.weak,
+                electric: regist.normal,
+                wind: regist.normal,
+                psy: regist.normal,
+                nuclear: regist.regist,
+                bless: regist.normal,
+                curse: regist.normal,
+            },
+            skill: [
+                {
+                    skill: this.fire.agidain,
+                    level: 0
+                },
+                {
+                    skill: this.physical.megaton_raid,
+                    level: 0
+                },
+                {
+                    skill: this.support.riberion,
+                    level: 56
+                },
+                {
+                    skill: this.auto.highper_counter,
+                    level: 57
+                },
+                {
+                    skill: this.auto.tyutiyusokushin,
+                    level: 58
+                },
+                {
+                    skill: this.auto.hukutunotoushi,
+                    level: 60
+                },
+            ],
+            status: {
+                ti: 39,
+                ma: 35,
+                ta: 32,
+                so: 39,
+                un: 27
+            }
         },
         {
             level: 64,
             name: 'トール',
             arcana: arcana.sensya,
+            element: {
+                    physical: regist.regist,
+                    gun: regist.normal,
+                    fire: regist.normal,
+                    ice: regist.normal,
+                    electric: regist.drain,
+                    wind: regist.normal,
+                    psy: regist.weak,
+                    nuclear: regist.normal,
+                    bless: regist.regist,
+                    curse: regist.regist,
+                },
+                skill: [
+                    {
+                        skill: this.electric.jiodain,
+                        level: 0
+                    },
+                    {
+                        skill: this.physical.megaton_raid,
+                        level: 0
+                    },
+                    {
+                        skill: this.auto.highper_counter,
+                        level: 0
+                    },
+                    {
+                        skill: this.auto.dengeki_booster,
+                        level: 66
+                    },
+                    {
+                        skill: this.electric.mahajiodain,
+                        level: 67
+                    },
+                    {
+                        skill: this.auto.heatup,
+                        level: 68
+                    },
+                    {
+                        skill: this.auto.kougeki,
+                        level: 70
+                    },
+                ],
+                status: {
+                    ti: 44,
+                    ma: 39,
+                    ta: 43,
+                    so: 38,
+                    un: 35
+                }
+        
         },
         {
             level: 86,
             name: 'シュウ',
             arcana: arcana.sensya,
+            element: {
+                    physical: regist.regist,
+                    gun: regist.regist,
+                    fire: regist.normal,
+                    ice: regist.normal,
+                    electric: regist.normal,
+                    wind: regist.normal,
+                    psy: regist.none,
+                    nuclear: regist.weak,
+                    bless: regist.normal,
+                    curse: regist.normal,
+                },
+                skill: [
+                    {
+                        skill: this.psy.psychiciness,
+                        level: 0
+                    },
+                    {
+                        skill: this.auto.buturi_hansya,
+                        level: 0
+                    },
+                    {
+                        skill: this.physical.gigant_makia,
+                        level: 0
+                    },
+                    {
+                        skill: this.auto.seishintaisei,
+                        level: 88
+                    },
+                    {
+                        skill: this.psy.psychforce,
+                        level: 89
+                    },
+                    {
+                        skill: this.auto.nenndou_kyusyu,
+                        level: 90
+                    },
+                    {
+                        skill: this.support.consentraito,
+                        level: 92
+                    },
+                ],
+                status: {
+                    ti: 54,
+                    ma: 56,
+                    ta: 53,
+                    so: 52,
+                    un: 50
+                }
+        
         },
         {
             level: 12,
