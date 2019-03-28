@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button default-href="home"></ion-back-button>
+      </ion-buttons>
+    <ion-title>合成</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="persona" lines="none">
+    <ion-grid>
+      <ion-row>
+        <ion-col auto>
+
+        </ion-col>
+        <ion-col  >
+            <ion-card >
+              <img src="assets/persona/{{persona.name}}.jpg" alt="">
+            </ion-card>
+        </ion-col>
+        <ion-col  class="row row-eq-height">
+          <ion-text>{{persona.arcana}} Lv:{{persona.level}}</ion-text>
+          <ion-text>{{persona.name}}</ion-text>
+        </ion-col>
+        <ion-col auto>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div class="fusion_info">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="1">
+
+      </ion-col>
+      <ion-col size="4">
+        <ion-text color="tertiary">ペルソナ1</ion-text>
+      </ion-col>
+      <ion-col size="2">
+        <ion-text color="tertiary"> x</ion-text>
+      </ion-col>
+      <ion-col size="4">
+        <ion-text color="tertiary">ペルソナ2</ion-text>
+      </ion-col>
+      <ion-col size="1">
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+<!-- <ion-list> -->
+  <div *ngFor="let fusion of fusionList" class="fusion">
+    <app-fusion [fusion]="fusion"></app-fusion>
+  </div>
+<!-- </ion-list> -->
+</ion-content>

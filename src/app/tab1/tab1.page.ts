@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { PersonaDb } from '../personaDb';
-import { NavController } from '@ionic/angular';
-import { PersonaInfoPage } from '../persona-info/persona-info.page';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-tab1',

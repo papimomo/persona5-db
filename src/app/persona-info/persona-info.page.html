@@ -1,12 +1,18 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="home"></ion-back-button>
+    </ion-buttons>
     <ion-title>{{title}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="fusion()">合体</ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
 
-    <!-- <div class="arcana">
+  <!-- <div class="arcana">
         {{persona.arcana}} Lv:{{persona.level}}
       </div> -->
   <ion-grid>
@@ -29,19 +35,19 @@
             <ion-progress-bar max=99 [value]="persona.status.ti / 100"></ion-progress-bar>
           </div>
           <div class="status">
-            <div>魔 &nbsp;&nbsp;      {{persona.status.ma}}</div>
+            <div>魔 &nbsp;&nbsp; {{persona.status.ma}}</div>
             <ion-progress-bar max=99 [value]="persona.status.ma / 100"></ion-progress-bar>
           </div>
           <div class="status">
-            <div>耐  &nbsp;&nbsp;     {{persona.status.ta}}</div>
+            <div>耐 &nbsp;&nbsp; {{persona.status.ta}}</div>
             <ion-progress-bar max=99 [value]="persona.status.ta / 100"></ion-progress-bar>
           </div>
           <div class="status">
-            <div>速   &nbsp;&nbsp;    {{persona.status.so}}</div>
+            <div>速 &nbsp;&nbsp; {{persona.status.so}}</div>
             <ion-progress-bar max=99 [value]="persona.status.so / 100"></ion-progress-bar>
           </div>
           <div class="status">
-            <div>運   &nbsp;&nbsp;    {{persona.status.un}}</div>
+            <div>運 &nbsp;&nbsp; {{persona.status.un}}</div>
             <ion-progress-bar max=99 [value]="persona.status.un / 100"></ion-progress-bar>
           </div>
 
@@ -114,8 +120,8 @@
   </ion-item> -->
   <ion-list>
     <div class="skill_card" *ngFor="let skill of persona.skill">
-  
-        <app-skill [skill]=skill></app-skill>
+
+      <app-skill [skill]=skill></app-skill>
     </div>
   </ion-list>
 

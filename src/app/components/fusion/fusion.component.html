@@ -1,0 +1,29 @@
+<ion-item class="base">
+<ion-grid>
+  <ion-row>
+    <ion-col size="6">
+
+      <ion-card class="persona">
+          <ion-avatar class="avatar">
+            <img src="assets/persona/{{fusion.first.name}}.jpg" alt="">
+          </ion-avatar>
+          <div>
+              <p class="arcana">{{fusion.first.name}}</p>
+              <p class="arcana">{{fusion.first.arcana}} Lv:{{fusion.first.level}}</p>
+          </div>
+      </ion-card>
+    </ion-col>
+    <ion-col size="6">
+      <ion-card class="persona">
+        <ion-avatar class="avatar">
+          <img src="assets/persona/{{fusion.second.name}}.jpg" alt="">
+        </ion-avatar>
+        <div>
+            <p class="arcana">{{fusion.second.name}}</p>
+            <p class="arcana">{{fusion.second.arcana}} Lv:{{fusion.second.level}}</p>
+        </div>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-item>

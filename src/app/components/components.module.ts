@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { PersonaRowComponent } from './persona-row/persona-row.component';
 import { IonicModule } from '@ionic/angular';
 import { SkillComponent } from './skill/skill.component';
+import { FusionComponent } from './fusion/fusion.component';
 
 @NgModule({
   declarations: [
     PersonaRowComponent,
-    SkillComponent
+    SkillComponent,
+    FusionComponent,
   ],
   imports: [
     CommonModule,
@@ -15,7 +17,8 @@ import { SkillComponent } from './skill/skill.component';
   ],
   exports: [
     PersonaRowComponent,
-    SkillComponent
+    SkillComponent,
+    FusionComponent,
   ]
 })
 export class ComponentsModule { }

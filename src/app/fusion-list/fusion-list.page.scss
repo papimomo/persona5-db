@@ -1,0 +1,35 @@
+.fusion{
+    margin: 0% !important;
+    padding: 0% !important;
+}
+.persona{
+    // height: 120px;
+}
+.persona ion-card{
+    height: 80px;
+    width: 80px;
+    margin-right:auto;
+}
+.persona div{
+    width: 100% !important;
+}
+.row-eq-height {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% !important;
+    min-width: 140px;
+}
+
+.persona ion-text{
+    margin:auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    width:100%;
+    // background-color: crimson;
+}
+.fusion_info{
+    padding-top: 8px;
+    text-align: center;
+    font-size: 10px;
+    margin: 0px !important;
+}
