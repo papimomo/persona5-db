@@ -5,13 +5,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FusionListPage } from './fusion-list.page';
-import { ComponentsModule } from '../components/components.module';
+import { PersonaInfoPage } from './persona-info.page';
+import { ComponentsModule } from '../../components/components.module';
 
 const routes: Routes = [
   {
     path: '',
-    component: FusionListPage
+    component: PersonaInfoPage
   }
 ];
 
@@ -23,6 +23,6 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     ComponentsModule
   ],
-  declarations: [FusionListPage]
+  declarations: [PersonaInfoPage]
 })
-export class FusionListPageModule {}
+export class PersonaInfoPageModule {}

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PersonaDb } from '../personaDb';
+import { PersonaDb } from '../../data/personaDb';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-tab1',

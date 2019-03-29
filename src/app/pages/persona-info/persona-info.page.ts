@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { PersonaDb } from '../personaDb';
-import { arcana } from "../personaDb";
+import { PersonaDb } from '../../data/personaDb';
+import { arcana } from "../../data/personaDb";
 
 @Component({
   selector: 'app-persona-info',

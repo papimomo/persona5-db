@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      スキル
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col auto>
+
+      </ion-col>
+      <ion-col>
+        <ion-list class="base">
+          <div *ngFor="let item of skillType; let i = index" class="accordion">
+            <ion-list-header lines="none">
+                <div [ngClass]="{'section-active': item.open, 'section':!item.open}">
+              <ion-item (click)="toggleSection(i)" lines="none" class="ion-header">
+                  <ion-icon item-left name="arrow-forward" *ngIf="!item.open"></ion-icon>
+                  <ion-icon item-left name="arrow-down" *ngIf="item.open"></ion-icon>
+                  {{item.name}}
+              </ion-item>
+            </div>
+
+            </ion-list-header>
+            <ion-list *ngIf="item.list && item.open" lines="none">
+
+              <ion-list-header *ngFor="let skill of item.list; let j = index" lines="none">
+                <ion-item (click)="clickSkill(skill)" detail-none>
+                  {{skill.name}}
+                </ion-item>
+              </ion-list-header>
+
+            </ion-list>
+
+          </div>
+        </ion-list>
+      </ion-col>
+      <ion-col auto>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
