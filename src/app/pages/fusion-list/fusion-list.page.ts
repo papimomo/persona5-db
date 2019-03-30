@@ -17,14 +17,14 @@ export class FusionListPage implements OnInit {
 
   persona;
   personaList = new PersonaDb().persona;
-  gushaList = this.personaList.filter(persona => persona.arcana === arcana.gusha && persona.gousei !== false);
+  gushaList = this.personaList.filter(persona => persona.arcana === arcana.gusya && persona.gousei !== false);
   seigiList = this.personaList.filter(persona => persona.arcana === arcana.seigi && persona.gousei !== false);
   hoshiList = this.personaList.filter(persona => persona.arcana === arcana.hoshi && persona.gousei !== false);
   injaList = this.personaList.filter(persona => persona.arcana === arcana.inja && persona.gousei !== false);
   kouteiList = this.personaList.filter(persona => persona.arcana === arcana.koutei && persona.gousei !== false);
   kyoukouList = this.personaList.filter(persona => persona.arcana === arcana.kyoukou && persona.gousei !== false);
   majutushiList = this.personaList.filter(persona => persona.arcana === arcana.majutushi && persona.gousei !== false);
-  renaiList = this.personaList.filter(persona => persona.arcana === arcana.renai && persona.gousei !== false);
+  renaiList = this.personaList.filter(persona => persona.arcana === arcana.rennai && persona.gousei !== false);
   sensyaList = this.personaList.filter(persona => persona.arcana === arcana.sensya && persona.gousei !== false);
   sesseiList = this.personaList.filter(persona => persona.arcana === arcana.sessei && persona.gousei !== false);
   shinigamiList = this.personaList.filter(persona => persona.arcana === arcana.shinigami && persona.gousei !== false);
@@ -59,7 +59,7 @@ export class FusionListPage implements OnInit {
 
     let fusionList = Array();
     switch (persona.arcana) {
-      case arcana.gusha:
+      case arcana.gusya:
         fusionList = this.normalFusion(persona, this.majutushiList, this.goukiList, this.gushaList);
         Array.prototype.push.apply(fusionList, this.normalFusion(persona, this.joteiList, this.hououList, this.gushaList));
         Array.prototype.push.apply(fusionList, this.normalFusion(persona, this.joteiList, this.shinigamiList, this.gushaList));
@@ -137,7 +137,7 @@ export class FusionListPage implements OnInit {
         Array.prototype.push.apply(fusionList, this.normalFusion(persona, this.shinigamiList, this.tukiList, this.hououList));
         break;
 
-      case arcana.renai:
+      case arcana.rennai:
         fusionList = this.normalFusion(persona, this.unmeiList, this.gushaList, this.renaiList);
         Array.prototype.push.apply(fusionList, this.normalFusion(persona, this.majutushiList, this.injaList, this.renaiList));
         Array.prototype.push.apply(fusionList, this.normalFusion(persona, this.majutushiList, this.tukiList, this.renaiList));

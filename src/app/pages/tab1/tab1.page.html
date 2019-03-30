@@ -11,18 +11,89 @@
 
 
     <ion-searchbar *ngIf="searchMode" [(ngModel)]="searchInput" [showCancelButton]="showSearchCancelButton"
-      (ionInput)="onInput($event)" (ionCancel)="onCancel($event)" class="search">
+      (change)="change($event)" (ionCancel)="onCancel($event)" class="search"
+      placeholder="ペルソナ or スキル" color="primary">
     </ion-searchbar>
-    <ion-buttons *ngIf="searchMode" slot="primary">
+    <!-- <ion-buttons *ngIf="searchMode" slot="primary">
       <ion-button (click)="searchMode = !searchMode">
         <ion-icon slot="end" name="close"></ion-icon>
       </ion-button>
-    </ion-buttons>
+    </ion-buttons> -->
   </ion-toolbar>
 </ion-header>
+<div class="scrolling-wrapper">
+  <ion-segment style="width: 2200px;" (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="all" checked mode="md">
+      <ion-label>すべて</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="gusya" mode="md">
+      <ion-label>愚者</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="majutushi" mode="md">
+      <ion-label>魔術師</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="kyoukou" mode="md">
+      <ion-label>女教皇</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="jotei" mode="md">
+      <ion-label>女帝</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="koutei" mode="md">
+      <ion-label>皇帝</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="houou" mode="md">
+      <ion-label>法王</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="rennai" mode="md">
+      <ion-label>恋愛</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="sensya" mode="md">
+      <ion-label>戦車</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="seigi" mode="md">
+      <ion-label>正義</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="inja" mode="md">
+      <ion-label>隠者</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="unmei" mode="md">
+      <ion-label>運命</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="gouki" mode="md">
+      <ion-label>剛毅</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="keishisya" mode="md">
+      <ion-label>刑死者</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="shinigami" mode="md">
+      <ion-label>死神</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="sessei" mode="md">
+      <ion-label>節制</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="akuma" mode="md">
+      <ion-label>悪魔</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="tou" mode="md">
+      <ion-label>塔</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="hoshi" mode="md">
+      <ion-label>星</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="tuki" mode="md">
+      <ion-label>月</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="taiyou" mode="md">
+      <ion-label>太陽</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="shinpan" mode="md">
+      <ion-label>審判</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</div>
+<ion-content padding>
 
-<ion-content>
-  <ion-list lines="none">
+  <ion-list lines="none" *ngIf="(personalist.length !== 0)" >
     <ion-grid>
       <ion-row>
         <ion-col col-4 col-md-3 col-xl-2 *ngFor="let persona of personalist">
@@ -30,7 +101,24 @@
         </ion-col>
       </ion-row>
     </ion-grid>
-    <!-- <app-persona-row></app-persona-row>
-      <ion-item *ngFor="let persona of personalist">{{ persona.name }}</ion-item> -->
   </ion-list>
+  <ion-item *ngIf="(personalist.length === 0)" lines="none">
+    <ion-text>該当なし</ion-text>
+  </ion-item>
+
+  <div *ngIf="searchMode">
+    <ion-text>習得スキル </ion-text>
+    <ion-list lines="none" *ngIf="personaSkillFilter.length !== 0">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4 col-md-3 col-xl-2 *ngFor="let persona of personaSkillFilter">
+            <app-persona-row [persona]=persona (click)="onItemClick(persona)"></app-persona-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-list>
+    <ion-item *ngIf="(personaSkillFilter.length === 0)" lines="none">
+      <ion-text>該当なし</ion-text>
+    </ion-item>
+  </div>
 </ion-content>

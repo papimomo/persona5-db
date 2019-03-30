@@ -17,13 +17,13 @@ import { SupportSkill } from './skill/support-skill';
 import { RecoverySkill } from './skill/recovery-skill';
 
 export enum arcana {
-    gusha = '愚者',
+    gusya = '愚者',
     majutushi = '魔術師',
     kyoukou = '女教皇',
     jotei = '女帝',
     koutei = '皇帝',
     houou = '法王',
-    renai = '恋愛',
+    rennai = '恋愛',
     sensya = '戦車',
     seigi = '正義',
     inja = '隠者',
@@ -109,7 +109,7 @@ export class PersonaDb {
         {
             level: 1,
             name: 'アルセーヌ',
-            arcana: arcana.gusha,
+            arcana: arcana.gusya,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -155,7 +155,7 @@ export class PersonaDb {
         {
             level: 8,
             name: 'オバリヨン',
-            arcana: arcana.gusha,
+            arcana: arcana.gusya,
             element: {
                 physical: regist.regist,
                 gun: regist.normal,
@@ -201,7 +201,7 @@ export class PersonaDb {
         {
             level: 16,
             name: 'ハイピクシー',
-            arcana: arcana.gusha,
+            arcana: arcana.gusya,
             element: {
                 physical: regist.normal,
                 gun: regist.weak,
@@ -276,7 +276,7 @@ export class PersonaDb {
         {
             level: 32,
             name: 'デカラビア',
-            arcana: arcana.gusha,
+            arcana: arcana.gusya,
             element: {
                 physical: regist.weak,
                 gun: regist.normal,
@@ -330,7 +330,7 @@ export class PersonaDb {
         {
             level: 38,
             name: 'レギオン',
-            arcana: arcana.gusha,
+            arcana: arcana.gusya,
             element: {
                 physical: regist.regist,
                 gun: regist.regist,
@@ -381,7 +381,7 @@ export class PersonaDb {
         {
             level: 42,
             name: 'オセ',
-            arcana: arcana.gusha,
+            arcana: arcana.gusya,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -427,7 +427,7 @@ export class PersonaDb {
         {
             level: 49,
             name: 'バグス',
-            arcana: arcana.gusha,
+            arcana: arcana.gusya,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -482,7 +482,7 @@ export class PersonaDb {
         {
             level: 50,
             name: '水晶髑髏',
-            arcana: arcana.gusha,
+            arcana: arcana.gusya,
             gousei: false,
             element: {
                 physical: regist.regist,
@@ -542,7 +542,7 @@ export class PersonaDb {
         {
             level: 61,
             name: 'ディオニュソス',
-            arcana: arcana.gusha,
+            arcana: arcana.gusya,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -593,7 +593,7 @@ export class PersonaDb {
         {
             level: 67,
             name: 'ジャアクフロスト',
-            arcana: arcana.gusha,
+            arcana: arcana.gusya,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -644,7 +644,7 @@ export class PersonaDb {
         {
             level: 83,
             name: 'ヴィシュヌ',
-            arcana: arcana.gusha,
+            arcana: arcana.gusya,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -703,7 +703,7 @@ export class PersonaDb {
         {
             level: 95,
             name: 'サタナエル',
-            arcana: arcana.gusha,
+            arcana: arcana.gusya,
             element: {
                 physical: regist.regist,
                 gun: regist.regist,
@@ -3178,7 +3178,7 @@ export class PersonaDb {
         {
             level: 2,
             name: 'ピクシー',
-            arcana: arcana.renai,
+            arcana: arcana.rennai,
             element: {
                 physical: regist.normal,
                 gun: regist.weak,
@@ -3225,7 +3225,7 @@ export class PersonaDb {
         {
             level: 6,
             name: 'サキミタマ',
-            arcana: arcana.renai,
+            arcana: arcana.rennai,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -3276,7 +3276,7 @@ export class PersonaDb {
         {
             level: 19,
             name: 'リャナンシー',
-            arcana: arcana.renai,
+            arcana: arcana.rennai,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -3327,7 +3327,7 @@ export class PersonaDb {
         {
             level: 29,
             name: 'アメノウズメ',
-            arcana: arcana.renai,
+            arcana: arcana.rennai,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -3378,7 +3378,7 @@ export class PersonaDb {
         {
             level: 42,
             name: 'クシナダヒメ',
-            arcana: arcana.renai,
+            arcana: arcana.rennai,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -3433,7 +3433,7 @@ export class PersonaDb {
         {
             level: 50,
             name: 'ナルキッソス',
-            arcana: arcana.renai,
+            arcana: arcana.rennai,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -3488,7 +3488,7 @@ export class PersonaDb {
         {
             level: 56,
             name: 'パールヴァティ',
-            arcana: arcana.renai,
+            arcana: arcana.rennai,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -3543,7 +3543,7 @@ export class PersonaDb {
         {
             level: 78,
             name: 'ラファエル',
-            arcana: arcana.renai,
+            arcana: arcana.rennai,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -3598,7 +3598,7 @@ export class PersonaDb {
         {
             level: 85,
             name: 'イシュタル',
-            arcana: arcana.renai,
+            arcana: arcana.rennai,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
