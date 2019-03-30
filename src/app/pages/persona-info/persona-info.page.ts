@@ -41,5 +41,7 @@ export class PersonaInfoPage implements OnInit {
   fusion(){
     this.router.navigateByUrl('/fusion-list/' + this.persona.name);
   }
-
+  onClickSkill(skill){
+    this.router.navigateByUrl('/skill/' + skill.skill.name);
+  }
 }

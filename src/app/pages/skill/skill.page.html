@@ -1,9 +1,38 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>{{skill.name}}</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>スキル</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+  <ion-item lines="none">
+    <ion-text>{{skill.name}}</ion-text>
+  </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>
+          <img src="assets/element/{{skill.element}}.png">
+          <ion-text>:{{getElementName(skill.element)}}</ion-text>
+        </div>
+      </ion-col>
+      <ion-col>
+        <ion-text>{{getCost(skill)}}</ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div>
+    <ion-text>{{skill.info}}</ion-text>
+  </div>
+
+  <ion-list>
+    <ion-list-header>覚えるペルソナ</ion-list-header>
+    <ion-item *ngFor="let persona of personaListHasSkill">
+      <app-persona-horizontal [persona]=persona (click)="onClickPersona(persona)"></app-persona-horizontal>
+    </ion-item>
+  </ion-list>
 
 </ion-content>

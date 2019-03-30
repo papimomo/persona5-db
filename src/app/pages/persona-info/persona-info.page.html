@@ -121,7 +121,7 @@
   <ion-list>
     <div class="skill_card" *ngFor="let skill of persona.skill">
 
-      <app-skill [skill]=skill></app-skill>
+      <app-skill [skill]=skill (click)="onClickSkill(skill)"></app-skill>
     </div>
   </ion-list>
 

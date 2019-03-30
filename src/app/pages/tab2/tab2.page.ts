@@ -136,16 +136,16 @@ export class Tab2Page {
 
   ];
 
-  constructor(private router: Router){
+  constructor(private router: Router) {
 
   }
 
-  toggleSection(i){
+  toggleSection(i) {
     this.skillType[i].open = !this.skillType[i].open;
   }
-  clickSkill(skill){
+  clickSkill(skill) {
     console.log(skill.name);
     this.router.navigateByUrl('/skill/' + skill.name);
-    
+
   }
 }

@@ -38,18 +38,24 @@ export class FusionListPage implements OnInit {
   hououList = this.personaList.filter(persona => persona.arcana === arcana.houou && persona.gousei !== false);
   keishisyaList = this.personaList.filter(persona => persona.arcana === arcana.keishisya && persona.gousei !== false);
   joteiList = this.personaList.filter(persona => persona.arcana === arcana.jotei && persona.gousei !== false);
-  fusionList;
+  fusionList = [];
 
   ngOnInit() {
     this.route.paramMap.subscribe((params: ParamMap) => {
       const name = params.get('name');
       console.log(name);
       this.persona = this.personaList.find(persona => persona.name === name);
-      this.fusionList = this.getFusionList(this.persona);
     });
   }
 
-  getFusionList(persona) {
+  ionViewDidEnter(){
+    this.getFusionList(this.persona)
+    .then(fusionList=>{
+      this.fusionList = fusionList;
+    })
+  }
+
+  async getFusionList(persona) {
 
     let fusionList = Array();
     switch (persona.arcana) {
