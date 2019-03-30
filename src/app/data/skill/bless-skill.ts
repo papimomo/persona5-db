@@ -1,6 +1,6 @@
 import { Skill, element } from '../persona_enum';
 
-enum blessSkill{
+export enum blessSkillName{
     kouha = 'コウハ',
     kouga = 'コウガ',
     kougaon = 'コウガオン',
@@ -17,98 +17,98 @@ enum blessSkill{
 }
 
 export class BlessSkill {
-    kouha = {
+    kouha : Skill = {
         element: element.bless,
-        name: blessSkill.kouha,
+        name: blessSkillName.kouha,
         hp: undefined,
         cp: 4,
         info: '敵１体に祝福属性で小ダメージを与える',
         relative: undefined,
     };
-    kouga = {
+    kouga : Skill = {
         element: element.bless,
-        name: blessSkill.kouga,
+        name: blessSkillName.kouga,
         hp: undefined,
         cp: 8,
         info: '敵１体に祝福属性で中ダメージを与える',
         relative: undefined,
     };
-    kougaon = {
+    kougaon : Skill = {
         element: element.bless,
-        name: blessSkill.kougaon,
+        name: blessSkillName.kougaon,
         hp: undefined,
         cp: 12,
         info: '敵１体に祝福属性で大ダメージを与える',
         relative: undefined,
     };
-    mahakouha = {
+    mahakouha : Skill = {
         element: element.bless,
-        name: blessSkill.mahakouha,
+        name: blessSkillName.mahakouha,
         hp: undefined,
         cp: 10,
         info: '敵全体に祝福属性で小ダメージを与える',
         relative: undefined,
     };
-    mahakouga = {
+    mahakouga : Skill = {
         element: element.bless,
-        name: blessSkill.mahakouga,
+        name: blessSkillName.mahakouga,
         hp: undefined,
         cp: 16,
         info: '敵全体に祝福属性で中ダメージを与える',
         relative: undefined,
     };
-    mahakougaon = {
+    mahakougaon : Skill = {
         element: element.bless,
-        name: blessSkill.mahakougaon,
+        name: blessSkillName.mahakougaon,
         hp: undefined,
         cp: 22,
         info: '敵全体に祝福属性で大ダメージを与える',
         relative: undefined,
     };
-    // kiya = '輝矢',
-    kaminoshinpan = {
+    // kiya : Skill = '輝矢',
+    kaminoshinpan : Skill = {
         element: element.bless,
-        name: blessSkill.kaminoshinpan,
+        name: blessSkillName.kaminoshinpan,
         hp: undefined,
         cp: 48,
         info: '敵１体を祝福属性で攻撃し、HPを１／２にする',
         relative: undefined,
     };
-    hama = {
+    hama : Skill = {
         element: element.bless,
-        name: blessSkill.hama,
+        name: blessSkillName.hama,
         hp: undefined,
         cp: 8,
         info: '敵１体に祝福属性の即死効果を低確率で与える',
         relative: undefined,
     };
-    hamaon = {
+    hamaon : Skill = {
         element: element.bless,
-        name: blessSkill.hamaon,
+        name: blessSkillName.hamaon,
         hp: undefined,
         cp: 12,
         info: '敵１体に祝福属性の即死効果を中確率で与える',
         relative: undefined,
     };
-    mahanma = {
+    mahanma : Skill = {
         element: element.bless,
-        name: blessSkill.mahanma,
+        name: blessSkillName.mahanma,
         hp: undefined,
         cp: 18,
         info: '敵全体に祝福属性の即死効果を低確率で与える',
         relative: undefined,
     };
-    mahanmaon = {
+    mahanmaon : Skill = {
         element: element.bless,
-        name: blessSkill.mahanmaon,
+        name: blessSkillName.mahanmaon,
         hp: undefined,
         cp: 34,
         info: '敵全体に祝福属性の即死効果を中確率で与える',
         relative: undefined,
     };
-    kaiten_seppou = {
+    kaiten_seppou : Skill = {
         element: element.bless,
-        name: blessSkill.kaiten_seppou,
+        name: blessSkillName.kaiten_seppou,
         hp: undefined,
         cp: 44,
         info: '敵全体に祝福属性の即死効果を高確率で与える',

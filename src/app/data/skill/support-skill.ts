@@ -1,6 +1,6 @@
 import { Skill, element } from '../persona_enum';
 
-enum supportSkill {
+export enum supportSkillName {
     tarukaja = 'タルカジャ',
     rakukaja = 'ラクカジャ',
     sukukaja = 'スクカジャ',
@@ -43,305 +43,305 @@ enum supportSkill {
 
 
 export class SupportSkill {
-    tarukaja = {
+    tarukaja : Skill = {
         element: element.support,
-        name: supportSkill.tarukaja,
+        name: supportSkillName.tarukaja,
         hp: undefined,
         cp: 8,
         info: '３ターンの間、味方１体の攻撃力が上昇する',
         relative: undefined,
     };
-    rakukaja = {
+    rakukaja : Skill = {
         element: element.support,
-        name: supportSkill.rakukaja,
+        name: supportSkillName.rakukaja,
         hp: undefined,
         cp: 8,
         info: '３ターンの間、味方１体の防御力が上昇する',
         relative: undefined,
     };
-    sukukaja = {
+    sukukaja : Skill = {
         element: element.support,
-        name: supportSkill.sukukaja,
+        name: supportSkillName.sukukaja,
         hp: undefined,
         cp: 8,
         info: '３ターンの間、味方１体の命中・回避率が上昇する',
         relative: undefined,
     };
-    mahatarukaja = {
+    mahatarukaja : Skill = {
         element: element.support,
-        name: supportSkill.mahatarukaja,
+        name: supportSkillName.mahatarukaja,
         hp: undefined,
         cp: 24,
         info: '３ターンの間、味方全体の攻撃力が上昇する',
         relative: undefined,
     };
-    maharakukaja = {
+    maharakukaja : Skill = {
         element: element.support,
-        name: supportSkill.maharakukaja,
+        name: supportSkillName.maharakukaja,
         hp: undefined,
         cp: 24,
         info: '３ターンの間、味方全体の防御力が上昇する',
         relative: undefined,
     };
-    mahasukukaja = {
+    mahasukukaja : Skill = {
         element: element.support,
-        name: supportSkill.mahasukukaja,
+        name: supportSkillName.mahasukukaja,
         hp: undefined,
         cp: 24,
         info: '３ターンの間、味方全体の命中・回避率が上昇する',
         relative: undefined,
     };
-    heatraiza = {
+    heatraiza : Skill = {
         element: element.support,
-        name: supportSkill.heatraiza,
+        name: supportSkillName.heatraiza,
         hp: undefined,
         cp: 30,
         info: '味方１体の攻撃・防御力と命中・回避率が上昇する',
         relative: undefined,
     };
-    terumopyurai = {
+    terumopyurai : Skill = {
         element: element.support,
-        name: supportSkill.terumopyurai,
+        name: supportSkillName.terumopyurai,
         hp: undefined,
         cp: 30,
         info: '味方全体の攻撃・防御力と命中・回避率が上昇する。包囲された時のみ有効',
         relative: undefined,
     };
-    riberion = {
+    riberion : Skill = {
         element: element.support,
-        name: supportSkill.riberion,
+        name: supportSkillName.riberion,
         hp: undefined,
         cp: 5,
         info: '３ターンの間、味方１体のクリティカル率が上昇する',
         relative: undefined,
     };
-    revolution = {
+    revolution : Skill = {
         element: element.support,
-        name: supportSkill.revolution,
+        name: supportSkillName.revolution,
         hp: undefined,
         cp: 5,
         info: '３ターンの間、敵味方全体のクリティカル率が上昇する',
         relative: undefined,
     };
-    tetrakarn = {
+    tetrakarn : Skill = {
         element: element.support,
-        name: supportSkill.tetrakarn,
+        name: supportSkillName.tetrakarn,
         hp: undefined,
         cp: 36,
         info: '味方１体に物理攻撃を１回反射するバリアを張る',
         relative: undefined,
     };
-    makarakarn = {
+    makarakarn : Skill = {
         element: element.support,
-        name: supportSkill.makarakarn,
+        name: supportSkillName.makarakarn,
         hp: undefined,
         cp: 36,
         info: '味方１体に魔法攻撃を１回反射するバリアを張る',
         relative: undefined,
     };
-    tetraja = {
+    tetraja : Skill = {
         element: element.support,
-        name: supportSkill.tetraja,
+        name: supportSkillName.tetraja,
         hp: undefined,
         cp: 24,
         info: '味方全体に即死効果を１回防御するバリアを張る',
         relative: undefined,
     };
-    dekunda = {
+    dekunda : Skill = {
         element: element.support,
-        name: supportSkill.dekunda,
+        name: supportSkillName.dekunda,
         hp: undefined,
         cp: 10,
         info: '味方全体にかかっているステータス低下を打ち消す',
         relative: undefined,
     };
-    bouennokabe = {
+    bouennokabe : Skill = {
         element: element.support,
-        name: supportSkill.bouennokabe,
+        name: supportSkillName.bouennokabe,
         hp: undefined,
         cp: 18,
         info: '３ターンの間、味方１体に火炎耐性をつける',
         relative: undefined,
     };
-    bouhyounokabe = {
+    bouhyounokabe : Skill = {
         element: element.support,
-        name: supportSkill.bouhyounokabe,
+        name: supportSkillName.bouhyounokabe,
         hp: undefined,
         cp: 18,
         info: '３ターンの間、味方１体に氷結耐性をつける',
         relative: undefined,
     };
-    boudennokabe = {
+    boudennokabe : Skill = {
         element: element.support,
-        name: supportSkill.boudennokabe,
+        name: supportSkillName.boudennokabe,
         hp: undefined,
         cp: 18,
         info: '３ターンの間、味方１体に電撃耐性をつける',
         relative: undefined,
     };
-    bourannokabe = {
+    bourannokabe : Skill = {
         element: element.support,
-        name: supportSkill.bourannokabe,
+        name: supportSkillName.bourannokabe,
         hp: undefined,
         cp: 18,
         info: '３ターンの間、味方１体に疾風耐性をつける',
         relative: undefined,
     };
-    bounennokabe = {
+    bounennokabe : Skill = {
         element: element.support,
-        name: supportSkill.bounennokabe,
+        name: supportSkillName.bounennokabe,
         hp: undefined,
         cp: 18,
         info: '３ターンの間、味方１体に念動耐性をつける',
         relative: undefined,
     };
-    boukakunokabe = {
+    boukakunokabe : Skill = {
         element: element.support,
-        name: supportSkill.boukakunokabe,
+        name: supportSkillName.boukakunokabe,
         hp: undefined,
         cp: 18,
         info: '３ターンの間、味方１体に核熱耐性をつける',
         relative: undefined,
     };
-    charge = {
+    charge : Skill = {
         element: element.support,
-        name: supportSkill.charge,
+        name: supportSkillName.charge,
         hp: undefined,
         cp: 15,
         info: '使用後の物理攻撃が１度だけ２倍以上になる',
         relative: undefined,
     };
-    consentraito = {
+    consentraito : Skill = {
         element: element.support,
-        name: supportSkill.consentraito,
+        name: supportSkillName.consentraito,
         hp: undefined,
         cp: 15,
         info: '使用後の魔法攻撃力が１度だけ２倍以上になる',
         relative: undefined,
     };
-    tarunda = {
+    tarunda : Skill = {
         element: element.support,
-        name: supportSkill.tarunda,
+        name: supportSkillName.tarunda,
         hp: undefined,
         cp: 8,
         info: '３ターンの間、敵１体の攻撃力が低下する',
         relative: undefined,
     };
-    rakunda = {
+    rakunda : Skill = {
         element: element.support,
-        name: supportSkill.rakunda,
+        name: supportSkillName.rakunda,
         hp: undefined,
         cp: 8,
         info: '３ターンの間、敵１体の防御力が低下する',
         relative: undefined,
     };
-    sukunda = {
+    sukunda : Skill = {
         element: element.support,
-        name: supportSkill.sukunda,
+        name: supportSkillName.sukunda,
         hp: undefined,
         cp: 8,
         info: '３ターンの間、敵１体の命中・回避率が低下する',
         relative: undefined,
     };
-    mahatarunda = {
+    mahatarunda : Skill = {
         element: element.support,
-        name: supportSkill.mahatarunda,
+        name: supportSkillName.mahatarunda,
         hp: undefined,
         cp: 24,
         info: '３ターンの間、敵全体の攻撃力が低下する',
         relative: undefined,
     };
-    maharakunda = {
+    maharakunda : Skill = {
         element: element.support,
-        name: supportSkill.maharakunda,
+        name: supportSkillName.maharakunda,
         hp: undefined,
         cp: 24,
         info: '３ターンの間、敵全体の防御力が低下する',
         relative: undefined,
     };
-    mahasukunda = {
+    mahasukunda : Skill = {
         element: element.support,
-        name: supportSkill.mahasukunda,
+        name: supportSkillName.mahasukunda,
         hp: undefined,
         cp: 24,
         info: '３ターンの間、敵全体の命中・回避率が低下する',
         relative: undefined,
     };
-    randamaiza = {
+    randamaiza : Skill = {
         element: element.support,
-        name: supportSkill.randamaiza,
+        name: supportSkillName.randamaiza,
         hp: undefined,
         cp: 30,
         info: '敵１体の攻撃・防御力と命中・回避率が低下する',
         relative: undefined,
     };
-    dekaja = {
+    dekaja : Skill = {
         element: element.support,
-        name: supportSkill.dekaja,
+        name: supportSkillName.dekaja,
         hp: undefined,
         cp: 10,
         info: '敵全体にかかっているステータス上昇を打ち消す',
         relative: undefined,
     };
-    kaen_gardkill = {
+    kaen_gardkill : Skill = {
         element: element.support,
-        name: supportSkill.kaen_gardkill,
+        name: supportSkillName.kaen_gardkill,
         hp: undefined,
         cp: 15,
         info: '敵全体の火炎耐性を打ち消す。防炎の壁は打ち消せない',
         relative: undefined,
     };
-    hyouketu_gardkill = {
+    hyouketu_gardkill : Skill = {
         element: element.support,
-        name: supportSkill.hyouketu_gardkill,
+        name: supportSkillName.hyouketu_gardkill,
         hp: undefined,
         cp: 15,
         info: '敵全体の氷結耐性を打ち消す。防氷の壁は打ち消せない',
         relative: undefined,
     };
-    dengeki_gardkill = {
+    dengeki_gardkill : Skill = {
         element: element.support,
-        name: supportSkill.dengeki_gardkill,
+        name: supportSkillName.dengeki_gardkill,
         hp: undefined,
         cp: 15,
         info: '敵全体の電撃耐性を打ち消す。防電の壁は打ち消せない',
         relative: undefined,
     };
-    shippu_gardkill = {
+    shippu_gardkill : Skill = {
         element: element.support,
-        name: supportSkill.shippu_gardkill,
+        name: supportSkillName.shippu_gardkill,
         hp: undefined,
         cp: 15,
         info: '敵全体の疾風耐性を打ち消す。防嵐の壁は打ち消せない',
         relative: undefined,
     };
-    nenndou_gardkill = {
+    nenndou_gardkill : Skill = {
         element: element.support,
-        name: supportSkill.nenndou_gardkill,
+        name: supportSkillName.nenndou_gardkill,
         hp: undefined,
         cp: 15,
         info: '敵全体の念動耐性を打ち消す。防念の壁は打ち消せない',
         relative: undefined,
     };
-    kakunetu_garadkill = {
+    kakunetu_garadkill : Skill = {
         element: element.support,
-        name: supportSkill.kakunetu_garadkill,
+        name: supportSkillName.kakunetu_garadkill,
         hp: undefined,
         cp: 15,
         info: '敵全体の核熱耐性を打ち消す。防核の壁は打ち消せない',
         relative: undefined,
     };
-    tetra_break = {
+    tetra_break : Skill = {
         element: element.support,
-        name: supportSkill.tetra_break,
+        name: supportSkillName.tetra_break,
         hp: undefined,
         cp: 18,
         info: '敵全体にかかっているテトラカーン効果を打ち消す',
         relative: undefined,
     };
-    makara_break = {
+    makara_break : Skill = {
         element: element.support,
-        name: supportSkill.makara_break,
+        name: supportSkillName.makara_break,
         hp: undefined,
         cp: 18,
         info: '敵全体にかかっているマカラカーン効果を打ち消す',

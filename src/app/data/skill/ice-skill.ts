@@ -1,6 +1,6 @@
 import { Skill, element } from '../persona_enum';
 
-enum iceSkill {
+export enum iceSkillName {
     bufu = 'ブフ',
     bufura = 'ブフーラ',
     bufudain = 'ブフダイン',
@@ -13,65 +13,65 @@ enum iceSkill {
 
 export class IceSkill {
 
-    bufu = {
+    bufu : Skill = {
         element: element.ice,
-        name: iceSkill.bufu,
+        name: iceSkillName.bufu,
         hp: undefined,
         cp: 4,
         info: '敵１体に氷結属性で小ダメージを与える。まれに敵を凍結させる',
         relative: undefined,
     };
-    bufura = {
+    bufura : Skill = {
         element: element.ice,
-        name: iceSkill.bufura,
+        name: iceSkillName.bufura,
         hp: undefined,
         cp: 8,
         info: '敵１体に氷結属性で中ダメージを与える。まれに敵を凍結させる',
         relative: undefined,
     };
-    bufudain = {
+    bufudain : Skill = {
         element: element.ice,
-        name: iceSkill.bufudain,
+        name: iceSkillName.bufudain,
         hp: undefined,
         cp: 12,
         info: '敵１体に氷結属性で大ダメージを与える。まれに敵を凍結させる',
         relative: undefined,
     };
-    mahabufu = {
+    mahabufu : Skill = {
         element: element.ice,
-        name: iceSkill.mahabufu,
+        name: iceSkillName.mahabufu,
         hp: undefined,
         cp: 10,
         info: '敵１体に氷結属性で大ダメージを与える。まれに敵を凍結させる',
         relative: undefined,
     };
-    mahabufura = {
+    mahabufura : Skill = {
         element: element.ice,
-        name: iceSkill.mahabufura,
+        name: iceSkillName.mahabufura,
         hp: undefined,
         cp: 16,
         info: '敵全体に氷結属性で中ダメージを与える。まれに敵を凍結させる',
         relative: undefined,
     };
-    mahabufudain = {
+    mahabufudain : Skill = {
         element: element.ice,
-        name: iceSkill.mahabufudain,
+        name: iceSkillName.mahabufudain,
         hp: undefined,
         cp: 22,
         info: '敵全体に氷結属性で大ダメージを与える。まれに敵を凍結させる',
         relative: undefined,
     };
-    diamonddust = {
+    diamonddust : Skill = {
         element: element.ice,
-        name: iceSkill.diamonddust,
+        name: iceSkillName.diamonddust,
         hp: undefined,
         cp: 48,
         info: '敵１体に氷結属性で特大ダメージを与える。まれに敵を凍結させる',
         relative: undefined,
     };
-    daihyougaki = {
+    daihyougaki : Skill = {
         element: element.ice,
-        name: iceSkill.daihyougaki,
+        name: iceSkillName.daihyougaki,
         hp: undefined,
         cp: 54,
         info: '敵全体に氷結属性で特大ダメージを与える。まれに敵を凍結させる',

@@ -15,6 +15,7 @@ import { AlmightSkill } from '../../data/skill/almight-skill';
 import { SupportSkill } from '../../data/skill/support-skill';
 import { RecoverySkill } from '../../data/skill/recovery-skill';
 import { element } from '../../data/persona_enum';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -134,11 +135,17 @@ export class Tab2Page {
     }
 
   ];
+
+  constructor(private router: Router){
+
+  }
+
   toggleSection(i){
     this.skillType[i].open = !this.skillType[i].open;
   }
   clickSkill(skill){
     console.log(skill.name);
+    this.router.navigateByUrl('/skill/' + skill.name);
     
   }
 }

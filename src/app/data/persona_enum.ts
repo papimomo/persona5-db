@@ -36,3 +36,7 @@ export interface Skill {
     //     sacrifice:string;
     // }
 }
+export interface SkillInPersona{
+    skill:Skill;
+    level:number;
+}

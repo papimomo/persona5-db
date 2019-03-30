@@ -1,7 +1,7 @@
 import { Skill, element } from '../persona_enum';
 
 
-enum recoverySkill {
+export enum recoverySkillName {
     dia = 'ディア',
     media = 'メディア',
     diarama = 'ディアラマ',
@@ -22,137 +22,137 @@ enum recoverySkill {
 }
 
 export class RecoverySkill {
-    dia = {
+    dia : Skill = {
         element: element.recovery,
-        name: recoverySkill.dia,
+        name: recoverySkillName.dia,
         hp: undefined,
         cp: 3,
         info: '味方１体のHPを小回復する',
         relative: undefined,
     };
-    diarama = {
+    diarama : Skill = {
         element: element.recovery,
-        name: recoverySkill.diarama,
+        name: recoverySkillName.diarama,
         hp: undefined,
         cp: 6,
         info: '味方１体のＨＰを中回復する',
         relative: undefined,
     };
-    diarahan = {
+    diarahan : Skill = {
         element: element.recovery,
-        name: recoverySkill.diarahan,
+        name: recoverySkillName.diarahan,
         hp: undefined,
         cp: 18,
         info: '味方１体のHPを全回復する',
         relative: undefined,
     };
-    media = {
+    media : Skill = {
         element: element.recovery,
-        name: recoverySkill.media,
+        name: recoverySkillName.media,
         hp: undefined,
         cp: 7,
         info: '味方全体のＨＰを小回復する',
         relative: undefined,
     };
-    medirama = {
+    medirama : Skill = {
         element: element.recovery,
-        name: recoverySkill.medirama,
+        name: recoverySkillName.medirama,
         hp: undefined,
         cp: 12,
         info: '味方全体のHPを中回復する',
         relative: undefined,
     };
-    mediarahan = {
+    mediarahan : Skill = {
         element: element.recovery,
-        name: recoverySkill.mediarahan,
+        name: recoverySkillName.mediarahan,
         hp: undefined,
         cp: 30,
         info: '味方全体のHPを全回復する',
         relative: undefined,
     };
-    meshiaraizer = {
+    meshiaraizer : Skill = {
         element: element.recovery,
-        name: recoverySkill.meshiaraizer,
+        name: recoverySkillName.meshiaraizer,
         hp: undefined,
         cp: 48,
         info: '味方全体のHPを全回復し、特殊なもの以外の状態異常も治療する',
         relative: undefined,
     };
-    rikamu = {
+    rikamu : Skill = {
         element: element.recovery,
-        name: recoverySkill.rikamu,
+        name: recoverySkillName.rikamu,
         hp: undefined,
         cp: 8,
         info: '味方１体の戦闘不能状態をHP５０％で回復する',
         relative: undefined,
     };
-    samrikamu = {
+    samrikamu : Skill = {
         element: element.recovery,
-        name: recoverySkill.samrikamu,
+        name: recoverySkillName.samrikamu,
         hp: undefined,
         cp: 18,
         info: '味方１体の戦闘不能状態をHP最大で回復する',
         relative: undefined,
     };
-    patra = {
+    patra : Skill = {
         element: element.recovery,
-        name: recoverySkill.patra,
+        name: recoverySkillName.patra,
         hp: undefined,
         cp: 4,
         info: '味方１体の目眩・忘却・睡眠・空腹状態を治療する',
         relative: undefined,
     };
-    mepatra = {
+    mepatra : Skill = {
         element: element.recovery,
-        name: recoverySkill.mepatra,
+        name: recoverySkillName.mepatra,
         hp: undefined,
         cp: 8,
         info: '味方全体の目眩・忘却・睡眠・空腹状態を治療する',
         relative: undefined,
     };
-    enazy_drop = {
+    enazy_drop : Skill = {
         element: element.recovery,
-        name: recoverySkill.enazy_drop,
+        name: recoverySkillName.enazy_drop,
         hp: undefined,
         cp: 4,
         info: '味方１体の混乱・恐怖・絶望・激怒・洗脳状態を治療する',
         relative: undefined,
     };
-    enazy_syawa = {
+    enazy_syawa : Skill = {
         element: element.recovery,
-        name: recoverySkill.enazy_syawa,
+        name: recoverySkillName.enazy_syawa,
         hp: undefined,
         cp: 8,
         info: '味方全体の混乱・恐怖・絶望・激怒・洗脳状態を治療する',
         relative: undefined,
     };
-    bisedy = {
+    bisedy : Skill = {
         element: element.recovery,
-        name: recoverySkill.bisedy,
+        name: recoverySkillName.bisedy,
         hp: undefined,
         cp: 4,
         info: '味方１体の炎上・凍結・感電状態を治療する',
         relative: undefined,
     };
-    mahabisedy = {
+    mahabisedy : Skill = {
         element: element.recovery,
-        name: recoverySkill.mahabisedy,
+        name: recoverySkillName.mahabisedy,
         hp: undefined,
         cp: 8,
         info: '味方全体の炎上・凍結・感電状態を治療する',
         relative: undefined,
     };
-    amurita_drop = {
+    amurita_drop : Skill = {
         element: element.recovery,
-        name: recoverySkill.amurita_drop,
+        name: recoverySkillName.amurita_drop,
         hp: undefined,
         cp: 6,
         info: '味方１体の特殊なもの以外の状態異常を治療する',
         relative: undefined,
     };
-    amurita_syawa = {
+    amurita_syawa : Skill = {
         element: element.recovery,
-        name: recoverySkill.amurita_syawa,
+        name: recoverySkillName.amurita_syawa,
         hp: undefined,
         cp: 12,
         info: '味方全体の特殊なもの以外の状態異常を治療する',

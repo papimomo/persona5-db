@@ -1,6 +1,6 @@
 import { Skill, element } from '../persona_enum';
 
-enum windSkill {
+export enum windSkillName {
     garu = 'ガル',
     garura = 'ガルーラ',
     garudain = 'ガルダイン',
@@ -13,65 +13,65 @@ enum windSkill {
 
 export class WindSkill {
 
-    garu = {
+    garu : Skill = {
         element: element.wind,
-        name: windSkill.garu,
+        name: windSkillName.garu,
         hp: undefined,
         cp: 3,
         info: '敵１体に疾風属性で小ダメージを与える',
         relative: undefined,
     };
-    garura = {
+    garura : Skill = {
         element: element.wind,
-        name: windSkill.garura,
+        name: windSkillName.garura,
         hp: undefined,
         cp: 6,
         info: '敵１体に疾風属性で中ダメージを与える',
         relative: undefined,
     };
-    garudain = {
+    garudain : Skill = {
         element: element.wind,
-        name: windSkill.garudain,
+        name: windSkillName.garudain,
         hp: undefined,
         cp: 10,
         info: '敵１体に疾風属性で大ダメージを与える',
         relative: undefined,
     };
-    mahagaru = {
+    mahagaru : Skill = {
         element: element.wind,
-        name: windSkill.mahagaru,
+        name: windSkillName.mahagaru,
         hp: undefined,
         cp: 8,
         info: '敵全体に疾風属性で小ダメージを与える',
         relative: undefined,
     };
-    mahagarura = {
+    mahagarura : Skill = {
         element: element.wind,
-        name: windSkill.mahagarura,
+        name: windSkillName.mahagarura,
         hp: undefined,
         cp: 14,
         info: '敵全体に疾風属性で中ダメージを与える',
         relative: undefined,
     };
-    mahagarudain = {
+    mahagarudain : Skill = {
         element: element.wind,
-        name: windSkill.mahagarudain,
+        name: windSkillName.mahagarudain,
         hp: undefined,
         cp: 20,
         info: '敵全体に疾風属性で大ダメージを与える',
         relative: undefined,
     };
-    bannbutu_ryuten = {
+    bannbutu_ryuten : Skill = {
         element: element.wind,
-        name: windSkill.bannbutu_ryuten,
+        name: windSkillName.bannbutu_ryuten,
         hp: undefined,
         cp: 42,
         info: '敵１体に疾風属性で特大ダメージを与える',
         relative: undefined,
     };
-    shinkuha = {
+    shinkuha : Skill = {
         element: element.wind,
-        name: windSkill.shinkuha,
+        name: windSkillName.shinkuha,
         hp: undefined,
         cp: 48,
         info: '敵全体に疾風属性で特大ダメージを与える',

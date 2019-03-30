@@ -1,6 +1,6 @@
 import { Skill, element } from '../persona_enum';
 
-enum physicalSkill {
+export enum physicalSkillName {
     slash = 'スラッシュ',
     totugeki = '突撃',
     daisetudan = '大切断',
@@ -53,137 +53,137 @@ export class PhysicalSkill {
 
 
 
-    slash = {
+    slash : Skill = {
         element: element.physical,
-        name: physicalSkill.slash,
+        name: physicalSkillName.slash,
         hp: '6%',
         cp: undefined,
         info: '敵１体に物理属性で小ダメージを与える',
         relative: undefined,
     };
-    totugeki = {
+    totugeki : Skill = {
         element: element.physical,
-        name: physicalSkill.totugeki,
+        name: physicalSkillName.totugeki,
         hp: '5%',
         cp: undefined,
         info: '敵１体に物理属性で小ダメージを与える',
         relative: undefined,
     }
-    daisetudan = {
+    daisetudan : Skill = {
         element: element.physical,
-        name: physicalSkill.daisetudan,
+        name: physicalSkillName.daisetudan,
         hp: '9%',
         cp: undefined,
         info: '	敵１体に物理属性で中ダメージを与える',
         relative: undefined,
     }
-    asult_dive = {
+    asult_dive : Skill = {
         element: element.physical,
-        name: physicalSkill.asult_dive,
+        name: physicalSkillName.asult_dive,
         hp: '13%',
         cp: undefined,
         info: '敵１体に物理属性で大ダメージを与える',
         relative: undefined,
     }
-    megaton_raid = {
+    megaton_raid : Skill = {
         element: element.physical,
-        name: physicalSkill.megaton_raid,
+        name: physicalSkillName.megaton_raid,
         hp: '16%',
         cp: undefined,
         info: '敵１体に物理属性で特大ダメージを与える',
         relative: undefined,
     }
-    turuginomai = {
+    turuginomai : Skill = {
         element: element.physical,
-        name: physicalSkill.turuginomai,
+        name: physicalSkillName.turuginomai,
         hp: '21%',
         cp: undefined,
         info: '敵１体に物理属性で超特大ダメージを与える',
         relative: undefined,
     }
-    blave_zapper = {
+    blave_zapper : Skill = {
         element: element.physical,
-        name: physicalSkill.blave_zapper,
+        name: physicalSkillName.blave_zapper,
         hp: '24%',
         cp: undefined,
         info: '敵１体に物理属性で超特大ダメージを与える',
         relative: undefined,
     }
-    god_hand = {
+    god_hand : Skill = {
         element: element.physical,
-        name: physicalSkill.god_hand,
+        name: physicalSkillName.god_hand,
         hp: '25%',
         cp: undefined,
         info: '敵１体に物理属性で超特大ダメージを与える',
         relative: undefined,
     }
-    raise_slash = {
+    raise_slash : Skill = {
         element: element.physical,
-        name: physicalSkill.raise_slash,
+        name: physicalSkillName.raise_slash,
         hp: '14%',
         cp: undefined,
         info: '敵１体に物理属性で大ダメージを与える。バトンタッチ時に威力上昇',
         relative: undefined,
     }
-    shibou_yugi = {
+    shibou_yugi : Skill = {
         element: element.physical,
-        name: physicalSkill.shibou_yugi,
+        name: physicalSkillName.shibou_yugi,
         hp: '18%',
         cp: undefined,
         info: '敵１体に物理属性で特大ダメージを与える。バトンタッチ時に威力上昇',
         relative: undefined,
     }
-    kyusonokiba = {
+    kyusonokiba : Skill = {
         element: element.physical,
-        name: physicalSkill.kyusonokiba,
+        name: physicalSkillName.kyusonokiba,
         hp: '10%',
         cp: undefined,
         info: '敵１体に物理属性で中ダメージを与える。包囲された時に威力上昇',
         relative: undefined,
     }
-    lucky_punch = {
+    lucky_punch : Skill = {
         element: element.physical,
-        name: physicalSkill.lucky_punch,
+        name: physicalSkillName.lucky_punch,
         hp: '3%',
         cp: undefined,
         info: '敵１体に物理属性でクリティカル率の高い極小ダメージを与える',
         relative: undefined,
     }
-    miracle_punch = {
+    miracle_punch : Skill = {
         element: element.physical,
-        name: physicalSkill.miracle_punch,
+        name: physicalSkillName.miracle_punch,
         hp: '8%',
         cp: undefined,
         info: '敵１体に物理属性でクリティカル率の高い中ダメージを与える',
         relative: undefined,
     }
-    nirenga = {
+    nirenga : Skill = {
         element: element.physical,
-        name: physicalSkill.nirenga,
+        name: physicalSkillName.nirenga,
         hp: '10%',
         cp: undefined,
         info: '敵１体に物理属性で小ダメージを２回与える',
         relative: undefined,
     }
-    samidare_giri = {
+    samidare_giri : Skill = {
         element: element.physical,
-        name: physicalSkill.samidare_giri,
+        name: physicalSkillName.samidare_giri,
         hp: '17%',
         cp: undefined,
         info: '敵１体に物理属性で極小ダメージを３～５回与える',
         relative: undefined,
     }
-    setuna_samidare_giri = {
+    setuna_samidare_giri : Skill = {
         element: element.physical,
-        name: physicalSkill.setuna_samidare_giri,
+        name: physicalSkillName.setuna_samidare_giri,
         hp: '20%',
         cp: undefined,
         info: '敵１体に物理属性で中ダメージを２～３回与える',
         relative: undefined,
     }
-    my_room = {
+    my_room : Skill = {
         element: element.physical,
-        name: physicalSkill.my_room,
+        name: physicalSkillName.my_room,
         hp: '25%',
         cp: undefined,
         info: '敵１体に物理属性で中ダメージを３回与える。命中率が高い',
@@ -191,210 +191,210 @@ export class PhysicalSkill {
     }
 
 
-    kongou_happa = {
+    kongou_happa : Skill = {
         element: element.physical,
-        name: physicalSkill.kongou_happa,
+        name: physicalSkillName.kongou_happa,
         hp: '13%',
         cp: undefined,
         info: '敵全体に物理属性で中ダメージを与える',
         relative: undefined,
     }
-    reppuha = {
+    reppuha : Skill = {
         element: element.physical,
-        name: physicalSkill.reppuha,
+        name: physicalSkillName.reppuha,
         hp: '18%',
         cp: undefined,
         info: '敵全体に物理属性で中ダメージを与える',
         relative: undefined,
     }
-    heat_wave = {
+    heat_wave : Skill = {
         element: element.physical,
-        name: physicalSkill.heat_wave,
+        name: physicalSkillName.heat_wave,
         hp: '20%',
         cp: undefined,
         info: '敵全体に物理属性で大ダメージを与える',
         relative: undefined,
     }
-    kukan_sappou = {
+    kukan_sappou : Skill = {
         element: element.physical,
-        name: physicalSkill.kukan_sappou,
+        name: physicalSkillName.kukan_sappou,
         hp: '23%',
         cp: undefined,
         info: '敵全体に物理属性で特大ダメージを与える',
         relative: undefined,
     }
-    gigant_makia = {
+    gigant_makia : Skill = {
         element: element.physical,
-        name: physicalSkill.gigant_makia,
+        name: physicalSkillName.gigant_makia,
         hp: '25%',
         cp: undefined,
         info: '敵全体に物理属性で超特大ダメージを与える',
         relative: undefined,
     }
-    abaremakuri = {
+    abaremakuri : Skill = {
         element: element.physical,
-        name: physicalSkill.abaremakuri,
+        name: physicalSkillName.abaremakuri,
         hp: '13%',
         cp: undefined,
         info: '敵全体に物理属性で小ダメージを１～３回与える',
         relative: undefined,
     }
-    denkousekka = {
+    denkousekka : Skill = {
         element: element.physical,
-        name: physicalSkill.denkousekka,
+        name: physicalSkillName.denkousekka,
         hp: '17%',
         cp: undefined,
         info: '敵全体に物理属性で小ダメージを３～４回与える',
         relative: undefined,
     }
-    deth_bound = {
+    deth_bound : Skill = {
         element: element.physical,
-        name: physicalSkill.deth_bound,
+        name: physicalSkillName.deth_bound,
         hp: '22%',
         cp: undefined,
         info: '敵全体に物理属性で中ダメージを１～２回与える',
         relative: undefined,
     }
-    aguneyastra = {
+    aguneyastra : Skill = {
         element: element.physical,
-        name: physicalSkill.aguneyastra,
+        name: physicalSkillName.aguneyastra,
         hp: '24%',
         cp: undefined,
         info: '敵全体に物理属性で中ダメージを１～３回与える',
         relative: undefined,
     }
-    hassou_tobi = {
+    hassou_tobi : Skill = {
         element: element.physical,
-        name: physicalSkill.hassou_tobi,
+        name: physicalSkillName.hassou_tobi,
         hp: '25%',
         cp: undefined,
         info: '敵全体に物理属性で小ダメージを８回与える',
         relative: undefined,
     }
 
-    sledge_hummer = {
+    sledge_hummer : Skill = {
         element: element.physical,
-        name: physicalSkill.sledge_hummer,
+        name: physicalSkillName.sledge_hummer,
         hp: '10%',
         cp: undefined,
         info: '敵１体に物理属性で中ダメージを与え、中確率で目眩状態にする',
         relative: undefined,
     }
-    flash_bom = {
+    flash_bom : Skill = {
         element: element.physical,
-        name: physicalSkill.flash_bom,
+        name: physicalSkillName.flash_bom,
         hp: '19%',
         cp: undefined,
         info: '敵全体に物理属性で中ダメージを与え、低確率で目眩状態にする',
         relative: undefined,
     }
-    headbutt = {
+    headbutt : Skill = {
         element: element.physical,
-        name: physicalSkill.headbutt,
+        name: physicalSkillName.headbutt,
         hp: '9%',
         cp: undefined,
         info: '敵１体に物理属性で中ダメージを与え、中確率で忘却状態にする',
         relative: undefined,
     }
-    bousatu_rash = {
+    bousatu_rash : Skill = {
         element: element.physical,
-        name: physicalSkill.bousatu_rash,
+        name: physicalSkillName.bousatu_rash,
         hp: '15%',
         cp: undefined,
         info: '敵全体に物理属性で小ダメージを与え、低確率で忘却状態にする',
         relative: undefined,
     }
-    yumemihari = {
+    yumemihari : Skill = {
         element: element.physical,
-        name: physicalSkill.yumemihari,
+        name: physicalSkillName.yumemihari,
         hp: '8%',
         cp: undefined,
         info: '敵１体に物理属性で小ダメージを与え、中確率で睡眠状態にする',
         relative: undefined,
     }
-    dorumin_rash = {
+    dorumin_rash : Skill = {
         element: element.physical,
-        name: physicalSkill.dorumin_rash,
+        name: physicalSkillName.dorumin_rash,
         hp: '16%',
         cp: undefined,
         info: '敵全体に物理属性で中ダメージを与え、低確率で睡眠状態にする',
         relative: undefined,
     }
-    nouten_otoshi = {
+    nouten_otoshi : Skill = {
         element: element.physical,
-        name: physicalSkill.nouten_otoshi,
+        name: physicalSkillName.nouten_otoshi,
         hp: '10%',
         cp: undefined,
         info: '敵１体に物理属性で中ダメージを与え、中確率で混乱状態にする',
         relative: undefined,
     }
-    mind_slice = {
+    mind_slice : Skill = {
         element: element.physical,
-        name: physicalSkill.mind_slice,
+        name: physicalSkillName.mind_slice,
         hp: '19%',
         cp: undefined,
         info: '敵全体に物理属性で中ダメージを与え、低確率で混乱状態にする',
         relative: undefined,
     }
-    teller_craw = {
+    teller_craw : Skill = {
         element: element.physical,
-        name: physicalSkill.teller_craw,
+        name: physicalSkillName.teller_craw,
         hp: '8%',
         cp: undefined,
         info: '敵１体に物理属性で小ダメージを与え、中確率で恐怖状態にする',
         relative: undefined,
     }
-    chimaturi = {
+    chimaturi : Skill = {
         element: element.physical,
-        name: physicalSkill.chimaturi,
+        name: physicalSkillName.chimaturi,
         hp: '22%',
         cp: undefined,
         info: '敵全体に物理属性で大ダメージを与え、低確率で恐怖状態にする',
         relative: undefined,
     }
-    negative_pile = {
+    negative_pile : Skill = {
         element: element.physical,
-        name: physicalSkill.negative_pile,
+        name: physicalSkillName.negative_pile,
         hp: '12%',
         cp: undefined,
         info: '敵１体に物理属性で大ダメージを与え、中確率で絶望状態にする',
         relative: undefined,
     }
-    bad_beat = {
+    bad_beat : Skill = {
         element: element.physical,
-        name: physicalSkill.bad_beat,
+        name: physicalSkillName.bad_beat,
         hp: '21%',
         cp: undefined,
         info: '敵全体に物理属性で中ダメージを与え、低確率で絶望状態にする',
         relative: undefined,
     }
-    brain_shake = {
+    brain_shake : Skill = {
         element: element.physical,
-        name: physicalSkill.brain_shake,
+        name: physicalSkillName.brain_shake,
         hp: '9%',
         cp: undefined,
         info: '敵１体に物理属性で中ダメージを与え、中確率で洗脳状態にする',
         relative: undefined,
     }
-    brain_buster = {
+    brain_buster : Skill = {
         element: element.physical,
-        name: physicalSkill.brain_buster,
+        name: physicalSkillName.brain_buster,
         hp: '22%',
         cp: undefined,
         info: '敵全体に物理属性で大ダメージを与え、低確率で洗脳状態にする',
         relative: undefined,
     }
-    histery_binta = {
+    histery_binta : Skill = {
         element: element.physical,
-        name: physicalSkill.histery_binta,
+        name: physicalSkillName.histery_binta,
         hp: '9%',
         cp: undefined,
         info: '敵１体に物理属性で中ダメージを与え、中確率で激怒状態にする',
         relative: undefined,
     }
-    onikagura = {
+    onikagura : Skill = {
         element: element.physical,
-        name: physicalSkill.onikagura,
+        name: physicalSkillName.onikagura,
         hp: '16%',
         cp: undefined,
         info: '敵全体に物理属性で中ダメージを与え、低確率で激怒状態にする',

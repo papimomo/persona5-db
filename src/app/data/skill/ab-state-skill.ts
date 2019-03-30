@@ -1,7 +1,7 @@
 import { Skill, element } from '../persona_enum';
 
 
-enum abStateSkill {
+export enum abStateSkillName {
     metubushi = '目潰し',
     yamiyonosenkou = '闇夜の閃光',
     makajama = 'マカジャマ',
@@ -23,129 +23,129 @@ enum abStateSkill {
 
 export class AbStateSkill {
 
-    metubushi = {
+    metubushi : Skill = {
         element: element.ab_state,
-        name: abStateSkill.metubushi,
+        name: abStateSkillName.metubushi,
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で目眩状態にする',
         relative: undefined,
     };
-    yamiyonosenkou = {
+    yamiyonosenkou : Skill = {
         element: element.ab_state,
-        name: abStateSkill.yamiyonosenkou,
+        name: abStateSkillName.yamiyonosenkou,
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で目眩状態にする',
         relative: undefined,
     };
-    makajama = {
+    makajama : Skill = {
         element: element.ab_state,
-        name: abStateSkill.makajama,
+        name: abStateSkillName.makajama,
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で忘却状態にする',
         relative: undefined,
     };
-    makajamaon = {
+    makajamaon : Skill = {
         element: element.ab_state,
-        name: abStateSkill.makajamaon,
+        name: abStateSkillName.makajamaon,
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で忘却状態にする',
         relative: undefined,
     };
-    dorumina = {
+    dorumina : Skill = {
         element: element.ab_state,
-        name: abStateSkill.dorumina,
+        name: abStateSkillName.dorumina,
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で睡眠状態にする',
         relative: undefined,
     };
-    sleep_song = {
+    sleep_song : Skill = {
         element: element.ab_state,
-        name: abStateSkill.sleep_song,
+        name: abStateSkillName.sleep_song,
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で睡眠状態にする',
         relative: undefined,
     };
-    prinpa = {
+    prinpa : Skill = {
         element: element.ab_state,
-        name: abStateSkill.prinpa,
+        name: abStateSkillName.prinpa,
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で混乱状態にする',
         relative: undefined,
     };
-    tentarahu = {
+    tentarahu : Skill = {
         element: element.ab_state,
-        name: abStateSkill.tentarahu,
+        name: abStateSkillName.tentarahu,
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で混乱状態にする',
         relative: undefined,
     };
-    hukitunakotoba = {
+    hukitunakotoba : Skill = {
         element: element.ab_state,
-        name: abStateSkill.hukitunakotoba,
+        name: abStateSkillName.hukitunakotoba,
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で絶望状態にする',
         relative: undefined,
     };
-    narakunohadou = {
+    narakunohadou : Skill = {
         element: element.ab_state,
-        name: abStateSkill.narakunohadou,
+        name: abStateSkillName.narakunohadou,
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で絶望状態にする',
         relative: undefined,
     };
-    tyouhatu = {
+    tyouhatu : Skill = {
         element: element.ab_state,
-        name: abStateSkill.tyouhatu,
+        name: abStateSkillName.tyouhatu,
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で激怒状態にする',
         relative: undefined,
     };
-    sensenhukoku = {
+    sensenhukoku : Skill = {
         element: element.ab_state,
-        name: abStateSkill.sensenhukoku,
+        name: abStateSkillName.sensenhukoku,
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で激怒状態にする',
         relative: undefined,
     };
-    marinkarin = {
+    marinkarin : Skill = {
         element: element.ab_state,
-        name: abStateSkill.marinkarin,
+        name: abStateSkillName.marinkarin,
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で洗脳状態にする',
         relative: undefined,
     };
-    brain_jack = {
+    brain_jack : Skill = {
         element: element.ab_state,
-        name: abStateSkill.brain_jack,
+        name: abStateSkillName.brain_jack,
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で洗脳状態にする',
         relative: undefined,
     };
-    devil_touch = {
+    devil_touch : Skill = {
         element: element.ab_state,
-        name: abStateSkill.devil_touch,
+        name: abStateSkillName.devil_touch,
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で恐怖状態にする',
         relative: undefined,
     };
-    devil_smile = {
+    devil_smile : Skill = {
         element: element.ab_state,
-        name: abStateSkill.devil_smile,
+        name: abStateSkillName.devil_smile,
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で恐怖状態にする',

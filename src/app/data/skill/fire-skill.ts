@@ -1,6 +1,6 @@
 import { Skill, element } from '../persona_enum';
 
-enum fireSkill {
+export enum fireSkillName {
     agi = 'アギ',
     agirao = 'アギラオ',
     agidain = 'アギダイン',
@@ -14,65 +14,65 @@ enum fireSkill {
 
 export class FireSkill {
 
-    agi = {
+    agi : Skill = {
         element: element.fire,
-        name: fireSkill.agi,
+        name: fireSkillName.agi,
         hp: undefined,
         cp: 4,
         info: '敵１体に火炎属性で小ダメージを与える。まれに敵を炎上させる',
         relative: undefined,
     };
-    agirao = {
+    agirao : Skill = {
         element: element.fire,
-        name: fireSkill.agirao,
+        name: fireSkillName.agirao,
         hp: undefined,
         cp: 8,
         info: '敵１体に火炎属性で中ダメージを与える。まれに敵を炎上させる',
         relative: undefined,
     };
-    agidain = {
+    agidain : Skill = {
         element: element.fire,
-        name: fireSkill.agidain,
+        name: fireSkillName.agidain,
         hp: undefined,
         cp: 12,
         info: '敵１体に火炎属性で大ダメージを与える。まれに敵を炎上させる',
         relative: undefined,
     };
-    maharagi = {
+    maharagi : Skill = {
         element: element.fire,
-        name: fireSkill.maharagi,
+        name: fireSkillName.maharagi,
         hp: undefined,
         cp: 10,
         info: '敵全体に火炎属性で小ダメージを与える。まれに敵を炎上させる',
         relative: undefined,
     };
-    maharagion = {
+    maharagion : Skill = {
         element: element.fire,
-        name: fireSkill.maharagion,
+        name: fireSkillName.maharagion,
         hp: undefined,
         cp: 10,
         info: '敵全体に火炎属性で中ダメージを与える。まれに敵を炎上させる',
         relative: undefined,
     };
-    maharagidain = {
+    maharagidain : Skill = {
         element: element.fire,
-        name: fireSkill.maharagidain,
+        name: fireSkillName.maharagidain,
         hp: undefined,
         cp: 22,
         info: '敵全体に火炎属性で大ダメージを与える。まれに敵を炎上させる',
         relative: undefined,
     };
-    inferno = {
+    inferno : Skill = {
         element: element.fire,
-        name: fireSkill.inferno,
+        name: fireSkillName.inferno,
         hp: undefined,
         cp: 48,
         info: '敵１体に火炎属性で特大ダメージを与える。まれに敵を炎上させる',
         relative: undefined,
     };
-    daienjo = {
+    daienjo : Skill = {
         element: element.fire,
-        name: fireSkill.daienjo,
+        name: fireSkillName.daienjo,
         hp: undefined,
         cp: 54,
         info: '敵全体に火炎属性で特大ダメージを与える。まれに敵を炎上させる',

@@ -1,6 +1,6 @@
 import { Skill, element } from '../persona_enum';
 
-enum autoSkill {
+export enum autoSkillName {
     seimitu_syageki = '精密射撃',
     kyusyouti = '急所撃ち',
     kaen_booster = '火炎ブースター',
@@ -162,796 +162,796 @@ enum autoSkill {
 
 
 export class AutoSkill {
-    seimitu_syageki = {
+    seimitu_syageki : Skill = {
         element: element.auto,
-        name: autoSkill.seimitu_syageki,
+        name: autoSkillName.seimitu_syageki,
         hp: undefined,
         cp: undefined,
         info: '銃撃属性の攻撃力が自動的に２５％上昇する',
         relative: undefined,
     };
-    kyusyouti = {
+    kyusyouti : Skill = {
         element: element.auto,
-        name: autoSkill.kyusyouti,
+        name: autoSkillName.kyusyouti,
         hp: undefined,
         cp: undefined,
         info: '銃撃属性の攻撃力が自動的に５０％上昇する。精密射撃の効果に累積する',
         relative: undefined,
     };
-    kaen_booster = {
+    kaen_booster : Skill = {
         element: element.auto,
-        name: autoSkill.kaen_booster,
+        name: autoSkillName.kaen_booster,
         hp: undefined,
         cp: undefined,
         info: '火炎属性の攻撃力が自動的に２５％上昇する',
         relative: undefined,
     };
-    kaen_highbooster = {
+    kaen_highbooster : Skill = {
         element: element.auto,
-        name: autoSkill.kaen_highbooster,
+        name: autoSkillName.kaen_highbooster,
         hp: undefined,
         cp: undefined,
         info: '火炎属性の攻撃力が自動的に５０％上昇する。ブースタの効果に累積する',
         relative: undefined,
     };
-    hyouketu_booster = {
+    hyouketu_booster : Skill = {
         element: element.auto,
-        name: autoSkill.hyouketu_booster,
+        name: autoSkillName.hyouketu_booster,
         hp: undefined,
         cp: undefined,
         info: '氷結属性の攻撃力が自動的に２５％上昇する',
         relative: undefined,
     };
-    hyouketu_highbooster = {
+    hyouketu_highbooster : Skill = {
         element: element.auto,
-        name: autoSkill.hyouketu_highbooster,
+        name: autoSkillName.hyouketu_highbooster,
         hp: undefined,
         cp: undefined,
         info: '氷結属性の攻撃力が自動的に５０％上昇する。ブースタの効果に累積する',
         relative: undefined,
     };
-    dengeki_booster = {
+    dengeki_booster : Skill = {
         element: element.auto,
-        name: autoSkill.dengeki_booster,
+        name: autoSkillName.dengeki_booster,
         hp: undefined,
         cp: undefined,
         info: '電撃属性の攻撃力が自動的に２５％上昇する',
         relative: undefined,
     };
-    dengeki_highbooster = {
+    dengeki_highbooster : Skill = {
         element: element.auto,
-        name: autoSkill.dengeki_highbooster,
+        name: autoSkillName.dengeki_highbooster,
         hp: undefined,
         cp: undefined,
         info: '電撃属性の攻撃力が自動的に５０％上昇する。ブースタの効果に累積する',
         relative: undefined,
     };
-    shippu_booster = {
+    shippu_booster : Skill = {
         element: element.auto,
-        name: autoSkill.shippu_booster,
+        name: autoSkillName.shippu_booster,
         hp: undefined,
         cp: undefined,
         info: '疾風属性の攻撃力が自動的に２５％上昇する',
         relative: undefined,
     };
-    shippu_highbooster = {
+    shippu_highbooster : Skill = {
         element: element.auto,
-        name: autoSkill.shippu_highbooster,
+        name: autoSkillName.shippu_highbooster,
         hp: undefined,
         cp: undefined,
         info: '疾風属性の攻撃力が自動的に５０％上昇する。ブースタの効果に累積する',
         relative: undefined,
     };
-    nenndou_booster = {
+    nenndou_booster : Skill = {
         element: element.auto,
-        name: autoSkill.nenndou_booster,
+        name: autoSkillName.nenndou_booster,
         hp: undefined,
         cp: undefined,
         info: '念動属性の攻撃力が自動的に２５％上昇する',
         relative: undefined,
     };
-    nenndou_highbooster = {
+    nenndou_highbooster : Skill = {
         element: element.auto,
-        name: autoSkill.nenndou_highbooster,
+        name: autoSkillName.nenndou_highbooster,
         hp: undefined,
         cp: undefined,
         info: '念動ハイブースタ	念動属性の攻撃力が自動的に５０％上昇する。ブースタの効果に累積する',
         relative: undefined,
     };
-    kakunetu_booster = {
+    kakunetu_booster : Skill = {
         element: element.auto,
-        name: autoSkill.kakunetu_booster,
+        name: autoSkillName.kakunetu_booster,
         hp: undefined,
         cp: undefined,
         info: '核熱属性の攻撃力が自動的に２５％上昇する',
         relative: undefined,
     };
-    kakunetu_highbooster = {
+    kakunetu_highbooster : Skill = {
         element: element.auto,
-        name: autoSkill.kakunetu_highbooster,
+        name: autoSkillName.kakunetu_highbooster,
         hp: undefined,
         cp: undefined,
         info: '核熱属性の攻撃力が自動的に５０％上昇する。ブースタの効果に累積する',
         relative: undefined,
     };
-    syukuhuku_booster = {
+    syukuhuku_booster : Skill = {
         element: element.auto,
-        name: autoSkill.syukuhuku_booster,
+        name: autoSkillName.syukuhuku_booster,
         hp: undefined,
         cp: undefined,
         info: '祝福属性の攻撃力が自動的に２５％上昇する',
         relative: undefined,
     };
-    syukuhuku_highbooster = {
+    syukuhuku_highbooster : Skill = {
         element: element.auto,
-        name: autoSkill.syukuhuku_booster,
+        name: autoSkillName.syukuhuku_booster,
         hp: undefined,
         cp: undefined,
         info: '祝福属性の攻撃力が自動的に５０％上昇する。ブースタの効果に累積する',
         relative: undefined,
     };
-    juon_booster = {
+    juon_booster : Skill = {
         element: element.auto,
-        name: autoSkill.juon_booster,
+        name: autoSkillName.juon_booster,
         hp: undefined,
         cp: undefined,
         info: '呪怨属性の攻撃力が自動的に２５％上昇する',
         relative: undefined,
     };
-    juon_highbooster = {
+    juon_highbooster : Skill = {
         element: element.auto,
-        name: autoSkill.juon_highbooster,
+        name: autoSkillName.juon_highbooster,
         hp: undefined,
         cp: undefined,
         info: '呪怨属性の攻撃力が自動的に５０％上昇する。ブースタの効果に累積する',
         relative: undefined,
     };
-    banno_booster = {
+    banno_booster : Skill = {
         element: element.auto,
-        name: autoSkill.banno_booster,
+        name: autoSkillName.banno_booster,
         hp: undefined,
         cp: undefined,
         info: '万能属性の攻撃力が自動的に２５％上昇する',
         relative: undefined,
     };
-    banno_highbooster = {
+    banno_highbooster : Skill = {
         element: element.auto,
-        name: autoSkill.banno_highbooster,
+        name: autoSkillName.banno_highbooster,
         hp: undefined,
         cp: undefined,
         info: '万能属性の攻撃力が自動的に２５％上昇する',
         relative: undefined,
     };
-    madounosainou = {
+    madounosainou : Skill = {
         element: element.auto,
-        name: autoSkill.madounosainou,
+        name: autoSkillName.madounosainou,
         hp: undefined,
         cp: undefined,
         info: '全属性の魔法攻撃力が自動的に２５％上昇する',
         relative: undefined,
     };
 
-    kamigaminokago = {
+    kamigaminokago : Skill = {
         element: element.auto,
-        name: autoSkill.kamigaminokago,
+        name: autoSkillName.kamigaminokago,
         hp: undefined,
         cp: undefined,
         info: '使用する回復魔法の効果が自動的に１．５倍になる',
         relative: undefined,
     };
-    hama_up = {
+    hama_up : Skill = {
         element: element.auto,
-        name: autoSkill.hama_up,
+        name: autoSkillName.hama_up,
         hp: undefined,
         cp: undefined,
         info: 'ハマ系スキルの成功率が自動的に上昇する',
         relative: undefined,
     };
-    mudo_up = {
+    mudo_up : Skill = {
         element: element.auto,
-        name: autoSkill.mudo_up,
+        name: autoSkillName.mudo_up,
         hp: undefined,
         cp: undefined,
         info: 'ムド系スキルの成功率が自動的に上昇する',
         relative: undefined,
     };
-    enjou_up = {
+    enjou_up : Skill = {
         element: element.auto,
-        name: autoSkill.enjou_up,
+        name: autoSkillName.enjou_up,
         hp: undefined,
         cp: undefined,
         info: '炎上の付着率が自動的に上昇する',
         relative: undefined,
     };
-    touketu_up = {
+    touketu_up : Skill = {
         element: element.auto,
-        name: autoSkill.touketu_up,
+        name: autoSkillName.touketu_up,
         hp: undefined,
         cp: undefined,
         info: '凍結の付着率が自動的に上昇する',
         relative: undefined,
     };
-    kanden_up = {
+    kanden_up : Skill = {
         element: element.auto,
-        name: autoSkill.kanden_up,
+        name: autoSkillName.kanden_up,
         hp: undefined,
         cp: undefined,
         info: '感電の付着率が自動的に上昇する',
         relative: undefined,
     };
-    memai_up = {
+    memai_up : Skill = {
         element: element.auto,
-        name: autoSkill.memai_up,
+        name: autoSkillName.memai_up,
         hp: undefined,
         cp: undefined,
         info: '目眩付着の成功率が自動的に上昇する',
         relative: undefined,
     };
-    boukyaku_up = {
+    boukyaku_up : Skill = {
         element: element.auto,
-        name: autoSkill.boukyaku_up,
+        name: autoSkillName.boukyaku_up,
         hp: undefined,
         cp: undefined,
         info: '忘却付着の成功率が自動的に上昇する',
         relative: undefined,
     };
-    suimin_up = {
+    suimin_up : Skill = {
         element: element.auto,
-        name: autoSkill.suimin_up,
+        name: autoSkillName.suimin_up,
         hp: undefined,
         cp: undefined,
         info: '睡眠付着の成功率が自動的に上昇する',
         relative: undefined,
     };
-    konran_up = {
+    konran_up : Skill = {
         element: element.auto,
-        name: autoSkill.konran_up,
+        name: autoSkillName.konran_up,
         hp: undefined,
         cp: undefined,
         info: '混乱付着の成功率が自動的に上昇する',
         relative: undefined,
     };
-    kyohu_up = {
+    kyohu_up : Skill = {
         element: element.auto,
-        name: autoSkill.kyohu_up,
+        name: autoSkillName.kyohu_up,
         hp: undefined,
         cp: undefined,
         info: '恐怖付着の成功率が自動的に上昇する',
         relative: undefined,
     };
-    zetubou_up = {
+    zetubou_up : Skill = {
         element: element.auto,
-        name: autoSkill.zetubou_up,
+        name: autoSkillName.zetubou_up,
         hp: undefined,
         cp: undefined,
         info: '絶望付着の成功率が自動的に上昇する',
         relative: undefined,
     };
-    gekido_up = {
+    gekido_up : Skill = {
         element: element.auto,
-        name: autoSkill.gekido_up,
+        name: autoSkillName.gekido_up,
         hp: undefined,
         cp: undefined,
         info: '激怒付着の成功率が自動的に上昇する',
         relative: undefined,
     };
-    sennou_up = {
+    sennou_up : Skill = {
         element: element.auto,
-        name: autoSkill.sennou_up,
+        name: autoSkillName.sennou_up,
         hp: undefined,
         cp: undefined,
         info: '洗脳付着の成功率が自動的に上昇する',
         relative: undefined,
     };
-    ab_state_up = {
+    ab_state_up : Skill = {
         element: element.auto,
-        name: autoSkill.ab_state_up,
+        name: autoSkillName.ab_state_up,
         hp: undefined,
         cp: undefined,
         info: '状態異常付着の成功率が自動的に上昇する',
         relative: undefined,
     };
 
-    kougeki = {
+    kougeki : Skill = {
         element: element.auto,
-        name: autoSkill.kougeki,
+        name: autoSkillName.kougeki,
         hp: undefined,
         cp: undefined,
         info: '戦闘開始時に自動でタルカジャが発動する',
         relative: undefined,
     };
-    bougyo = {
+    bougyo : Skill = {
         element: element.auto,
-        name: autoSkill.bougyo,
+        name: autoSkillName.bougyo,
         hp: undefined,
         cp: undefined,
         info: '戦闘開始時に自動でラクカジャが発動する',
         relative: undefined,
     };
-    subayasa = {
+    subayasa : Skill = {
         element: element.auto,
-        name: autoSkill.subayasa,
+        name: autoSkillName.subayasa,
         hp: undefined,
         cp: undefined,
         info: '戦闘開始時に自動でスクカジャが発動する',
         relative: undefined,
     };
-    mahatarukaauto = {
+    mahatarukaauto : Skill = {
         element: element.auto,
-        name: autoSkill.mahatarukaauto,
+        name: autoSkillName.mahatarukaauto,
         hp: undefined,
         cp: undefined,
         info: '戦闘開始時に自動でマハタルカジャが発動する',
         relative: undefined,
     };
-    maharakukaauto = {
+    maharakukaauto : Skill = {
         element: element.auto,
-        name: autoSkill.maharakukaauto,
+        name: autoSkillName.maharakukaauto,
         hp: undefined,
         cp: undefined,
         info: '戦闘開始時に自動でマハラクカジャが発動する',
         relative: undefined,
     };
-    mahasukukaauto = {
+    mahasukukaauto : Skill = {
         element: element.auto,
-        name: autoSkill.mahasukukaauto,
+        name: autoSkillName.mahasukukaauto,
         hp: undefined,
         cp: undefined,
         info: '戦闘開始時に自動でマハスクカジャが発動する',
         relative: undefined,
     };
-    heatup = {
+    heatup : Skill = {
         element: element.auto,
-        name: autoSkill.heatup,
+        name: autoSkillName.heatup,
         hp: undefined,
         cp: undefined,
         info: 'チャンスエンカウント時、行動順になった際、HPが５％・SPが１０回復する',
         relative: undefined,
     };
-    high_voltage = {
+    high_voltage : Skill = {
         element: element.auto,
-        name: autoSkill.high_voltage,
+        name: autoSkillName.high_voltage,
         hp: undefined,
         cp: undefined,
         info: 'チャンスエンカウント時に、クリティカル攻撃を与える確率が自動的に上昇する',
         relative: undefined,
     };
-    gyakkyounokakugo = {
+    gyakkyounokakugo : Skill = {
         element: element.auto,
-        name: autoSkill.gyakkyounokakugo,
+        name: autoSkillName.gyakkyounokakugo,
         hp: undefined,
         cp: undefined,
         info: '包囲された時にクリティカル攻撃を与える確率が自動的に上昇する',
         relative: undefined,
     };
-    haisuinojin = {
+    haisuinojin : Skill = {
         element: element.auto,
-        name: autoSkill.haisuinojin,
+        name: autoSkillName.haisuinojin,
         hp: undefined,
         cp: undefined,
         info: '包囲された時に万能属性を除き、受ける攻撃の命中率が１／３になる',
         relative: undefined,
     };
-    ameniutaeba = {
+    ameniutaeba : Skill = {
         element: element.auto,
-        name: autoSkill.ameniutaeba,
+        name: autoSkillName.ameniutaeba,
         hp: undefined,
         cp: undefined,
         info: '雨や注意報が出ている時、全相性の回避率が自動的に２倍になる',
         relative: undefined,
     };
-    ukanaisora = {
+    ukanaisora : Skill = {
         element: element.auto,
-        name: autoSkill.ukanaisora,
+        name: autoSkillName.ukanaisora,
         hp: undefined,
         cp: undefined,
         info: '雨や注意報が出ている時、状態異常攻撃の付着率が自動的に大幅に上昇する',
         relative: undefined,
     };
 
-    syoutiyusokushin = {
+    syoutiyusokushin : Skill = {
         element: element.auto,
-        name: autoSkill.syoutiyusokushin,
+        name: autoSkillName.syoutiyusokushin,
         hp: undefined,
         cp: undefined,
         info: '戦闘中、行動順になった際、HPの２％を自動的に回復する',
         relative: undefined,
     };
-    tyutiyusokushin = {
+    tyutiyusokushin : Skill = {
         element: element.auto,
-        name: autoSkill.tyutiyusokushin,
+        name: autoSkillName.tyutiyusokushin,
         hp: undefined,
         cp: undefined,
         info: '戦闘中、行動順になった際、HPの４％を自動的に回復する',
         relative: undefined,
     };
-    daitiyusokushin = {
+    daitiyusokushin : Skill = {
         element: element.auto,
-        name: autoSkill.daitiyusokushin,
+        name: autoSkillName.daitiyusokushin,
         hp: undefined,
         cp: undefined,
         info: '戦闘中、行動順になった際、HPの６％を自動的に回復する',
         relative: undefined,
     };
-    syoukikou = {
+    syoukikou : Skill = {
         element: element.auto,
-        name: autoSkill.syoukikou,
+        name: autoSkillName.syoukikou,
         hp: undefined,
         cp: undefined,
         info: '戦闘中、行動順になった際、自動的にSPが３回復する',
         relative: undefined,
     };
-    tyukikou = {
+    tyukikou : Skill = {
         element: element.auto,
-        name: autoSkill.tyukikou,
+        name: autoSkillName.tyukikou,
         hp: undefined,
         cp: undefined,
         info: '戦闘中、行動順になった際、自動的にSPが５回復する',
         relative: undefined,
     };
-    daikikou = {
+    daikikou : Skill = {
         element: element.auto,
-        name: autoSkill.daikikou,
+        name: autoSkillName.daikikou,
         hp: undefined,
         cp: undefined,
         info: '戦闘中、行動順になった際、自動的にSPが７回復する',
         relative: undefined,
     };
-    budounokokoroe = {
+    budounokokoroe : Skill = {
         element: element.auto,
-        name: autoSkill.budounokokoroe,
+        name: autoSkillName.budounokokoroe,
         hp: undefined,
         cp: undefined,
         info: '自動的にスキル使用時のHP消費量が半分になる',
         relative: undefined,
     };
-    majutunosoyou = {
+    majutunosoyou : Skill = {
         element: element.auto,
-        name: autoSkill.majutunosoyou,
+        name: autoSkillName.majutunosoyou,
         hp: undefined,
         cp: undefined,
         info: '自動的にスキル使用時のSP消費量が半分になる',
         relative: undefined,
     };
-    counter = {
+    counter : Skill = {
         element: element.auto,
-        name: autoSkill.counter,
+        name: autoSkillName.counter,
         hp: undefined,
         cp: undefined,
         info: '物理攻撃を１０％の確率で自動的に反射する',
         relative: undefined,
     };
-    heavy_counter = {
+    heavy_counter : Skill = {
         element: element.auto,
-        name: autoSkill.heavy_counter,
+        name: autoSkillName.heavy_counter,
         hp: undefined,
         cp: undefined,
         info: '物理攻撃を１５％の確率で自動的に反射する。他カウンタと効果累積なし',
         relative: undefined,
     };
-    highper_counter = {
+    highper_counter : Skill = {
         element: element.auto,
-        name: autoSkill.highper_counter,
+        name: autoSkillName.highper_counter,
         hp: undefined,
         cp: undefined,
         info: '物理攻撃を２０％の確率で自動的に反射する。他カウンタと効果累積なし',
         relative: undefined,
     };
 
-    couching = {
+    couching : Skill = {
         element: element.auto,
-        name: autoSkill.couching,
+        name: autoSkillName.couching,
         hp: undefined,
         cp: undefined,
         info: 'クリティカル攻撃を受ける確率が自動的に低下する',
         relative: undefined,
     };
-    advice = {
+    advice : Skill = {
         element: element.auto,
-        name: autoSkill.advice,
+        name: autoSkillName.advice,
         hp: undefined,
         cp: undefined,
         info: 'クリティカル攻撃を与える確率が自動的に上昇する',
         relative: undefined,
     };
-    triger_happy = {
+    triger_happy : Skill = {
         element: element.auto,
-        name: autoSkill.triger_happy,
+        name: autoSkillName.triger_happy,
         hp: undefined,
         cp: undefined,
         info: 'クリティカル攻撃を与える確率が自動的に上昇する',
         relative: undefined,
     };
-    touch_and_go = {
+    touch_and_go : Skill = {
         element: element.auto,
-        name: autoSkill.touch_and_go,
+        name: autoSkillName.touch_and_go,
         hp: undefined,
         cp: undefined,
         info: 'バトンタッチで行動を得た際に、スクカジャが発動する',
         relative: undefined,
     };
-    soul_chain = {
+    soul_chain : Skill = {
         element: element.auto,
-        name: autoSkill.soul_chain,
+        name: autoSkillName.soul_chain,
         hp: undefined,
         cp: undefined,
         info: 'バトンタッチで行動を得た際に、SPが２０回復する',
         relative: undefined,
     };
-    nioudati = {
+    nioudati : Skill = {
         element: element.auto,
-        name: autoSkill.nioudati,
+        name: autoSkillName.nioudati,
         hp: undefined,
         cp: undefined,
         info: '自動的に敵からの攻撃を必ず受けるがダメージは半分になる',
         relative: undefined,
     };
-    kyusokukaihuku = {
+    kyusokukaihuku : Skill = {
         element: element.auto,
-        name: autoSkill.kyusokukaihuku,
+        name: autoSkillName.kyusokukaihuku,
         hp: undefined,
         cp: undefined,
         info: '自動的に状態異常回復の必要ターンが半減する',
         relative: undefined,
     };
-    syunkankaihuku = {
+    syunkankaihuku : Skill = {
         element: element.auto,
-        name: autoSkill.syunkankaihuku,
+        name: autoSkillName.syunkankaihuku,
         hp: undefined,
         cp: undefined,
         info: '自動的に状態異常回復の必要ターンが１ターンになる',
         relative: undefined,
     };
-    kuishibari = {
+    kuishibari : Skill = {
         element: element.auto,
-        name: autoSkill.kuishibari,
+        name: autoSkillName.kuishibari,
         hp: undefined,
         cp: undefined,
         info: 'HPが０になった際、自動的に１度だけHP１で復帰する',
         relative: undefined,
     };
-    hukutunotoushi = {
+    hukutunotoushi : Skill = {
         element: element.auto,
-        name: autoSkill.hukutunotoushi,
+        name: autoSkillName.hukutunotoushi,
         hp: undefined,
         cp: undefined,
         info: 'HPが０になった際、自動的に１度だけHP全快で復帰する',
         relative: undefined,
     };
-    seikan_tric = {
+    seikan_tric : Skill = {
         element: element.auto,
-        name: autoSkill.seikan_tric,
+        name: autoSkillName.seikan_tric,
         hp: undefined,
         cp: undefined,
         info: '即死効果攻撃を受けた際に自動的に必ずＨＰ１で生き残る',
         relative: undefined,
     };
-    syourinoibuki = {
+    syourinoibuki : Skill = {
         element: element.auto,
-        name: autoSkill.syourinoibuki,
+        name: autoSkillName.syourinoibuki,
         hp: undefined,
         cp: undefined,
         info: '戦闘勝利後に自身のＨＰ・ＳＰが８％回復する',
         relative: undefined,
     };
-    syourinootakebi = {
+    syourinootakebi : Skill = {
         element: element.auto,
-        name: autoSkill.syourinootakebi,
+        name: autoSkillName.syourinootakebi,
         hp: undefined,
         cp: undefined,
         info: '戦闘勝利後に自身のＨＰ・ＳＰが全回復する',
         relative: undefined,
     };
-    low_grow = {
+    low_grow : Skill = {
         element: element.auto,
-        name: autoSkill.low_grow,
+        name: autoSkillName.low_grow,
         hp: undefined,
         cp: undefined,
         info: '戦闘に参加していなくても経験値を１／４入手する',
         relative: undefined,
     };
-    middle_grow = {
+    middle_grow : Skill = {
         element: element.auto,
-        name: autoSkill.middle_grow,
+        name: autoSkillName.middle_grow,
         hp: undefined,
         cp: undefined,
         info: '戦闘に参加していなくても、経験値を１／２入手する',
         relative: undefined,
     };
-    high_grow = {
+    high_grow : Skill = {
         element: element.auto,
-        name: autoSkill.high_grow,
+        name: autoSkillName.high_grow,
         hp: undefined,
         cp: undefined,
         info: '戦闘に参加していなくても同じ経験値を入手する',
         relative: undefined,
     };
 
-    buturi_mikiri = {
+    buturi_mikiri : Skill = {
         element: element.auto,
-        name: autoSkill.buturi_mikiri,
+        name: autoSkillName.buturi_mikiri,
         hp: undefined,
         cp: undefined,
         info: '物理属性の攻撃に対する回避率が２倍になる',
         relative: undefined,
     };
-    kyoku_buturi_mikiri = {
+    kyoku_buturi_mikiri : Skill = {
         element: element.auto,
-        name: autoSkill.kyoku_buturi_mikiri,
+        name: autoSkillName.kyoku_buturi_mikiri,
         hp: undefined,
         cp: undefined,
         info: '物理属性の攻撃に対する回避率が３倍になる。見切りとの効果累積なし',
         relative: undefined,
     };
-    buturi_taisei = {
+    buturi_taisei : Skill = {
         element: element.auto,
-        name: autoSkill.buturi_taisei,
+        name: autoSkillName.buturi_taisei,
         hp: undefined,
         cp: undefined,
         info: '物理属性の攻撃に強くなる。弱点だった場合は弱点を消す',
         relative: undefined,
     };
-    buturi_mukou = {
+    buturi_mukou : Skill = {
         element: element.auto,
-        name: autoSkill.buturi_mukou,
+        name: autoSkillName.buturi_mukou,
         hp: undefined,
         cp: undefined,
         info: '物理属性の攻撃を無効にする',
         relative: undefined,
     };
-    buturi_hansya = {
+    buturi_hansya : Skill = {
         element: element.auto,
-        name: autoSkill.buturi_hansya,
+        name: autoSkillName.buturi_hansya,
         hp: undefined,
         cp: undefined,
         info: '物理属性の攻撃を反射する',
         relative: undefined,
     };
-    buturi_kyusyu = {
+    buturi_kyusyu : Skill = {
         element: element.auto,
-        name: autoSkill.buturi_kyusyu,
+        name: autoSkillName.buturi_kyusyu,
         hp: undefined,
         cp: undefined,
         info: '物理属性の攻撃を吸収する',
         relative: undefined,
     };
-    kaen_mikiri = {
+    kaen_mikiri : Skill = {
         element: element.auto,
-        name: autoSkill.kaen_mikiri,
+        name: autoSkillName.kaen_mikiri,
         hp: undefined,
         cp: undefined,
         info: '火炎属性の攻撃に対する回避率が２倍になる',
         relative: undefined,
     };
-    kyoku_kaen_mikiri = {
+    kyoku_kaen_mikiri : Skill = {
         element: element.auto,
-        name: autoSkill.kyoku_kaen_mikiri,
+        name: autoSkillName.kyoku_kaen_mikiri,
         hp: undefined,
         cp: undefined,
         info: '火炎属性の攻撃に対する回避率が３倍になる。見切りとの効果累積なし',
         relative: undefined,
     };
-    kaen_taisei = {
+    kaen_taisei : Skill = {
         element: element.auto,
-        name: autoSkill.kaen_taisei,
+        name: autoSkillName.kaen_taisei,
         hp: undefined,
         cp: undefined,
         info: '火炎属性の攻撃に強くなる。弱点だった場合は弱点を消す',
         relative: undefined,
     };
-    kaen_mukou = {
+    kaen_mukou : Skill = {
         element: element.auto,
-        name: autoSkill.kaen_mukou,
+        name: autoSkillName.kaen_mukou,
         hp: undefined,
         cp: undefined,
         info: '火炎属性の攻撃を無効にする',
         relative: undefined,
     };
-    kaen_hansha = {
+    kaen_hansha : Skill = {
         element: element.auto,
-        name: autoSkill.kaen_hansha,
+        name: autoSkillName.kaen_hansha,
         hp: undefined,
         cp: undefined,
         info: '火炎属性の攻撃を反射する',
         relative: undefined,
     };
-    kaen_kyusyu ={
+    kaen_kyusyu : Skill ={
         element: element.auto,
-        name: autoSkill.kaen_kyusyu,
+        name: autoSkillName.kaen_kyusyu,
         hp: undefined,
         cp: undefined,
         info: '火炎属性の攻撃を吸収する',
         relative: undefined,
     };
-    hyouketu_mikiri = {
+    hyouketu_mikiri : Skill = {
         element: element.auto,
-        name: autoSkill.hyouketu_mikiri,
+        name: autoSkillName.hyouketu_mikiri,
         hp: undefined,
         cp: undefined,
         info: '氷結属性の攻撃に対する回避率が２倍になる',
         relative: undefined,
     };
-    kyoku_hyouketu_mikiri = {
+    kyoku_hyouketu_mikiri : Skill = {
         element: element.auto,
-        name: autoSkill.kyoku_hyouketu_mikiri,
+        name: autoSkillName.kyoku_hyouketu_mikiri,
         hp: undefined,
         cp: undefined,
         info: '氷結属性の攻撃に対する回避率が３倍になる。見切りとの効果累積なし',
         relative: undefined,
     };
-    hyouketu_taisei = {
+    hyouketu_taisei : Skill = {
         element: element.auto,
-        name: autoSkill.hyouketu_taisei,
+        name: autoSkillName.hyouketu_taisei,
         hp: undefined,
         cp: undefined,
         info: '氷結属性の攻撃に強くなる。弱点だった場合は弱点を消す',
         relative: undefined,
     };
-    hyouketu_mukou ={
+    hyouketu_mukou : Skill ={
         element: element.auto,
-        name: autoSkill.hyouketu_mukou,
+        name: autoSkillName.hyouketu_mukou,
         hp: undefined,
         cp: undefined,
         info: '氷結属性の攻撃を無効にする',
         relative: undefined,
     };
-    hyouketu_hansha = {
+    hyouketu_hansha : Skill = {
         element: element.auto,
-        name: autoSkill.hyouketu_hansha,
+        name: autoSkillName.hyouketu_hansha,
         hp: undefined,
         cp: undefined,
         info: '氷結属性の攻撃を反射する',
         relative: undefined,
     };
-    hyouketu_kyusyu = {
+    hyouketu_kyusyu : Skill = {
         element: element.auto,
-        name: autoSkill.hyouketu_kyusyu,
+        name: autoSkillName.hyouketu_kyusyu,
         hp: undefined,
         cp: undefined,
         info: '氷結属性の攻撃を吸収する',
         relative: undefined,
     };
-    dengeki_mikiri = {
+    dengeki_mikiri : Skill = {
         element: element.auto,
-        name: autoSkill.dengeki_mikiri,
+        name: autoSkillName.dengeki_mikiri,
         hp: undefined,
         cp: undefined,
         info: '電撃属性の攻撃に対する回避率が２倍になる',
         relative: undefined,
     };
-    kyoku_dengeki_mikiri = {
+    kyoku_dengeki_mikiri : Skill = {
         element: element.auto,
-        name: autoSkill.kyoku_dengeki_mikiri,
+        name: autoSkillName.kyoku_dengeki_mikiri,
         hp: undefined,
         cp: undefined,
         info: '電撃属性の攻撃に対する回避率が３倍になる。見切りとの効果累積なし',
         relative: undefined,
     };
-    dengeki_taisei = {
+    dengeki_taisei : Skill = {
         element: element.auto,
-        name: autoSkill.dengeki_taisei,
+        name: autoSkillName.dengeki_taisei,
         hp: undefined,
         cp: undefined,
         info: '電撃属性の攻撃に強くなる。弱点だった場合は弱点を消す',
         relative: undefined,
     };
-    dengeki_mukou = {
+    dengeki_mukou : Skill = {
         element: element.auto,
-        name: autoSkill.dengeki_mukou,
+        name: autoSkillName.dengeki_mukou,
         hp: undefined,
         cp: undefined,
         info: '電撃属性の攻撃を無効にする',
         relative: undefined,
     };
-    dengeki_hansya = {
+    dengeki_hansya : Skill = {
         element: element.auto,
-        name: autoSkill.dengeki_hansya,
+        name: autoSkillName.dengeki_hansya,
         hp: undefined,
         cp: undefined,
         info: '電撃属性の攻撃を反射する',
         relative: undefined,
     };
-    // dengeki_kyusyu ={
+    // dengeki_kyusyu : Skill ={
     //     element: element.auto,
     //     name: autoSkill.high_grow,
     //     hp: undefined,
@@ -959,39 +959,39 @@ export class AutoSkill {
     //     info: '戦闘に参加していなくても同じ経験値を入手する',
     //     relative: undefined,
     // };
-    shippu_mikiri = {
+    shippu_mikiri : Skill = {
         element: element.auto,
-        name: autoSkill.shippu_mikiri,
+        name: autoSkillName.shippu_mikiri,
         hp: undefined,
         cp: undefined,
         info: '疾風属性の攻撃を無効にする',
         relative: undefined,
     };
-    kyoku_shippu_mikiri = {
+    kyoku_shippu_mikiri : Skill = {
         element: element.auto,
-        name: autoSkill.kyoku_shippu_mikiri,
+        name: autoSkillName.kyoku_shippu_mikiri,
         hp: undefined,
         cp: undefined,
         info: '戦闘に参加していなくても同じ経験値を入手する',
         relative: undefined,
     };
-    shippu_taisei = {
+    shippu_taisei : Skill = {
         element: element.auto,
-        name: autoSkill.shippu_taisei,
+        name: autoSkillName.shippu_taisei,
         hp: undefined,
         cp: undefined,
         info: '疾風属性の攻撃に強くなる。弱点だった場合は弱点を消す',
         relative: undefined,
     };
-    shippu_mukou = {
+    shippu_mukou : Skill = {
         element: element.auto,
-        name: autoSkill.shippu_mukou,
+        name: autoSkillName.shippu_mukou,
         hp: undefined,
         cp: undefined,
         info: '疾風属性の攻撃を無効にする',
         relative: undefined,
     };
-    // sippu_hansya = {
+    // sippu_hansya : Skill = {
     //     element: element.auto,
     //     name: autoSkill.high_grow,
     //     hp: undefined,
@@ -999,47 +999,47 @@ export class AutoSkill {
     //     info: '戦闘に参加していなくても同じ経験値を入手する',
     //     relative: undefined,
     // };
-    shippu_kyusyu = {
+    shippu_kyusyu : Skill = {
         element: element.auto,
-        name: autoSkill.shippu_kyusyu,
+        name: autoSkillName.shippu_kyusyu,
         hp: undefined,
         cp: undefined,
         info: '疾風属性の攻撃を吸収する',
         relative: undefined,
     };
-    nenndou_mikiri = {
+    nenndou_mikiri : Skill = {
         element: element.auto,
-        name: autoSkill.nenndou_mikiri,
+        name: autoSkillName.nenndou_mikiri,
         hp: undefined,
         cp: undefined,
         info: '念動属性の攻撃に対する回避率が２倍になる',
         relative: undefined,
     };
-    kyoku_nenndou_mikiri = {
+    kyoku_nenndou_mikiri : Skill = {
         element: element.auto,
-        name: autoSkill.kyoku_nenndou_mikiri,
+        name: autoSkillName.kyoku_nenndou_mikiri,
         hp: undefined,
         cp: undefined,
         info: '念動属性の攻撃に対する回避率が３倍になる。見切りとの効果累積なし',
         relative: undefined,
     };
-    nenndou_taisei = {
+    nenndou_taisei : Skill = {
         element: element.auto,
-        name: autoSkill.nenndou_taisei,
+        name: autoSkillName.nenndou_taisei,
         hp: undefined,
         cp: undefined,
         info: '念動属性の攻撃に強くなる。弱点だった場合は弱点を消す',
         relative: undefined,
     };
-    nenndou_mukou = {
+    nenndou_mukou : Skill = {
         element: element.auto,
-        name: autoSkill.nenndou_mukou,
+        name: autoSkillName.nenndou_mukou,
         hp: undefined,
         cp: undefined,
         info: '戦闘に参加していなくても同じ経験値を入手する',
         relative: undefined,
     };
-    // nenndou_hansya = {
+    // nenndou_hansya : Skill = {
     //     element: element.auto,
     //     name: autoSkill.high_grow,
     //     hp: undefined,
@@ -1047,95 +1047,95 @@ export class AutoSkill {
     //     info: '戦闘に参加していなくても同じ経験値を入手する',
     //     relative: undefined,
     // };
-    nenndou_kyusyu = {
+    nenndou_kyusyu : Skill = {
         element: element.auto,
-        name: autoSkill.nenndou_kyusyu,
+        name: autoSkillName.nenndou_kyusyu,
         hp: undefined,
         cp: undefined,
         info: '念動属性の攻撃を吸収する',
         relative: undefined,
     };
-    kakunetu_mikiri = {
+    kakunetu_mikiri : Skill = {
         element: element.auto,
-        name: autoSkill.kakunetu_mikiri,
+        name: autoSkillName.kakunetu_mikiri,
         hp: undefined,
         cp: undefined,
         info: '核熱属性の攻撃に対する回避率が２倍になる',
         relative: undefined,
     };
-    kyoku_kakunetu_mikiri = {
+    kyoku_kakunetu_mikiri : Skill = {
         element: element.auto,
-        name: autoSkill.kyoku_kakunetu_mikiri,
+        name: autoSkillName.kyoku_kakunetu_mikiri,
         hp: undefined,
         cp: undefined,
         info: '核熱属性の攻撃に対する回避率が３倍になる。見切りとの効果累積なし',
         relative: undefined,
     };
-    kakunetu_taisei = {
+    kakunetu_taisei : Skill = {
         element: element.auto,
-        name: autoSkill.kakunetu_taisei,
+        name: autoSkillName.kakunetu_taisei,
         hp: undefined,
         cp: undefined,
         info: '核熱属性の攻撃に強くなる。弱点だった場合は弱点を消す',
         relative: undefined,
     };
-    kakunetu_mukou = {
+    kakunetu_mukou : Skill = {
         element: element.auto,
-        name: autoSkill.kakunetu_mukou,
+        name: autoSkillName.kakunetu_mukou,
         hp: undefined,
         cp: undefined,
         info: '核熱属性の攻撃を無効にする',
         relative: undefined,
     };
-    kakunetu_hansya = {
+    kakunetu_hansya : Skill = {
         element: element.auto,
-        name: autoSkill.kakunetu_hansya,
+        name: autoSkillName.kakunetu_hansya,
         hp: undefined,
         cp: undefined,
         info: '核熱属性の攻撃を反射する',
         relative: undefined,
     };
-    kakunetu_kyusyu = {
+    kakunetu_kyusyu : Skill = {
         element: element.auto,
-        name: autoSkill.kakunetu_kyusyu,
+        name: autoSkillName.kakunetu_kyusyu,
         hp: undefined,
         cp: undefined,
         info: '核熱属性の攻撃を吸収する',
         relative: undefined,
     };
-    syukuhuku_mikiri ={
+    syukuhuku_mikiri : Skill ={
         element: element.auto,
-        name: autoSkill.syukuhuku_mikiri,
+        name: autoSkillName.syukuhuku_mikiri,
         hp: undefined,
         cp: undefined,
         info: '即死を除く祝福属性の攻撃に対する回避率が２倍になる',
         relative: undefined,
     };
-    kyoku_syukuhuku_mikiri = {
+    kyoku_syukuhuku_mikiri : Skill = {
         element: element.auto,
-        name: autoSkill.kyoku_syukuhuku_mikiri,
+        name: autoSkillName.kyoku_syukuhuku_mikiri,
         hp: undefined,
         cp: undefined,
         info: '即死を除く祝福属性に対する回避率が３倍になる。見切りとの効果累積なし',
         relative: undefined,
     };
-    syukuhuku_taisei = {
+    syukuhuku_taisei : Skill = {
         element: element.auto,
-        name: autoSkill.syukuhuku_taisei,
+        name: autoSkillName.syukuhuku_taisei,
         hp: undefined,
         cp: undefined,
         info: '祝福属性の攻撃に強くなる。弱点だった場合は弱点を消す',
         relative: undefined,
     };
-    syukuhuku_mukou = {
+    syukuhuku_mukou : Skill = {
         element: element.auto,
-        name: autoSkill.syukuhuku_mukou,
+        name: autoSkillName.syukuhuku_mukou,
         hp: undefined,
         cp: undefined,
         info: '祝福属性の攻撃を無効にする',
         relative: undefined,
     };
-    // syukuhuku_hansya = {
+    // syukuhuku_hansya : Skill = {
     //     element: element.auto,
     //     name: autoSkill.high_grow,
     //     hp: undefined,
@@ -1143,218 +1143,218 @@ export class AutoSkill {
     //     info: '戦闘に参加していなくても同じ経験値を入手する',
     //     relative: undefined,
     // };
-    syukuhuku_kyusyu = {
+    syukuhuku_kyusyu : Skill = {
         element: element.auto,
-        name: autoSkill.syukuhuku_kyusyu,
+        name: autoSkillName.syukuhuku_kyusyu,
         hp: undefined,
         cp: undefined,
         info: '祝福属性の攻撃を吸収する',
         relative: undefined,
     };
-    juon_mikiri = {
+    juon_mikiri : Skill = {
         element: element.auto,
-        name: autoSkill.juon_mikiri,
+        name: autoSkillName.juon_mikiri,
         hp: undefined,
         cp: undefined,
         info: '即死を除く呪怨属性の攻撃に対する回避率が２倍になる',
         relative: undefined,
     };
-    kyoku_juon_mikiri = {
+    kyoku_juon_mikiri : Skill = {
         element: element.auto,
-        name: autoSkill.kyoku_juon_mikiri,
+        name: autoSkillName.kyoku_juon_mikiri,
         hp: undefined,
         cp: undefined,
         info: '即死を除く祝福属性に対する回避率が３倍になる。見切りとの効果累積なし',
         relative: undefined,
     };
-    juon_taisei = {
+    juon_taisei : Skill = {
         element: element.auto,
-        name: autoSkill.juon_taisei,
+        name: autoSkillName.juon_taisei,
         hp: undefined,
         cp: undefined,
         info: '呪怨属性の攻撃に強くなる。弱点だった場合は弱点を消す',
         relative: undefined,
     };
-    juon_mukou = {
+    juon_mukou : Skill = {
         element: element.auto,
-        name: autoSkill.juon_mukou,
+        name: autoSkillName.juon_mukou,
         hp: undefined,
         cp: undefined,
         info: '呪怨属性の攻撃を無効にする',
         relative: undefined,
     };
-    juon_hansya = {
+    juon_hansya : Skill = {
         element: element.auto,
-        name: autoSkill.juon_hansya,
+        name: autoSkillName.juon_hansya,
         hp: undefined,
         cp: undefined,
         info: '呪怨属性の攻撃を反射する',
         relative: undefined,
     };
-    juon_kyusyu = {
+    juon_kyusyu : Skill = {
         element: element.auto,
-        name: autoSkill.juon_kyusyu,
+        name: autoSkillName.juon_kyusyu,
         hp: undefined,
         cp: undefined,
         info: '呪怨属性の攻撃を吸収する',
         relative: undefined,
     };
-    ari_dance = {
+    ari_dance : Skill = {
         element: element.auto,
-        name: autoSkill.ari_dance,
+        name: autoSkillName.ari_dance,
         hp: undefined,
         cp: undefined,
         info: '攻撃してくる敵の命中率が自動的に半分になる',
         relative: undefined,
     };
-    daitenshinokago = {
+    daitenshinokago : Skill = {
         element: element.auto,
-        name: autoSkill.daitenshinokago,
+        name: autoSkillName.daitenshinokago,
         hp: undefined,
         cp: undefined,
         info: '火炎・氷結・疾風・電撃・祝福・呪怨・核熱・念動の回避率が自動で２倍になる',
         relative: undefined,
     };
 
-    memai_taisei = {
+    memai_taisei : Skill = {
         element: element.auto,
-        name: autoSkill.memai_taisei,
+        name: autoSkillName.memai_taisei,
         hp: undefined,
         cp: undefined,
         info: '目眩にかかりにくくなる',
         relative: undefined,
     };
-    memai_mukou = {
+    memai_mukou : Skill = {
         element: element.auto,
-        name: autoSkill.memai_mukou,
+        name: autoSkillName.memai_mukou,
         hp: undefined,
         cp: undefined,
         info: '目眩にかからなくなる',
         relative: undefined,
     };
-    boukyaku_taisei = {
+    boukyaku_taisei : Skill = {
         element: element.auto,
-        name: autoSkill.boukyaku_taisei,
+        name: autoSkillName.boukyaku_taisei,
         hp: undefined,
         cp: undefined,
         info: '忘却にかかりにくくなる',
         relative: undefined,
     };
-    boukyaku_mukou = {
+    boukyaku_mukou : Skill = {
         element: element.auto,
-        name: autoSkill.boukyaku_mukou,
+        name: autoSkillName.boukyaku_mukou,
         hp: undefined,
         cp: undefined,
         info: '忘却にかからなくなる',
         relative: undefined,
     };
-    konran_taisei = {
+    konran_taisei : Skill = {
         element: element.auto,
-        name: autoSkill.konran_taisei,
+        name: autoSkillName.konran_taisei,
         hp: undefined,
         cp: undefined,
         info: '混乱にかかりにくくなる',
         relative: undefined,
     };
-    konran_mukou = {
+    konran_mukou : Skill = {
         element: element.auto,
-        name: autoSkill.konran_mukou,
+        name: autoSkillName.konran_mukou,
         hp: undefined,
         cp: undefined,
         info: '混乱にかからなくなる',
         relative: undefined,
     };
-    suimin_taisei = {
+    suimin_taisei : Skill = {
         element: element.auto,
-        name: autoSkill.suimin_taisei,
+        name: autoSkillName.suimin_taisei,
         hp: undefined,
         cp: undefined,
         info: '睡眠にかかりにくくなる',
         relative: undefined,
     };
-    suimin_mukou = {
+    suimin_mukou : Skill = {
         element: element.auto,
-        name: autoSkill.suimin_mukou,
+        name: autoSkillName.suimin_mukou,
         hp: undefined,
         cp: undefined,
         info: '睡眠にかからなくなる',
         relative: undefined,
     };
-    kyohu_taisei = {
+    kyohu_taisei : Skill = {
         element: element.auto,
-        name: autoSkill.kyohu_taisei,
+        name: autoSkillName.kyohu_taisei,
         hp: undefined,
         cp: undefined,
         info: '恐怖にかかりにくくなる',
         relative: undefined,
     };
-    kyohu_mukou = {
+    kyohu_mukou : Skill = {
         element: element.auto,
-        name: autoSkill.kyohu_mukou,
+        name: autoSkillName.kyohu_mukou,
         hp: undefined,
         cp: undefined,
         info: '恐怖にかからなくなる',
         relative: undefined,
     };
-    zetubou_taisei = {
+    zetubou_taisei : Skill = {
         element: element.auto,
-        name: autoSkill.zetubou_taisei,
+        name: autoSkillName.zetubou_taisei,
         hp: undefined,
         cp: undefined,
         info: '絶望にかかりにくくなる',
         relative: undefined,
     };
-    zetubou_mukou = {
+    zetubou_mukou : Skill = {
         element: element.auto,
-        name: autoSkill.zetubou_mukou,
+        name: autoSkillName.zetubou_mukou,
         hp: undefined,
         cp: undefined,
         info: '絶望にかからなくなる',
         relative: undefined,
     };
-    gekido_taisei = {
+    gekido_taisei : Skill = {
         element: element.auto,
-        name: autoSkill.gekido_taisei,
+        name: autoSkillName.gekido_taisei,
         hp: undefined,
         cp: undefined,
         info: '激怒にかかりにくくなる',
         relative: undefined,
     };
-    gekido_mukou = {
+    gekido_mukou : Skill = {
         element: element.auto,
-        name: autoSkill.gekido_mukou,
+        name: autoSkillName.gekido_mukou,
         hp: undefined,
         cp: undefined,
         info: '激怒にかからなくなる',
         relative: undefined,
     };
-    sennou_taisei = {
+    sennou_taisei : Skill = {
         element: element.auto,
-        name: autoSkill.sennou_taisei,
+        name: autoSkillName.sennou_taisei,
         hp: undefined,
         cp: undefined,
         info: '洗脳にかかりにくくなる',
         relative: undefined,
     };
-    sennou_mukou = {
+    sennou_mukou : Skill = {
         element: element.auto,
-        name: autoSkill.sennou_mukou,
+        name: autoSkillName.sennou_mukou,
         hp: undefined,
         cp: undefined,
         info: '洗脳にかからなくなる',
         relative: undefined,
     };
-    hudoushin = {
+    hudoushin : Skill = {
         element: element.auto,
-        name: autoSkill.hudoushin,
+        name: autoSkillName.hudoushin,
         hp: undefined,
         cp: undefined,
         info: '混乱・恐怖・激怒・絶望にかからなくなる',
         relative: undefined,
     };
-    seishintaisei = {
+    seishintaisei : Skill = {
         element: element.auto,
-        name: autoSkill.seishintaisei,
+        name: autoSkillName.seishintaisei,
         hp: undefined,
         cp: undefined,
         info: 'すべての状態異常にかかりにくくなる',

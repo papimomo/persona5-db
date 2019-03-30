@@ -1,6 +1,6 @@
 import { Skill, element } from '../persona_enum';
 
-enum gunSkill{
+export enum gunSkillName{
     shidan = '指弾',
     one_shot_kill = 'ワンショットキル',
     triple_down = 'トリプルダウン',
@@ -9,33 +9,33 @@ enum gunSkill{
 
 export class GunSkill {
 
-    shidan = {
+    shidan : Skill = {
         element: element.gun,
-        name: gunSkill.shidan,
+        name: gunSkillName.shidan,
         hp: '9%',
         cp: undefined,
         info: '敵１体に銃撃属性で中ダメージを与える',
         relative: undefined,
     };
-    one_shot_kill = {
+    one_shot_kill : Skill = {
         element: element.gun,
-        name: gunSkill.shidan,
+        name: gunSkillName.shidan,
         hp: '17%',
         cp: undefined,
         info: '敵１体に銃撃属性でクリティカル率の高い特大ダメージを与える',
         relative: undefined,
     };
-    triple_down = {
+    triple_down : Skill = {
         element: element.gun,
-        name: gunSkill.shidan,
+        name: gunSkillName.shidan,
         hp: '16%',
         cp: undefined,
         info: '敵全体に銃撃属性で小ダメージを３回与える',
         relative: undefined,
     };
-    shikounomadan = {
+    shikounomadan : Skill = {
         element: element.gun,
-        name: gunSkill.shidan,
+        name: gunSkillName.shidan,
         hp: '24%',
         cp: undefined,
         info: '敵全体に銃撃属性で特大ダメージを与える',

@@ -1,6 +1,6 @@
 import { Skill, element } from '../persona_enum';
 
-enum psySkill {
+export enum psySkillName {
     psy = 'サイ',
     psyo = 'サイオ',
     psydain = 'サイダイン',
@@ -13,65 +13,65 @@ enum psySkill {
 
 
 export class PsySkill {
-    psy = {
+    psy : Skill = {
         element: element.psy,
-        name: psySkill.psy,
+        name: psySkillName.psy,
         hp: undefined,
         cp: 4,
         info: '敵１体に念動属性で小ダメージを与える。精神状態異常の敵に効果大',
         relative: undefined,
     };
-    psyo = {
+    psyo : Skill = {
         element: element.psy,
-        name: psySkill.psyo,
+        name: psySkillName.psyo,
         hp: undefined,
         cp: 8,
         info: '敵１体に念動属性で中ダメージを与える。精神状態異常の敵に効果大',
         relative: undefined,
     };
-    psydain = {
+    psydain : Skill = {
         element: element.psy,
-        name: psySkill.psydain,
+        name: psySkillName.psydain,
         hp: undefined,
         cp: 12,
         info: '敵１体に念動属性で大ダメージを与える。精神状態異常の敵に効果大',
         relative: undefined,
     };
-    mahapsy = {
+    mahapsy : Skill = {
         element: element.psy,
-        name: psySkill.mahapsy,
+        name: psySkillName.mahapsy,
         hp: undefined,
         cp: 10,
         info: '敵全体に念動属性で小ダメージを与える。精神状態異常の敵に効果大',
         relative: undefined,
     };
-    mahapsyo = {
+    mahapsyo : Skill = {
         element: element.psy,
-        name: psySkill.mahapsyo,
+        name: psySkillName.mahapsyo,
         hp: undefined,
         cp: 16,
         info: '敵全体に念動属性で中ダメージを与える。精神状態異常の敵に効果大',
         relative: undefined,
     };
-    mahapsydain = {
+    mahapsydain : Skill = {
         element: element.psy,
-        name: psySkill.mahapsydain,
+        name: psySkillName.mahapsydain,
         hp: undefined,
         cp: 22,
         info: '敵全体に念動属性で大ダメージを与える。精神状態異常の敵に効果大',
         relative: undefined,
     };
-    psychiciness = {
+    psychiciness : Skill = {
         element: element.psy,
-        name: psySkill.psychiciness,
+        name: psySkillName.psychiciness,
         hp: undefined,
         cp: 48,
         info: '敵１体に念動属性で特大ダメージを与える。精神状態異常の敵に効果大',
         relative: undefined,
     };
-    psychforce = {
+    psychforce : Skill = {
         element: element.psy,
-        name: psySkill.psychforce,
+        name: psySkillName.psychforce,
         hp: undefined,
         cp: 54,
         info: '敵全体に念動属性で特大ダメージを与える。精神状態異常の敵に効果大',

@@ -1,6 +1,6 @@
 import { Skill, element } from '../persona_enum';
 
-enum almightSkill {
+export enum almightSkillName {
     megido = 'メギド',
     megidora = 'メギドラ',
     megidoraon = 'メギドラオン',
@@ -17,47 +17,47 @@ enum almightSkill {
 export class AlmightSkill {
 
 
-    megido = {
+    megido : Skill = {
         element: element.almight,
-        name: almightSkill.megido,
+        name: almightSkillName.megido,
         hp: undefined,
         cp: 15,
         info: '敵全体に万能属性で中ダメージを与える',
         relative: undefined,
     };
-    megidora = {
+    megidora : Skill = {
         element: element.almight,
-        name: almightSkill.megidora,
+        name: almightSkillName.megidora,
         hp: undefined,
         cp: 24,
         info: '敵全体に万能属性で大ダメージを与える',
         relative: undefined,
     };
-    megidoraon = {
+    megidoraon : Skill = {
         element: element.almight,
-        name: almightSkill.megidoraon,
+        name: almightSkillName.megidoraon,
         hp: undefined,
         cp: 38,
         info: '敵全体に万能属性で特大ダメージを与える',
         relative: undefined,
     };
-    shikkokunohebi = {
+    shikkokunohebi : Skill = {
         element: element.almight,
-        name: almightSkill.shikkokunohebi,
+        name: almightSkillName.shikkokunohebi,
         hp: undefined,
         cp: 48,
         info: '敵１体に万能属性で特大ダメージを与える',
         relative: undefined,
     };
-    akenomyoujou = {
+    akenomyoujou : Skill = {
         element: element.almight,
-        name: almightSkill.akenomyoujou,
+        name: almightSkillName.akenomyoujou,
         hp: undefined,
         cp: 54,
         info: '敵全体に万能属性で特大ダメージを与える',
         relative: undefined,
     };
-    // meihunotobira = {
+    // meihunotobira : Skill = {
     //     element: element.almight,
     //     name: almightSkill.megido,
     //     hp: undefined,
@@ -65,41 +65,41 @@ export class AlmightSkill {
     //     info: '敵全体に万能属性で中ダメージを与える',
     //     relative: undefined,
     // };
-    kyuketu = {
+    kyuketu : Skill = {
         element: element.almight,
-        name: almightSkill.kyuketu,
+        name: almightSkillName.kyuketu,
         hp: undefined,
         cp: 3,
         info: '敵のＨＰを吸い取り、自分のＨＰにする',
         relative: undefined,
     };
-    kyuma = {
+    kyuma : Skill = {
         element: element.almight,
-        name: almightSkill.kyuma,
+        name: almightSkillName.kyuma,
         hp: undefined,
         cp: 3,
         info: '敵のSPを吸い取り、自分のSPにする',
         relative: undefined,
     };
-    yodonda_toiki = {
+    yodonda_toiki : Skill = {
         element: element.ab_state,
-        name: almightSkill.yodonda_toiki,
+        name: almightSkillName.yodonda_toiki,
         hp: undefined,
         cp: 8,
         info: '敵１体を状態異常にかかりやすくさせる',
         relative: undefined,
     };
-    yodonda_kuuki = {
+    yodonda_kuuki : Skill = {
         element: element.ab_state,
-        name: almightSkill.yodonda_kuuki,
+        name: almightSkillName.yodonda_kuuki,
         hp: undefined,
         cp: 5,
         info: '敵味方全体を状態異常にかかりやすくさせる',
         relative: undefined,
     };
-    moujanonageki = {
+    moujanonageki : Skill = {
         element: element.ab_state,
-        name: almightSkill.moujanonageki,
+        name: almightSkillName.moujanonageki,
         hp: undefined,
         cp: 28,
         info: '恐怖状態の敵に即死効果を与える',

@@ -1,6 +1,6 @@
 import { Skill, element } from '../persona_enum';
 
-enum curseSkill {
+export enum curseSkillName {
     eiha = 'エイハ',
     eiga = 'エイガ',
     eigaon = 'エイガオン',
@@ -19,49 +19,49 @@ enum curseSkill {
 
 export class CurseSkill {
 
-    eiha = {
+    eiha: Skill = {
         element: element.curse,
-        name: curseSkill.eiha,
+        name: curseSkillName.eiha,
         hp: undefined,
         cp: 4,
         info: '敵１体に呪怨属性で小ダメージを与える',
         relative: undefined,
     };
-    eiga = {
+    eiga: Skill = {
         element: element.curse,
-        name: curseSkill.eiga,
+        name: curseSkillName.eiga,
         hp: undefined,
         cp: 8,
         info: '敵１体に呪怨属性で中ダメージを与える',
         relative: undefined,
     };
-    eigaon = {
+    eigaon : Skill = {
         element: element.curse,
-        name: curseSkill.eigaon,
+        name: curseSkillName.eigaon,
         hp: undefined,
         cp: 12,
         info: '敵１体に呪怨属性で大ダメージを与える',
         relative: undefined,
     };
-    mahaeiha = {
+    mahaeiha : Skill = {
         element: element.curse,
-        name: curseSkill.mahaeiha,
+        name: curseSkillName.mahaeiha,
         hp: undefined,
         cp: 10,
         info: '敵全体に呪怨属性で小ダメージを与える',
         relative: undefined,
     };
-    mahaeiga = {
+    mahaeiga : Skill = {
         element: element.curse,
-        name: curseSkill.mahaeiga,
+        name: curseSkillName.mahaeiga,
         hp: undefined,
         cp: 16,
         info: '敵全体に呪怨属性で中ダメージを与える',
         relative: undefined,
     };
-    mahaeigaon = {
+    mahaeigaon : Skill = {
         element: element.curse,
-        name: curseSkill.mahaeigaon,
+        name: curseSkillName.mahaeigaon,
         hp: undefined,
         cp: 22,
         info: '敵全体に呪怨属性で大ダメージを与える',
@@ -69,49 +69,49 @@ export class CurseSkill {
     };
     // rengokunotubasa = '煉獄の翼',
     // magatumandara = 'マガツマンダラ',
-    akumanoshinpan = {
+    akumanoshinpan : Skill = {
         element: element.curse,
-        name: curseSkill.akumanoshinpan,
+        name: curseSkillName.akumanoshinpan,
         hp: undefined,
         cp: 54,
         info: '敵１体を呪怨属性で攻撃し、HPを１／２にする',
         relative: undefined,
     };
-    mudo = {
+    mudo : Skill = {
         element: element.curse,
-        name: curseSkill.mudo,
+        name: curseSkillName.mudo,
         hp: undefined,
         cp: 8,
         info: '敵１体に呪怨属性の即死効果を低確率で与える',
         relative: undefined,
     };
-    mudoon = {
+    mudoon : Skill = {
         element: element.curse,
-        name: curseSkill.mudoon,
+        name: curseSkillName.mudoon,
         hp: undefined,
         cp: 15,
         info: '敵１体に呪怨属性の即死効果を中確率で与える',
         relative: undefined,
     };
-    mahamudo = {
+    mahamudo : Skill = {
         element: element.curse,
-        name: curseSkill.mahamudo,
+        name: curseSkillName.mahamudo,
         hp: undefined,
         cp: 18,
         info: '敵１体に呪怨属性の即死効果を中確率で与える',
         relative: undefined,
     };
-    mahamudoon = {
+    mahamudoon : Skill = {
         element: element.curse,
-        name: curseSkill.mahamudoon,
+        name: curseSkillName.mahamudoon,
         hp: undefined,
         cp: 34,
         info: '敵全体に呪怨属性の即死効果を中確率で与える',
         relative: undefined,
     };
-    shindekureru = {
+    shindekureru : Skill = {
         element: element.curse,
-        name: curseSkill.shindekureru,
+        name: curseSkillName.shindekureru,
         hp: undefined,
         cp: 44,
         info: '敵全体に呪怨属性の即死効果を高確率で与える',
