@@ -1,21 +1,36 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
+    <ion-title *ngIf="!searchMode">
       Persona5
     </ion-title>
+    <ion-buttons *ngIf="!searchMode" slot="primary">
+      <ion-button (click)="searchMode = !searchMode">
+        <ion-icon slot="end" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+
+    <ion-searchbar *ngIf="searchMode" [(ngModel)]="searchInput" [showCancelButton]="showSearchCancelButton"
+      (ionInput)="onInput($event)" (ionCancel)="onCancel($event)" class="search">
+    </ion-searchbar>
+    <ion-buttons *ngIf="searchMode" slot="primary">
+      <ion-button (click)="searchMode = !searchMode">
+        <ion-icon slot="end" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-list lines="none">
-        <ion-grid>
-          <ion-row>
-            <ion-col col-4 col-md-3 col-xl-2 *ngFor="let persona of personalist">
-                <app-persona-row [persona]=persona (click)="onItemClick(persona)"></app-persona-row>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      <!-- <app-persona-row></app-persona-row>
+  <ion-list lines="none">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-4 col-md-3 col-xl-2 *ngFor="let persona of personalist">
+          <app-persona-row [persona]=persona (click)="onItemClick(persona)"></app-persona-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <!-- <app-persona-row></app-persona-row>
       <ion-item *ngFor="let persona of personalist">{{ persona.name }}</ion-item> -->
-    </ion-list>
+  </ion-list>
 </ion-content>
