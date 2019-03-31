@@ -1,10 +1,12 @@
-
-      <ion-card class="persona">
-          <ion-avatar class="avatar">
-            <img src="assets/persona/{{persona.name}}.jpg" alt="">
-          </ion-avatar>
-          <div>
-              <p class="arcana">{{persona.name}}</p>
-              <p class="arcana">{{persona.arcana}} Lv:{{persona.level}}</p>
-          </div>
-      </ion-card>
+<ion-card class="persona">
+  <div class="outer">
+    <ion-avatar class="avatar">
+      <img src="assets/persona/{{persona.name}}.jpg" alt="">
+    </ion-avatar>
+    <div class="arcana">
+      <p >{{persona.name}}</p>
+      <p >{{persona.arcana}} Lv:{{persona.level}}</p>
+      <p >習得レベル Lv:{{skill.level}}</p>
+    </div>
+  </div>
+</ion-card>

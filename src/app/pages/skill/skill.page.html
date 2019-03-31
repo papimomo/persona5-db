@@ -8,30 +8,54 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-item lines="none">
+  <ion-item lines="none" class="skill_name">
     <ion-text>{{skill.name}}</ion-text>
   </ion-item>
+
+  <ion-grid *ngIf="getCost(skill) !== ''">
+    <ion-row>
+      <ion-col auto></ion-col>
+      <ion-col class="cost">
+        {{getCost(skill)}}
+      </ion-col>
+      <ion-col auto></ion-col>
+    </ion-row>
+  </ion-grid>
+
   <ion-grid>
     <ion-row>
-      <ion-col>
-        <div>
+      <ion-col auto>
+
+      </ion-col>
+      <ion-col class="element_outer">
+
+        <div class="element">
           <img src="assets/element/{{skill.element}}.png">
-          <ion-text>:{{getElementName(skill.element)}}</ion-text>
+          <ion-text>{{getElementName(skill.element)}}</ion-text>
         </div>
       </ion-col>
-      <ion-col>
-        <ion-text>{{getCost(skill)}}</ion-text>
+      <ion-col auto>
+
       </ion-col>
     </ion-row>
   </ion-grid>
-  <div>
+  <ion-item lines="none" class="info">
+      <ion-text>{{skill.info}}</ion-text>
+    </ion-item>
+  <!-- <ion-item lines="none" class="info">
     <ion-text>{{skill.info}}</ion-text>
-  </div>
+  </ion-item> -->
+  <!-- <div class ="info">
+        <ion-text class="info">{{skill.info}}</ion-text>
+      </div> -->
+
+
 
   <ion-list>
     <ion-list-header>覚えるペルソナ</ion-list-header>
-    <ion-item *ngFor="let persona of personaListHasSkill">
-      <app-persona-horizontal [persona]=persona (click)="onClickPersona(persona)"></app-persona-horizontal>
+    <ion-item *ngFor="let persona of personaListHasSkill" class="persona">
+      <app-persona-horizontal [persona]=persona [skill]=getSkill(persona) (click)="onClickPersona(persona)">
+      </app-persona-horizontal>
     </ion-item>
   </ion-list>
 

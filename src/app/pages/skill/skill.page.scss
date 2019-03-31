@@ -1,0 +1,46 @@
+.skill_name {
+    font-size: 22px;
+    text-align: center;
+}
+
+.skill_name ion-text {
+    width: 100%;
+
+}
+
+.element_outer {
+    width: 100%;
+}
+
+.element {
+    margin: auto;
+    width: 100px;
+}
+
+.element img {
+    max-height: 15px;
+    min-height: 10px;
+    margin-right: 10px;
+    padding-top: 3px;
+}
+
+.element ion-text {
+    margin-left: 10px;
+}
+
+.info {
+    font-size: 16px;
+    text-align: center;
+}
+.info ion-text {
+    width: 100%;
+
+}
+
+.cost {
+    text-align: center;
+}
+
+.persona app-persona-horizontal {
+    width: 100%;
+}

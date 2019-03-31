@@ -1,12 +1,15 @@
 .avatar{
     width: 45px;
     height: 45px;
-    margin: 4px;
+    margin: 12px;
     float: left;
 }
 .persona{
     background-color: #494949;
     overflow:hidden;
+    max-width: 400px;
+    margin-left:auto;
+    margin-right:auto;
 }
 .persona div{
     font-size: 12px;
@@ -15,4 +18,14 @@
     vertical-align: middle;
 }
 .arcana{
+    // display: table-cell;
+    // vertical-align: middle;
+    margin:auto;
+}
+.arcana p{
+    color:white;
+    margin: 4px !important;
+}
+.outer{
+    display: table;
 }

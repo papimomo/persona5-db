@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class PersonaHorizontalComponent implements OnInit {
 
   @Input() persona: any;
+  @Input() skill: any;
   constructor() { }
 
   ngOnInit() {}

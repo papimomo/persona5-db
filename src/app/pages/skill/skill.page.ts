@@ -56,7 +56,7 @@ export class SkillPage implements OnInit {
   getCost(skill) {
     if (skill.hp !== undefined) {
       return 'HP:' + this.skill.hp;
-    } else if(skill.cp !== undefined){
+    } else if (skill.cp !== undefined) {
       return 'CP:' + this.skill.cp;
     } else {
       return '';
@@ -67,7 +67,7 @@ export class SkillPage implements OnInit {
     let name;
     switch (ele) {
       case element.ab_state:
-        name = "状態異常";
+        name = '状態異常';
         break;
       case element.almight:
         name = '万能';
@@ -114,9 +114,15 @@ export class SkillPage implements OnInit {
     }
     return name;
   }
-  
-  onClickPersona(persona){
+
+  onClickPersona(persona) {
     this.router.navigateByUrl('/persona-info/' + persona.name);
   }
 
+  // なんども呼ばれるから遅いかも
+  getSkill(persona) {
+    return persona.skill.find(perSkill => {
+      return perSkill.skill.name === this.skill.name;
+    });
+  }
 }
