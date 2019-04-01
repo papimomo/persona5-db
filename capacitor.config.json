@@ -1,0 +1,6 @@
+{
+  "appId": "jp.momo.persona5_db",
+  "appName": "Persona5データベース",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Persona5データベース</string>
+    <string name="title_activity_main">Persona5データベース</string>
+    <string name="package_name">jp.momo.persona5_db</string>
+    <string name="fileprovider_authority">jp.momo.persona5_db.fileprovider</string>
+    <string name="custom_url_scheme">jp.momo.persona5_db</string>
+</resources>
