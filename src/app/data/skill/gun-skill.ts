@@ -19,7 +19,7 @@ export class GunSkill {
     };
     one_shot_kill : Skill = {
         element: element.gun,
-        name: gunSkillName.shidan,
+        name: gunSkillName.one_shot_kill,
         hp: '17%',
         cp: undefined,
         info: '敵１体に銃撃属性でクリティカル率の高い特大ダメージを与える',
@@ -27,7 +27,7 @@ export class GunSkill {
     };
     triple_down : Skill = {
         element: element.gun,
-        name: gunSkillName.shidan,
+        name: gunSkillName.triple_down,
         hp: '16%',
         cp: undefined,
         info: '敵全体に銃撃属性で小ダメージを３回与える',
@@ -35,7 +35,7 @@ export class GunSkill {
     };
     shikounomadan : Skill = {
         element: element.gun,
-        name: gunSkillName.shidan,
+        name: gunSkillName.shikounomadan,
         hp: '24%',
         cp: undefined,
         info: '敵全体に銃撃属性で特大ダメージを与える',

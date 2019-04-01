@@ -4,17 +4,17 @@
 .base div{
     width: 100%;
 }
-.accordion{
-    width: auto;
-    // background:#00FF00;
-}
-.accordion ion-list-header{
-
+.base ion-list-header{
     margin:0px !important;
-    padding:0px !important;
-    width: auto;
-    // background: #00ffff;;
 }
+// .accordion{
+// }
+// .accordion ion-list-header{
+
+//     margin:0px !important;
+//     padding:0px !important;
+//     width: auto;
+// }
 // .accordion ion-item{
 //     width: auto;
 
@@ -24,12 +24,30 @@
     width: 100%;
     // background-color: #669dd4;
 }
-// .section{
-//     background: #fff;
-//     color: #000;
-//     margin-bottom: 4px;
+.ion-header ion-icon{
+    color: #fff;
+}
+.ion-header img{
+    padding-left: 15px;
+    padding-right: 7px;
+    max-height: 15px;
+    min-height: 10px;
+}
+.section{
+    // background: #fff;
+    // color: #000;
+    // margin-bottom: 4px;
+    margin:0px !important;
+    padding:0px !important;
+}
+.section-active{
+    // background:#ff0000;
+    // color:#fff;
+}
+// .section ion-list-header{
+//     background: #ff0000;
 // }
-// .section-active{
-//     background:#ff0000;
-//     color:#fff;
-// }
+
+.skill_item {
+    width: 100%;
+}

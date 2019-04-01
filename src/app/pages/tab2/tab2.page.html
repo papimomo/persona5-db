@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      スキル
+      Persona5
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,24 +14,30 @@
       </ion-col>
       <ion-col>
         <ion-list class="base">
-          <div *ngFor="let item of skillType; let i = index" class="accordion">
+          <div *ngFor="let item of skillType; let i = index" [ngClass]="{'section-active': item.open, 'section':!item.open}">
             <ion-list-header lines="none">
-                <div [ngClass]="{'section-active': item.open, 'section':!item.open}">
-              <ion-item (click)="toggleSection(i)" lines="none" class="ion-header">
+              <!-- <div>  -->
+                <!-- [ngClass]="{'section-active': item.open, 'section':!item.open}"> -->
+                <ion-item (click)="toggleSection(i)" lines="none" class="ion-header">
+                  <!-- <div class="header_outer"> -->
                   <ion-icon item-left name="arrow-forward" *ngIf="!item.open"></ion-icon>
                   <ion-icon item-left name="arrow-down" *ngIf="item.open"></ion-icon>
-                  {{item.name}}
-              </ion-item>
-            </div>
+                  <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
+                  <img src="assets/element/{{item.type}}.png">
+                  <!-- &nbsp;&nbsp; -->
+                  <ion-text>{{item.name}}</ion-text>
+                <!-- </div> -->
+                </ion-item>
+              <!-- </div> -->
 
             </ion-list-header>
-            <ion-list *ngIf="item.list && item.open" lines="none">
-
-              <ion-list-header *ngFor="let skill of item.list; let j = index" lines="none">
-                <ion-item (click)="clickSkill(skill)" detail-none>
-                  {{skill.name}}
+            <ion-list *ngIf="item.list && item.open" >
+              
+                <ion-item (click)="clickSkill(skill)"   *ngFor="let skill of item.list; let j = index"  lines="none" detail-none>
+                  <app-skill-home [skill]=skill class="skill_item"></app-skill-home>
+                  <!-- <ion-text>{{skill.name}}</ion-text>
+                  <ion-text>HP</ion-text> -->
                 </ion-item>
-              </ion-list-header>
 
             </ion-list>
 
