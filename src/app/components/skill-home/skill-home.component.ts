@@ -16,7 +16,7 @@ export class SkillHomeComponent implements OnInit {
     if (skill.hp !== undefined) {
       return 'HP:' + this.skill.hp;
     } else if (skill.cp !== undefined) {
-      return 'CP:' + this.skill.cp;
+      return 'SP:' + this.skill.cp;
     } else {
       return '';
     }
