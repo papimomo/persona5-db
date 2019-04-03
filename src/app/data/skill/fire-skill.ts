@@ -20,6 +20,7 @@ export class FireSkill {
         hp: undefined,
         cp: 4,
         info: '敵１体に火炎属性で小ダメージを与える。まれに敵を炎上させる',
+        info_short: '小（単）',
         relative: undefined,
     };
     agirao : Skill = {
@@ -28,6 +29,7 @@ export class FireSkill {
         hp: undefined,
         cp: 8,
         info: '敵１体に火炎属性で中ダメージを与える。まれに敵を炎上させる',
+        info_short: '中（単）',
         relative: undefined,
     };
     agidain : Skill = {
@@ -36,6 +38,7 @@ export class FireSkill {
         hp: undefined,
         cp: 12,
         info: '敵１体に火炎属性で大ダメージを与える。まれに敵を炎上させる',
+        info_short: '大（単）',
         relative: undefined,
     };
     maharagi : Skill = {
@@ -44,6 +47,7 @@ export class FireSkill {
         hp: undefined,
         cp: 10,
         info: '敵全体に火炎属性で小ダメージを与える。まれに敵を炎上させる',
+        info_short: '小（全）',
         relative: undefined,
     };
     maharagion : Skill = {
@@ -52,6 +56,7 @@ export class FireSkill {
         hp: undefined,
         cp: 10,
         info: '敵全体に火炎属性で中ダメージを与える。まれに敵を炎上させる',
+        info_short: '中（全）',
         relative: undefined,
     };
     maharagidain : Skill = {
@@ -60,6 +65,7 @@ export class FireSkill {
         hp: undefined,
         cp: 22,
         info: '敵全体に火炎属性で大ダメージを与える。まれに敵を炎上させる',
+        info_short: '大（全）',
         relative: undefined,
     };
     inferno : Skill = {
@@ -68,6 +74,7 @@ export class FireSkill {
         hp: undefined,
         cp: 48,
         info: '敵１体に火炎属性で特大ダメージを与える。まれに敵を炎上させる',
+        info_short: '特大（単）',
         relative: undefined,
     };
     daienjo : Skill = {
@@ -76,6 +83,7 @@ export class FireSkill {
         hp: undefined,
         cp: 54,
         info: '敵全体に火炎属性で特大ダメージを与える。まれに敵を炎上させる',
+        info_short: '特大（全）',
         relative: undefined,
     };
 

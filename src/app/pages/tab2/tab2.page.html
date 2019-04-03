@@ -1,8 +1,19 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Persona5
-    </ion-title>
+      <ion-title *ngIf="!searchMode">
+          Persona5
+        </ion-title>
+        <ion-buttons *ngIf="!searchMode" slot="primary">
+          <ion-button (click)="searchMode = !searchMode">
+            <ion-icon slot="end" name="search"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+    
+    
+        <ion-searchbar *ngIf="searchMode" [(ngModel)]="searchInput" [showCancelButton]="showSearchCancelButton"
+          (change)="change($event)" (ionCancel)="onCancel($event)" class="search"
+          placeholder="スキル" color="primary">
+        </ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
@@ -33,11 +44,11 @@
             </ion-list-header>
             <ion-list *ngIf="item.list && item.open" >
               
-                <ion-item (click)="clickSkill(skill)"   *ngFor="let skill of item.list; let j = index"  lines="none" detail-none>
+                <div (click)="clickSkill(skill)"   *ngFor="let skill of item.list; let j = index"  lines="none" detail-none>
                   <app-skill-home [skill]=skill class="skill_item"></app-skill-home>
                   <!-- <ion-text>{{skill.name}}</ion-text>
                   <ion-text>HP</ion-text> -->
-                </ion-item>
+                  </div>
 
             </ion-list>
 

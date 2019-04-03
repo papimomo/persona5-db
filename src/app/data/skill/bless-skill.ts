@@ -23,6 +23,7 @@ export class BlessSkill {
         hp: undefined,
         cp: 4,
         info: '敵１体に祝福属性で小ダメージを与える',
+        info_short: '小（単）',
         relative: undefined,
     };
     kouga : Skill = {
@@ -31,6 +32,7 @@ export class BlessSkill {
         hp: undefined,
         cp: 8,
         info: '敵１体に祝福属性で中ダメージを与える',
+        info_short: '中（単）',
         relative: undefined,
     };
     kougaon : Skill = {
@@ -39,6 +41,7 @@ export class BlessSkill {
         hp: undefined,
         cp: 12,
         info: '敵１体に祝福属性で大ダメージを与える',
+        info_short: '大（単）',
         relative: undefined,
     };
     mahakouha : Skill = {
@@ -47,6 +50,7 @@ export class BlessSkill {
         hp: undefined,
         cp: 10,
         info: '敵全体に祝福属性で小ダメージを与える',
+        info_short: '小（全）',
         relative: undefined,
     };
     mahakouga : Skill = {
@@ -55,6 +59,7 @@ export class BlessSkill {
         hp: undefined,
         cp: 16,
         info: '敵全体に祝福属性で中ダメージを与える',
+        info_short: '中（全）',
         relative: undefined,
     };
     mahakougaon : Skill = {
@@ -63,6 +68,7 @@ export class BlessSkill {
         hp: undefined,
         cp: 22,
         info: '敵全体に祝福属性で大ダメージを与える',
+        info_short: '大（全）',
         relative: undefined,
     };
     // kiya : Skill = '輝矢',
@@ -72,6 +78,7 @@ export class BlessSkill {
         hp: undefined,
         cp: 48,
         info: '敵１体を祝福属性で攻撃し、HPを１／２にする',
+        info_short: 'HP1/2（単）',
         relative: undefined,
     };
     hama : Skill = {
@@ -80,6 +87,7 @@ export class BlessSkill {
         hp: undefined,
         cp: 8,
         info: '敵１体に祝福属性の即死効果を低確率で与える',
+        info_short: '低即死（単）',
         relative: undefined,
     };
     hamaon : Skill = {
@@ -88,6 +96,7 @@ export class BlessSkill {
         hp: undefined,
         cp: 12,
         info: '敵１体に祝福属性の即死効果を中確率で与える',
+        info_short: '中即死（単）',
         relative: undefined,
     };
     mahanma : Skill = {
@@ -96,6 +105,7 @@ export class BlessSkill {
         hp: undefined,
         cp: 18,
         info: '敵全体に祝福属性の即死効果を低確率で与える',
+        info_short: '低即死（全）',
         relative: undefined,
     };
     mahanmaon : Skill = {
@@ -104,6 +114,7 @@ export class BlessSkill {
         hp: undefined,
         cp: 34,
         info: '敵全体に祝福属性の即死効果を中確率で与える',
+        info_short: '中即死（全）',
         relative: undefined,
     };
     kaiten_seppou : Skill = {
@@ -112,6 +123,7 @@ export class BlessSkill {
         hp: undefined,
         cp: 44,
         info: '敵全体に祝福属性の即死効果を高確率で与える',
+        info_short: '高即死（全）',
         relative: undefined,
     };
 

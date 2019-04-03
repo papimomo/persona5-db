@@ -168,6 +168,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '銃撃属性の攻撃力が自動的に２５％上昇する',
+        info_short: '銃撃UP（25%）',
         relative: undefined,
     };
     kyusyouti : Skill = {
@@ -176,6 +177,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '銃撃属性の攻撃力が自動的に５０％上昇する。精密射撃の効果に累積する',
+        info_short: '銃撃UP（50%）',
         relative: undefined,
     };
     kaen_booster : Skill = {
@@ -184,6 +186,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '火炎属性の攻撃力が自動的に２５％上昇する',
+        info_short: '火炎UP（25%）',
         relative: undefined,
     };
     kaen_highbooster : Skill = {
@@ -192,6 +195,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '火炎属性の攻撃力が自動的に５０％上昇する。ブースタの効果に累積する',
+        info_short: '火炎UP（50%）',
         relative: undefined,
     };
     hyouketu_booster : Skill = {
@@ -200,6 +204,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '氷結属性の攻撃力が自動的に２５％上昇する',
+        info_short: '氷結UP（25%）',
         relative: undefined,
     };
     hyouketu_highbooster : Skill = {
@@ -208,6 +213,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '氷結属性の攻撃力が自動的に５０％上昇する。ブースタの効果に累積する',
+        info_short: '氷結UP（50%）',
         relative: undefined,
     };
     dengeki_booster : Skill = {
@@ -216,6 +222,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '電撃属性の攻撃力が自動的に２５％上昇する',
+        info_short: '雷撃UP（25%）',
         relative: undefined,
     };
     dengeki_highbooster : Skill = {
@@ -224,6 +231,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '電撃属性の攻撃力が自動的に５０％上昇する。ブースタの効果に累積する',
+        info_short: '雷撃UP（50%）',
         relative: undefined,
     };
     shippu_booster : Skill = {
@@ -232,6 +240,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '疾風属性の攻撃力が自動的に２５％上昇する',
+        info_short: '疾風UP（25%）',
         relative: undefined,
     };
     shippu_highbooster : Skill = {
@@ -240,6 +249,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '疾風属性の攻撃力が自動的に５０％上昇する。ブースタの効果に累積する',
+        info_short: '疾風UP（50%）',
         relative: undefined,
     };
     nenndou_booster : Skill = {
@@ -248,6 +258,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '念動属性の攻撃力が自動的に２５％上昇する',
+        info_short: '念動UP（25%）',
         relative: undefined,
     };
     nenndou_highbooster : Skill = {
@@ -256,6 +267,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '念動ハイブースタ	念動属性の攻撃力が自動的に５０％上昇する。ブースタの効果に累積する',
+        info_short: '念動UP（50%）',
         relative: undefined,
     };
     kakunetu_booster : Skill = {
@@ -264,6 +276,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '核熱属性の攻撃力が自動的に２５％上昇する',
+        info_short: '核熱UP（25%）',
         relative: undefined,
     };
     kakunetu_highbooster : Skill = {
@@ -272,6 +285,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '核熱属性の攻撃力が自動的に５０％上昇する。ブースタの効果に累積する',
+        info_short: '核熱UP（50%）',
         relative: undefined,
     };
     syukuhuku_booster : Skill = {
@@ -280,6 +294,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '祝福属性の攻撃力が自動的に２５％上昇する',
+        info_short: '祝福UP（25%）',
         relative: undefined,
     };
     syukuhuku_highbooster : Skill = {
@@ -288,6 +303,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '祝福属性の攻撃力が自動的に５０％上昇する。ブースタの効果に累積する',
+        info_short: '祝福UP（50%）',
         relative: undefined,
     };
     juon_booster : Skill = {
@@ -296,6 +312,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '呪怨属性の攻撃力が自動的に２５％上昇する',
+        info_short: '呪怨UP（25%）',
         relative: undefined,
     };
     juon_highbooster : Skill = {
@@ -304,6 +321,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '呪怨属性の攻撃力が自動的に５０％上昇する。ブースタの効果に累積する',
+        info_short: '呪怨UP（50%）',
         relative: undefined,
     };
     banno_booster : Skill = {
@@ -312,6 +330,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '万能属性の攻撃力が自動的に２５％上昇する',
+        info_short: '万能UP（25%）',
         relative: undefined,
     };
     banno_highbooster : Skill = {
@@ -319,7 +338,8 @@ export class AutoSkill {
         name: autoSkillName.banno_highbooster,
         hp: undefined,
         cp: undefined,
-        info: '万能属性の攻撃力が自動的に２５％上昇する',
+        info: '万能属性の攻撃力が自動的に５０％上昇する',
+        info_short: '万能UP（50%）',
         relative: undefined,
     };
     madounosainou : Skill = {
@@ -328,6 +348,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '全属性の魔法攻撃力が自動的に２５％上昇する',
+        info_short: '魔法UP（25%）',
         relative: undefined,
     };
 
@@ -337,6 +358,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '使用する回復魔法の効果が自動的に１．５倍になる',
+        info_short: '回復UP（1.5倍）',
         relative: undefined,
     };
     hama_up : Skill = {
@@ -345,6 +367,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: 'ハマ系スキルの成功率が自動的に上昇する',
+        info_short: autoSkillName.hama_up,
         relative: undefined,
     };
     mudo_up : Skill = {
@@ -353,6 +376,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: 'ムド系スキルの成功率が自動的に上昇する',
+        info_short: autoSkillName.mudo_up,
         relative: undefined,
     };
     enjou_up : Skill = {
@@ -361,6 +385,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '炎上の付着率が自動的に上昇する',
+        info_short: autoSkillName.enjou_up,
         relative: undefined,
     };
     touketu_up : Skill = {
@@ -369,6 +394,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '凍結の付着率が自動的に上昇する',
+        info_short: autoSkillName.touketu_up,
         relative: undefined,
     };
     kanden_up : Skill = {
@@ -377,6 +403,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '感電の付着率が自動的に上昇する',
+        info_short: autoSkillName.kanden_up,
         relative: undefined,
     };
     memai_up : Skill = {
@@ -385,6 +412,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '目眩付着の成功率が自動的に上昇する',
+        info_short: autoSkillName.memai_up,
         relative: undefined,
     };
     boukyaku_up : Skill = {
@@ -393,6 +421,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '忘却付着の成功率が自動的に上昇する',
+        info_short: autoSkillName.boukyaku_up,
         relative: undefined,
     };
     suimin_up : Skill = {
@@ -401,6 +430,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '睡眠付着の成功率が自動的に上昇する',
+        info_short: autoSkillName.suimin_up,
         relative: undefined,
     };
     konran_up : Skill = {
@@ -409,6 +439,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '混乱付着の成功率が自動的に上昇する',
+        info_short: autoSkillName.konran_up,
         relative: undefined,
     };
     kyohu_up : Skill = {
@@ -417,6 +448,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '恐怖付着の成功率が自動的に上昇する',
+        info_short: autoSkillName.kyohu_up,
         relative: undefined,
     };
     zetubou_up : Skill = {
@@ -425,6 +457,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '絶望付着の成功率が自動的に上昇する',
+        info_short: autoSkillName.zetubou_up,
         relative: undefined,
     };
     gekido_up : Skill = {
@@ -433,6 +466,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '激怒付着の成功率が自動的に上昇する',
+        info_short: autoSkillName.gekido_up,
         relative: undefined,
     };
     sennou_up : Skill = {
@@ -441,6 +475,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '洗脳付着の成功率が自動的に上昇する',
+        info_short: autoSkillName.sennou_up,
         relative: undefined,
     };
     ab_state_up : Skill = {
@@ -449,6 +484,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '状態異常付着の成功率が自動的に上昇する',
+        info_short: autoSkillName.ab_state_up,
         relative: undefined,
     };
 
@@ -458,6 +494,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '戦闘開始時に自動でタルカジャが発動する',
+        info_short: '戦闘開始時、攻撃力UP（単）',
         relative: undefined,
     };
     bougyo : Skill = {
@@ -466,6 +503,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '戦闘開始時に自動でラクカジャが発動する',
+        info_short: '戦闘開始時、防御力UP（単）',
         relative: undefined,
     };
     subayasa : Skill = {
@@ -474,6 +512,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '戦闘開始時に自動でスクカジャが発動する',
+        info_short: '戦闘開始時、回避・命中率UP（単）',
         relative: undefined,
     };
     mahatarukaauto : Skill = {
@@ -482,6 +521,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '戦闘開始時に自動でマハタルカジャが発動する',
+        info_short: '戦闘開始時、攻撃力UP（全）',
         relative: undefined,
     };
     maharakukaauto : Skill = {
@@ -490,6 +530,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '戦闘開始時に自動でマハラクカジャが発動する',
+        info_short: '戦闘開始時、防御力UP（全）',
         relative: undefined,
     };
     mahasukukaauto : Skill = {
@@ -498,6 +539,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '戦闘開始時に自動でマハスクカジャが発動する',
+        info_short: '戦闘開始時、回避・命中率UP（全）',
         relative: undefined,
     };
     heatup : Skill = {
@@ -506,6 +548,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: 'チャンスエンカウント時、行動順になった際、HPが５％・SPが１０回復する',
+        info_short: '先制時、HP5% SP10回復',
         relative: undefined,
     };
     high_voltage : Skill = {
@@ -514,6 +557,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: 'チャンスエンカウント時に、クリティカル攻撃を与える確率が自動的に上昇する',
+        info_short: '先制時、クリティカルUP',
         relative: undefined,
     };
     gyakkyounokakugo : Skill = {
@@ -522,6 +566,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '包囲された時にクリティカル攻撃を与える確率が自動的に上昇する',
+        info_short: '包囲時、クリティカルUP',
         relative: undefined,
     };
     haisuinojin : Skill = {
@@ -530,6 +575,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '包囲された時に万能属性を除き、受ける攻撃の命中率が１／３になる',
+        info_short: '包囲時、回避率UP',
         relative: undefined,
     };
     ameniutaeba : Skill = {
@@ -538,6 +584,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '雨や注意報が出ている時、全相性の回避率が自動的に２倍になる',
+        info_short: '雨、回避率UP',
         relative: undefined,
     };
     ukanaisora : Skill = {
@@ -546,6 +593,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '雨や注意報が出ている時、状態異常攻撃の付着率が自動的に大幅に上昇する',
+        info_short: '雨、状態異常UP',
         relative: undefined,
     };
 
@@ -555,6 +603,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '戦闘中、行動順になった際、HPの２％を自動的に回復する',
+        info_short: 'HP2%回復',
         relative: undefined,
     };
     tyutiyusokushin : Skill = {
@@ -563,6 +612,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '戦闘中、行動順になった際、HPの４％を自動的に回復する',
+        info_short: 'HP4%回復',
         relative: undefined,
     };
     daitiyusokushin : Skill = {
@@ -571,6 +621,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '戦闘中、行動順になった際、HPの６％を自動的に回復する',
+        info_short: 'HP6%回復',
         relative: undefined,
     };
     syoukikou : Skill = {
@@ -579,6 +630,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '戦闘中、行動順になった際、自動的にSPが３回復する',
+        info_short: 'SP3回復',
         relative: undefined,
     };
     tyukikou : Skill = {
@@ -587,6 +639,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '戦闘中、行動順になった際、自動的にSPが５回復する',
+        info_short: 'SP5回復',
         relative: undefined,
     };
     daikikou : Skill = {
@@ -595,6 +648,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '戦闘中、行動順になった際、自動的にSPが７回復する',
+        info_short: 'SP7回復',
         relative: undefined,
     };
     budounokokoroe : Skill = {
@@ -603,6 +657,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '自動的にスキル使用時のHP消費量が半分になる',
+        info_short: 'HP消費半分',
         relative: undefined,
     };
     majutunosoyou : Skill = {
@@ -611,6 +666,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '自動的にスキル使用時のSP消費量が半分になる',
+        info_short: 'SP消費半分',
         relative: undefined,
     };
     counter : Skill = {
@@ -619,6 +675,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '物理攻撃を１０％の確率で自動的に反射する',
+        info_short: '物理反射10%',
         relative: undefined,
     };
     heavy_counter : Skill = {
@@ -627,6 +684,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '物理攻撃を１５％の確率で自動的に反射する。他カウンタと効果累積なし',
+        info_short: '物理反射15%',
         relative: undefined,
     };
     highper_counter : Skill = {
@@ -635,6 +693,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '物理攻撃を２０％の確率で自動的に反射する。他カウンタと効果累積なし',
+        info_short: '物理反射20%',
         relative: undefined,
     };
 
@@ -644,6 +703,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: 'クリティカル攻撃を受ける確率が自動的に低下する',
+        info_short: '被クリティカルDOWN',
         relative: undefined,
     };
     advice : Skill = {
@@ -652,6 +712,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: 'クリティカル攻撃を与える確率が自動的に上昇する',
+        info_short: '物理クリティカルUP',
         relative: undefined,
     };
     triger_happy : Skill = {
@@ -660,6 +721,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: 'クリティカル攻撃を与える確率が自動的に上昇する',
+        info_short: '銃撃クリティカルUP',
         relative: undefined,
     };
     touch_and_go : Skill = {
@@ -668,6 +730,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: 'バトンタッチで行動を得た際に、スクカジャが発動する',
+        info_short: 'バトンタッチ時、スクカジャ',
         relative: undefined,
     };
     soul_chain : Skill = {
@@ -676,6 +739,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: 'バトンタッチで行動を得た際に、SPが２０回復する',
+        info_short: 'バトンタッチ時、SP20回復',
         relative: undefined,
     };
     nioudati : Skill = {
@@ -684,6 +748,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '自動的に敵からの攻撃を必ず受けるがダメージは半分になる',
+        info_short: '被ダメージ半分',
         relative: undefined,
     };
     kyusokukaihuku : Skill = {
@@ -692,6 +757,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '自動的に状態異常回復の必要ターンが半減する',
+        info_short: '状態異常回復（ターン半減）',
         relative: undefined,
     };
     syunkankaihuku : Skill = {
@@ -700,6 +766,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '自動的に状態異常回復の必要ターンが１ターンになる',
+        info_short: '状態異常回復（1ターン）',
         relative: undefined,
     };
     kuishibari : Skill = {
@@ -708,6 +775,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: 'HPが０になった際、自動的に１度だけHP１で復帰する',
+        info_short: 'HP1で復帰',
         relative: undefined,
     };
     hukutunotoushi : Skill = {
@@ -716,6 +784,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: 'HPが０になった際、自動的に１度だけHP全快で復帰する',
+        info_short: 'HP全快で復帰',
         relative: undefined,
     };
     seikan_tric : Skill = {
@@ -724,6 +793,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '即死効果攻撃を受けた際に自動的に必ずＨＰ１で生き残る',
+        info_short: '即死効果でHP1で生き残る',
         relative: undefined,
     };
     syourinoibuki : Skill = {
@@ -732,6 +802,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '戦闘勝利後に自身のＨＰ・ＳＰが８％回復する',
+        info_short: '戦闘勝利後、HP・SP8%回復',
         relative: undefined,
     };
     syourinootakebi : Skill = {
@@ -740,6 +811,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '戦闘勝利後に自身のＨＰ・ＳＰが全回復する',
+        info_short: '戦闘勝利後、HP・SP全回復',
         relative: undefined,
     };
     low_grow : Skill = {
@@ -748,6 +820,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '戦闘に参加していなくても経験値を１／４入手する',
+        info_short: '戦闘非参加で経験値1/4',
         relative: undefined,
     };
     middle_grow : Skill = {
@@ -756,6 +829,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '戦闘に参加していなくても、経験値を１／２入手する',
+        info_short: '戦闘非参加で経験値1/2',
         relative: undefined,
     };
     high_grow : Skill = {
@@ -764,6 +838,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '戦闘に参加していなくても同じ経験値を入手する',
+        info_short: '戦闘非参加で同経験値',
         relative: undefined,
     };
 
@@ -773,6 +848,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '物理属性の攻撃に対する回避率が２倍になる',
+        info_short: '物理回避率UP（2倍）',
         relative: undefined,
     };
     kyoku_buturi_mikiri : Skill = {
@@ -781,6 +857,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '物理属性の攻撃に対する回避率が３倍になる。見切りとの効果累積なし',
+        info_short: '物理回避率UP（3倍）',
         relative: undefined,
     };
     buturi_taisei : Skill = {
@@ -789,6 +866,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '物理属性の攻撃に強くなる。弱点だった場合は弱点を消す',
+        info_short: autoSkillName.buturi_taisei,
         relative: undefined,
     };
     buturi_mukou : Skill = {
@@ -797,6 +875,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '物理属性の攻撃を無効にする',
+        info_short: autoSkillName.buturi_mukou,
         relative: undefined,
     };
     buturi_hansya : Skill = {
@@ -805,6 +884,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '物理属性の攻撃を反射する',
+        info_short: autoSkillName.buturi_hansya,
         relative: undefined,
     };
     buturi_kyusyu : Skill = {
@@ -813,6 +893,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '物理属性の攻撃を吸収する',
+        info_short: autoSkillName.buturi_kyusyu,
         relative: undefined,
     };
     kaen_mikiri : Skill = {
@@ -821,6 +902,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '火炎属性の攻撃に対する回避率が２倍になる',
+        info_short: '火炎回避率UP（2倍）',
         relative: undefined,
     };
     kyoku_kaen_mikiri : Skill = {
@@ -829,6 +911,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '火炎属性の攻撃に対する回避率が３倍になる。見切りとの効果累積なし',
+        info_short: '火炎回避率UP（3倍）',
         relative: undefined,
     };
     kaen_taisei : Skill = {
@@ -837,6 +920,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '火炎属性の攻撃に強くなる。弱点だった場合は弱点を消す',
+        info_short: autoSkillName.kaen_taisei,
         relative: undefined,
     };
     kaen_mukou : Skill = {
@@ -845,6 +929,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '火炎属性の攻撃を無効にする',
+        info_short: autoSkillName.kaen_mukou,
         relative: undefined,
     };
     kaen_hansha : Skill = {
@@ -853,6 +938,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '火炎属性の攻撃を反射する',
+        info_short: autoSkillName.kaen_hansha,
         relative: undefined,
     };
     kaen_kyusyu : Skill ={
@@ -861,6 +947,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '火炎属性の攻撃を吸収する',
+        info_short: autoSkillName.kaen_hansha,
         relative: undefined,
     };
     hyouketu_mikiri : Skill = {
@@ -869,6 +956,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '氷結属性の攻撃に対する回避率が２倍になる',
+        info_short: '氷結回避率UP（2倍）',
         relative: undefined,
     };
     kyoku_hyouketu_mikiri : Skill = {
@@ -877,6 +965,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '氷結属性の攻撃に対する回避率が３倍になる。見切りとの効果累積なし',
+        info_short: '氷結回避率UP（3倍）',
         relative: undefined,
     };
     hyouketu_taisei : Skill = {
@@ -885,6 +974,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '氷結属性の攻撃に強くなる。弱点だった場合は弱点を消す',
+        info_short: autoSkillName.hyouketu_taisei,
         relative: undefined,
     };
     hyouketu_mukou : Skill ={
@@ -893,6 +983,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '氷結属性の攻撃を無効にする',
+        info_short: autoSkillName.hyouketu_mukou,
         relative: undefined,
     };
     hyouketu_hansha : Skill = {
@@ -901,6 +992,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '氷結属性の攻撃を反射する',
+        info_short: autoSkillName.hyouketu_hansha,
         relative: undefined,
     };
     hyouketu_kyusyu : Skill = {
@@ -909,6 +1001,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '氷結属性の攻撃を吸収する',
+        info_short: autoSkillName.hyouketu_kyusyu,
         relative: undefined,
     };
     dengeki_mikiri : Skill = {
@@ -917,6 +1010,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '電撃属性の攻撃に対する回避率が２倍になる',
+        info_short: '電撃回避率UP（2倍）',
         relative: undefined,
     };
     kyoku_dengeki_mikiri : Skill = {
@@ -925,6 +1019,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '電撃属性の攻撃に対する回避率が３倍になる。見切りとの効果累積なし',
+        info_short: '電撃回避率UP（3倍）',
         relative: undefined,
     };
     dengeki_taisei : Skill = {
@@ -933,6 +1028,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '電撃属性の攻撃に強くなる。弱点だった場合は弱点を消す',
+        info_short: autoSkillName.dengeki_taisei,
         relative: undefined,
     };
     dengeki_mukou : Skill = {
@@ -941,6 +1037,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '電撃属性の攻撃を無効にする',
+        info_short: autoSkillName.dengeki_mukou,
         relative: undefined,
     };
     dengeki_hansya : Skill = {
@@ -949,6 +1046,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '電撃属性の攻撃を反射する',
+        info_short: autoSkillName.dengeki_hansya,
         relative: undefined,
     };
     // dengeki_kyusyu : Skill ={
@@ -964,7 +1062,8 @@ export class AutoSkill {
         name: autoSkillName.shippu_mikiri,
         hp: undefined,
         cp: undefined,
-        info: '疾風属性の攻撃を無効にする',
+        info: '疾風属性の攻撃に対する回避率が２倍になる',
+        info_short: '疾風回避率UP（2倍）',
         relative: undefined,
     };
     kyoku_shippu_mikiri : Skill = {
@@ -972,7 +1071,8 @@ export class AutoSkill {
         name: autoSkillName.kyoku_shippu_mikiri,
         hp: undefined,
         cp: undefined,
-        info: '戦闘に参加していなくても同じ経験値を入手する',
+        info: '疾風属性の攻撃に対する回避率が３倍になる。見切りとの効果累積なし',
+        info_short: '疾風回避率UP（3倍）',
         relative: undefined,
     };
     shippu_taisei : Skill = {
@@ -981,6 +1081,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '疾風属性の攻撃に強くなる。弱点だった場合は弱点を消す',
+        info_short: autoSkillName.shippu_taisei,
         relative: undefined,
     };
     shippu_mukou : Skill = {
@@ -989,6 +1090,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '疾風属性の攻撃を無効にする',
+        info_short: autoSkillName.shippu_mukou,
         relative: undefined,
     };
     // sippu_hansya : Skill = {
@@ -1004,6 +1106,7 @@ export class AutoSkill {
         name: autoSkillName.shippu_kyusyu,
         hp: undefined,
         cp: undefined,
+        info_short: autoSkillName.shippu_kyusyu,
         info: '疾風属性の攻撃を吸収する',
         relative: undefined,
     };
@@ -1013,6 +1116,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '念動属性の攻撃に対する回避率が２倍になる',
+        info_short: '念動回避率UP（2倍）',
         relative: undefined,
     };
     kyoku_nenndou_mikiri : Skill = {
@@ -1021,6 +1125,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '念動属性の攻撃に対する回避率が３倍になる。見切りとの効果累積なし',
+        info_short: '念動回避率UP（3倍）',
         relative: undefined,
     };
     nenndou_taisei : Skill = {
@@ -1029,6 +1134,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '念動属性の攻撃に強くなる。弱点だった場合は弱点を消す',
+        info_short: autoSkillName.nenndou_taisei,
         relative: undefined,
     };
     nenndou_mukou : Skill = {
@@ -1036,7 +1142,8 @@ export class AutoSkill {
         name: autoSkillName.nenndou_mukou,
         hp: undefined,
         cp: undefined,
-        info: '戦闘に参加していなくても同じ経験値を入手する',
+        info: '念動属性の攻撃を無効にする',
+        info_short: autoSkillName.nenndou_mukou,
         relative: undefined,
     };
     // nenndou_hansya : Skill = {
@@ -1053,6 +1160,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '念動属性の攻撃を吸収する',
+        info_short: autoSkillName.nenndou_kyusyu,
         relative: undefined,
     };
     kakunetu_mikiri : Skill = {
@@ -1061,6 +1169,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '核熱属性の攻撃に対する回避率が２倍になる',
+        info_short: '核熱回避率UP（2倍）',
         relative: undefined,
     };
     kyoku_kakunetu_mikiri : Skill = {
@@ -1069,6 +1178,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '核熱属性の攻撃に対する回避率が３倍になる。見切りとの効果累積なし',
+        info_short: '核熱回避率UP（3倍）',
         relative: undefined,
     };
     kakunetu_taisei : Skill = {
@@ -1077,6 +1187,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '核熱属性の攻撃に強くなる。弱点だった場合は弱点を消す',
+        info_short: autoSkillName.kakunetu_taisei,
         relative: undefined,
     };
     kakunetu_mukou : Skill = {
@@ -1085,6 +1196,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '核熱属性の攻撃を無効にする',
+        info_short: autoSkillName.kakunetu_mukou,
         relative: undefined,
     };
     kakunetu_hansya : Skill = {
@@ -1093,6 +1205,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '核熱属性の攻撃を反射する',
+        info_short: autoSkillName.kakunetu_hansya,
         relative: undefined,
     };
     kakunetu_kyusyu : Skill = {
@@ -1101,6 +1214,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '核熱属性の攻撃を吸収する',
+        info_short: autoSkillName.kakunetu_kyusyu,
         relative: undefined,
     };
     syukuhuku_mikiri : Skill ={
@@ -1109,6 +1223,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '即死を除く祝福属性の攻撃に対する回避率が２倍になる',
+        info_short: '祝福回避率UP（2倍）',
         relative: undefined,
     };
     kyoku_syukuhuku_mikiri : Skill = {
@@ -1117,6 +1232,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '即死を除く祝福属性に対する回避率が３倍になる。見切りとの効果累積なし',
+        info_short: '祝福回避率UP（3倍）',
         relative: undefined,
     };
     syukuhuku_taisei : Skill = {
@@ -1125,6 +1241,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '祝福属性の攻撃に強くなる。弱点だった場合は弱点を消す',
+        info_short: autoSkillName.syukuhuku_taisei,
         relative: undefined,
     };
     syukuhuku_mukou : Skill = {
@@ -1133,6 +1250,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '祝福属性の攻撃を無効にする',
+        info_short: autoSkillName.syukuhuku_mukou,
         relative: undefined,
     };
     // syukuhuku_hansya : Skill = {
@@ -1149,6 +1267,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '祝福属性の攻撃を吸収する',
+        info_short: autoSkillName.syukuhuku_kyusyu,
         relative: undefined,
     };
     juon_mikiri : Skill = {
@@ -1157,6 +1276,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '即死を除く呪怨属性の攻撃に対する回避率が２倍になる',
+        info_short: '呪怨回避率UP（2倍）',
         relative: undefined,
     };
     kyoku_juon_mikiri : Skill = {
@@ -1165,6 +1285,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '即死を除く祝福属性に対する回避率が３倍になる。見切りとの効果累積なし',
+        info_short: '呪怨回避率UP（3倍）',
         relative: undefined,
     };
     juon_taisei : Skill = {
@@ -1173,6 +1294,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '呪怨属性の攻撃に強くなる。弱点だった場合は弱点を消す',
+        info_short: autoSkillName.juon_taisei,
         relative: undefined,
     };
     juon_mukou : Skill = {
@@ -1181,6 +1303,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '呪怨属性の攻撃を無効にする',
+        info_short: autoSkillName.juon_mukou,
         relative: undefined,
     };
     juon_hansya : Skill = {
@@ -1189,6 +1312,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '呪怨属性の攻撃を反射する',
+        info_short: autoSkillName.juon_hansya,
         relative: undefined,
     };
     juon_kyusyu : Skill = {
@@ -1196,6 +1320,7 @@ export class AutoSkill {
         name: autoSkillName.juon_kyusyu,
         hp: undefined,
         cp: undefined,
+        info_short: autoSkillName.juon_kyusyu,
         info: '呪怨属性の攻撃を吸収する',
         relative: undefined,
     };
@@ -1205,6 +1330,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '攻撃してくる敵の命中率が自動的に半分になる',
+        info_short: '敵の命中率半減',
         relative: undefined,
     };
     daitenshinokago : Skill = {
@@ -1213,6 +1339,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '火炎・氷結・疾風・電撃・祝福・呪怨・核熱・念動の回避率が自動で２倍になる',
+        info_short: '魔法の回避率UP（2倍）',
         relative: undefined,
     };
 
@@ -1222,6 +1349,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '目眩にかかりにくくなる',
+        info_short: autoSkillName.memai_taisei,
         relative: undefined,
     };
     memai_mukou : Skill = {
@@ -1230,6 +1358,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '目眩にかからなくなる',
+        info_short: autoSkillName.memai_mukou,
         relative: undefined,
     };
     boukyaku_taisei : Skill = {
@@ -1238,6 +1367,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '忘却にかかりにくくなる',
+        info_short: autoSkillName.boukyaku_taisei,
         relative: undefined,
     };
     boukyaku_mukou : Skill = {
@@ -1246,6 +1376,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '忘却にかからなくなる',
+        info_short: autoSkillName.boukyaku_mukou,
         relative: undefined,
     };
     konran_taisei : Skill = {
@@ -1254,6 +1385,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '混乱にかかりにくくなる',
+        info_short: autoSkillName.konran_taisei,
         relative: undefined,
     };
     konran_mukou : Skill = {
@@ -1262,6 +1394,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '混乱にかからなくなる',
+        info_short: autoSkillName.konran_mukou,
         relative: undefined,
     };
     suimin_taisei : Skill = {
@@ -1270,6 +1403,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '睡眠にかかりにくくなる',
+        info_short: autoSkillName.suimin_taisei,
         relative: undefined,
     };
     suimin_mukou : Skill = {
@@ -1278,6 +1412,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '睡眠にかからなくなる',
+        info_short: autoSkillName.suimin_mukou,
         relative: undefined,
     };
     kyohu_taisei : Skill = {
@@ -1286,6 +1421,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '恐怖にかかりにくくなる',
+        info_short: autoSkillName.kyohu_taisei,
         relative: undefined,
     };
     kyohu_mukou : Skill = {
@@ -1294,6 +1430,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '恐怖にかからなくなる',
+        info_short: autoSkillName.kyohu_mukou,
         relative: undefined,
     };
     zetubou_taisei : Skill = {
@@ -1302,6 +1439,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '絶望にかかりにくくなる',
+        info_short: autoSkillName.zetubou_taisei,
         relative: undefined,
     };
     zetubou_mukou : Skill = {
@@ -1310,6 +1448,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '絶望にかからなくなる',
+        info_short: autoSkillName.zetubou_mukou,
         relative: undefined,
     };
     gekido_taisei : Skill = {
@@ -1318,6 +1457,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '激怒にかかりにくくなる',
+        info_short: autoSkillName.gekido_taisei,
         relative: undefined,
     };
     gekido_mukou : Skill = {
@@ -1326,6 +1466,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '激怒にかからなくなる',
+        info_short: autoSkillName.gekido_mukou,
         relative: undefined,
     };
     sennou_taisei : Skill = {
@@ -1334,6 +1475,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '洗脳にかかりにくくなる',
+        info_short: autoSkillName.sennou_taisei,
         relative: undefined,
     };
     sennou_mukou : Skill = {
@@ -1342,6 +1484,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '洗脳にかからなくなる',
+        info_short: autoSkillName.sennou_mukou,
         relative: undefined,
     };
     hudoushin : Skill = {
@@ -1350,6 +1493,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: '混乱・恐怖・激怒・絶望にかからなくなる',
+        info_short: '無効（混乱・恐怖・激怒・絶望）',
         relative: undefined,
     };
     seishintaisei : Skill = {
@@ -1358,6 +1502,7 @@ export class AutoSkill {
         hp: undefined,
         cp: undefined,
         info: 'すべての状態異常にかかりにくくなる',
+        info_short: '耐性（全状態異常）',
         relative: undefined,
     };
 

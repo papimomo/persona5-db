@@ -59,6 +59,7 @@ export class PhysicalSkill {
         hp: '6%',
         cp: undefined,
         info: '敵１体に物理属性で小ダメージを与える',
+        info_short: '小（単）',
         relative: undefined,
     };
     totugeki : Skill = {
@@ -67,6 +68,7 @@ export class PhysicalSkill {
         hp: '5%',
         cp: undefined,
         info: '敵１体に物理属性で小ダメージを与える',
+        info_short: '小（単）',
         relative: undefined,
     }
     daisetudan : Skill = {
@@ -75,6 +77,7 @@ export class PhysicalSkill {
         hp: '9%',
         cp: undefined,
         info: '	敵１体に物理属性で中ダメージを与える',
+        info_short: '中（単）',
         relative: undefined,
     }
     asult_dive : Skill = {
@@ -83,6 +86,7 @@ export class PhysicalSkill {
         hp: '13%',
         cp: undefined,
         info: '敵１体に物理属性で大ダメージを与える',
+        info_short: '大（単）',
         relative: undefined,
     }
     megaton_raid : Skill = {
@@ -91,6 +95,7 @@ export class PhysicalSkill {
         hp: '16%',
         cp: undefined,
         info: '敵１体に物理属性で特大ダメージを与える',
+        info_short: '特大（単）',
         relative: undefined,
     }
     turuginomai : Skill = {
@@ -99,6 +104,7 @@ export class PhysicalSkill {
         hp: '21%',
         cp: undefined,
         info: '敵１体に物理属性で超特大ダメージを与える',
+        info_short: '超特大（単）',
         relative: undefined,
     }
     blave_zapper : Skill = {
@@ -107,6 +113,7 @@ export class PhysicalSkill {
         hp: '24%',
         cp: undefined,
         info: '敵１体に物理属性で超特大ダメージを与える',
+        info_short: '超特大（単）',
         relative: undefined,
     }
     god_hand : Skill = {
@@ -115,6 +122,7 @@ export class PhysicalSkill {
         hp: '25%',
         cp: undefined,
         info: '敵１体に物理属性で超特大ダメージを与える',
+        info_short: '超特大（単）',
         relative: undefined,
     }
     raise_slash : Skill = {
@@ -123,6 +131,7 @@ export class PhysicalSkill {
         hp: '14%',
         cp: undefined,
         info: '敵１体に物理属性で大ダメージを与える。バトンタッチ時に威力上昇',
+        info_short: '大（単）バトンタッチUP',
         relative: undefined,
     }
     shibou_yugi : Skill = {
@@ -131,6 +140,7 @@ export class PhysicalSkill {
         hp: '18%',
         cp: undefined,
         info: '敵１体に物理属性で特大ダメージを与える。バトンタッチ時に威力上昇',
+        info_short: '特大（単）バトンタッチUP',
         relative: undefined,
     }
     kyusonokiba : Skill = {
@@ -139,6 +149,7 @@ export class PhysicalSkill {
         hp: '10%',
         cp: undefined,
         info: '敵１体に物理属性で中ダメージを与える。包囲された時に威力上昇',
+        info_short: '中（単）包囲UP',
         relative: undefined,
     }
     lucky_punch : Skill = {
@@ -147,6 +158,7 @@ export class PhysicalSkill {
         hp: '3%',
         cp: undefined,
         info: '敵１体に物理属性でクリティカル率の高い極小ダメージを与える',
+        info_short: '極小（単）高クリティカル',
         relative: undefined,
     }
     miracle_punch : Skill = {
@@ -155,6 +167,7 @@ export class PhysicalSkill {
         hp: '8%',
         cp: undefined,
         info: '敵１体に物理属性でクリティカル率の高い中ダメージを与える',
+        info_short: '中（単）高クリティカル',
         relative: undefined,
     }
     nirenga : Skill = {
@@ -163,6 +176,7 @@ export class PhysicalSkill {
         hp: '10%',
         cp: undefined,
         info: '敵１体に物理属性で小ダメージを２回与える',
+        info_short: '小×2（単）',
         relative: undefined,
     }
     samidare_giri : Skill = {
@@ -171,6 +185,7 @@ export class PhysicalSkill {
         hp: '17%',
         cp: undefined,
         info: '敵１体に物理属性で極小ダメージを３～５回与える',
+        info_short: '極小×3〜5（単）',
         relative: undefined,
     }
     setuna_samidare_giri : Skill = {
@@ -179,6 +194,7 @@ export class PhysicalSkill {
         hp: '20%',
         cp: undefined,
         info: '敵１体に物理属性で中ダメージを２～３回与える',
+        info_short: '中×2〜3（単）',
         relative: undefined,
     }
     my_room : Skill = {
@@ -187,6 +203,7 @@ export class PhysicalSkill {
         hp: '25%',
         cp: undefined,
         info: '敵１体に物理属性で中ダメージを３回与える。命中率が高い',
+        info_short: '中×3（単）高命中',
         relative: undefined,
     }
 
@@ -197,6 +214,7 @@ export class PhysicalSkill {
         hp: '13%',
         cp: undefined,
         info: '敵全体に物理属性で中ダメージを与える',
+        info_short: '中（全）',
         relative: undefined,
     }
     reppuha : Skill = {
@@ -205,6 +223,7 @@ export class PhysicalSkill {
         hp: '18%',
         cp: undefined,
         info: '敵全体に物理属性で中ダメージを与える',
+        info_short: '中（全）',
         relative: undefined,
     }
     heat_wave : Skill = {
@@ -213,6 +232,7 @@ export class PhysicalSkill {
         hp: '20%',
         cp: undefined,
         info: '敵全体に物理属性で大ダメージを与える',
+        info_short: '大（全）',
         relative: undefined,
     }
     kukan_sappou : Skill = {
@@ -221,6 +241,7 @@ export class PhysicalSkill {
         hp: '23%',
         cp: undefined,
         info: '敵全体に物理属性で特大ダメージを与える',
+        info_short: '特大（全）',
         relative: undefined,
     }
     gigant_makia : Skill = {
@@ -229,6 +250,7 @@ export class PhysicalSkill {
         hp: '25%',
         cp: undefined,
         info: '敵全体に物理属性で超特大ダメージを与える',
+        info_short: '超特大（全）',
         relative: undefined,
     }
     abaremakuri : Skill = {
@@ -237,6 +259,7 @@ export class PhysicalSkill {
         hp: '13%',
         cp: undefined,
         info: '敵全体に物理属性で小ダメージを１～３回与える',
+        info_short: '小×1〜3（全）',
         relative: undefined,
     }
     denkousekka : Skill = {
@@ -245,6 +268,7 @@ export class PhysicalSkill {
         hp: '17%',
         cp: undefined,
         info: '敵全体に物理属性で小ダメージを３～４回与える',
+        info_short: '小×3〜4（全）',
         relative: undefined,
     }
     deth_bound : Skill = {
@@ -253,6 +277,7 @@ export class PhysicalSkill {
         hp: '22%',
         cp: undefined,
         info: '敵全体に物理属性で中ダメージを１～２回与える',
+        info_short: '中×1〜2（全）',
         relative: undefined,
     }
     aguneyastra : Skill = {
@@ -261,6 +286,7 @@ export class PhysicalSkill {
         hp: '24%',
         cp: undefined,
         info: '敵全体に物理属性で中ダメージを１～３回与える',
+        info_short: '小×1〜3（全）',
         relative: undefined,
     }
     hassou_tobi : Skill = {
@@ -269,6 +295,7 @@ export class PhysicalSkill {
         hp: '25%',
         cp: undefined,
         info: '敵全体に物理属性で小ダメージを８回与える',
+        info_short: '小×8（全）',
         relative: undefined,
     }
 
@@ -278,6 +305,7 @@ export class PhysicalSkill {
         hp: '10%',
         cp: undefined,
         info: '敵１体に物理属性で中ダメージを与え、中確率で目眩状態にする',
+        info_short: '中（単）中盲目',
         relative: undefined,
     }
     flash_bom : Skill = {
@@ -286,6 +314,7 @@ export class PhysicalSkill {
         hp: '19%',
         cp: undefined,
         info: '敵全体に物理属性で中ダメージを与え、低確率で目眩状態にする',
+        info_short: '中（全）低盲目',
         relative: undefined,
     }
     headbutt : Skill = {
@@ -294,6 +323,7 @@ export class PhysicalSkill {
         hp: '9%',
         cp: undefined,
         info: '敵１体に物理属性で中ダメージを与え、中確率で忘却状態にする',
+        info_short: '中（単）中忘却',
         relative: undefined,
     }
     bousatu_rash : Skill = {
@@ -302,6 +332,7 @@ export class PhysicalSkill {
         hp: '15%',
         cp: undefined,
         info: '敵全体に物理属性で小ダメージを与え、低確率で忘却状態にする',
+        info_short: '小（全）低忘却',
         relative: undefined,
     }
     yumemihari : Skill = {
@@ -310,6 +341,7 @@ export class PhysicalSkill {
         hp: '8%',
         cp: undefined,
         info: '敵１体に物理属性で小ダメージを与え、中確率で睡眠状態にする',
+        info_short: '小（単）中睡眠',
         relative: undefined,
     }
     dorumin_rash : Skill = {
@@ -318,6 +350,7 @@ export class PhysicalSkill {
         hp: '16%',
         cp: undefined,
         info: '敵全体に物理属性で中ダメージを与え、低確率で睡眠状態にする',
+        info_short: '中（全）低睡眠',
         relative: undefined,
     }
     nouten_otoshi : Skill = {
@@ -326,6 +359,7 @@ export class PhysicalSkill {
         hp: '10%',
         cp: undefined,
         info: '敵１体に物理属性で中ダメージを与え、中確率で混乱状態にする',
+        info_short: '中（単）中混乱',
         relative: undefined,
     }
     mind_slice : Skill = {
@@ -334,6 +368,7 @@ export class PhysicalSkill {
         hp: '19%',
         cp: undefined,
         info: '敵全体に物理属性で中ダメージを与え、低確率で混乱状態にする',
+        info_short: '中（全）低混乱',
         relative: undefined,
     }
     teller_craw : Skill = {
@@ -342,6 +377,7 @@ export class PhysicalSkill {
         hp: '8%',
         cp: undefined,
         info: '敵１体に物理属性で小ダメージを与え、中確率で恐怖状態にする',
+        info_short: '小（単）低恐怖',
         relative: undefined,
     }
     chimaturi : Skill = {
@@ -350,6 +386,7 @@ export class PhysicalSkill {
         hp: '22%',
         cp: undefined,
         info: '敵全体に物理属性で大ダメージを与え、低確率で恐怖状態にする',
+        info_short: '大（全）低恐怖',
         relative: undefined,
     }
     negative_pile : Skill = {
@@ -358,6 +395,7 @@ export class PhysicalSkill {
         hp: '12%',
         cp: undefined,
         info: '敵１体に物理属性で大ダメージを与え、中確率で絶望状態にする',
+        info_short: '大（単）中絶望',
         relative: undefined,
     }
     bad_beat : Skill = {
@@ -366,6 +404,7 @@ export class PhysicalSkill {
         hp: '21%',
         cp: undefined,
         info: '敵全体に物理属性で中ダメージを与え、低確率で絶望状態にする',
+        info_short: '中（全）低絶望',
         relative: undefined,
     }
     brain_shake : Skill = {
@@ -374,6 +413,7 @@ export class PhysicalSkill {
         hp: '9%',
         cp: undefined,
         info: '敵１体に物理属性で中ダメージを与え、中確率で洗脳状態にする',
+        info_short: '中（単）中洗脳',
         relative: undefined,
     }
     brain_buster : Skill = {
@@ -382,6 +422,7 @@ export class PhysicalSkill {
         hp: '22%',
         cp: undefined,
         info: '敵全体に物理属性で大ダメージを与え、低確率で洗脳状態にする',
+        info_short: '大（全）低洗脳',
         relative: undefined,
     }
     histery_binta : Skill = {
@@ -390,6 +431,7 @@ export class PhysicalSkill {
         hp: '9%',
         cp: undefined,
         info: '敵１体に物理属性で中ダメージを与え、中確率で激怒状態にする',
+        info_short: '中（単）中激怒',
         relative: undefined,
     }
     onikagura : Skill = {
@@ -398,6 +440,7 @@ export class PhysicalSkill {
         hp: '16%',
         cp: undefined,
         info: '敵全体に物理属性で中ダメージを与え、低確率で激怒状態にする',
+        info_short: '中（全）低激怒',
         relative: undefined,
     }
 

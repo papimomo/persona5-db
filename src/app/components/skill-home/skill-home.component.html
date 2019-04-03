@@ -1,10 +1,22 @@
 <ion-card class="skill">
   <div>
-  <ion-text class="skill_name">
-    {{skill.name}}
-  </ion-text><br />
-  <div class="skill_info">
-    {{getCost(skill)}} 威力:小 (単)
+    <ion-grid class="grid">
+      <ion-row>
+        <ion-col size="9">
+          <ion-text class="skill_name">
+            {{skill.name}}
+          </ion-text>
+        </ion-col>
+        <ion-col size="3">
+          <ion-text class="cost">
+            {{getCost(skill)}}
+          </ion-text>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
-</div>
+  <div class="skill_info">
+    {{getSkillShortInfo(skill)}}
+  </div>
 </ion-card>

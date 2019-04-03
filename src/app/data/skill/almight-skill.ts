@@ -23,6 +23,7 @@ export class AlmightSkill {
         hp: undefined,
         cp: 15,
         info: '敵全体に万能属性で中ダメージを与える',
+        info_short: '中（全）',
         relative: undefined,
     };
     megidora : Skill = {
@@ -31,6 +32,7 @@ export class AlmightSkill {
         hp: undefined,
         cp: 24,
         info: '敵全体に万能属性で大ダメージを与える',
+        info_short: '大（全）',
         relative: undefined,
     };
     megidoraon : Skill = {
@@ -39,6 +41,7 @@ export class AlmightSkill {
         hp: undefined,
         cp: 38,
         info: '敵全体に万能属性で特大ダメージを与える',
+        info_short: '特大（全）',
         relative: undefined,
     };
     shikkokunohebi : Skill = {
@@ -47,6 +50,7 @@ export class AlmightSkill {
         hp: undefined,
         cp: 48,
         info: '敵１体に万能属性で特大ダメージを与える',
+        info_short: '超特大（単）',
         relative: undefined,
     };
     akenomyoujou : Skill = {
@@ -55,6 +59,7 @@ export class AlmightSkill {
         hp: undefined,
         cp: 54,
         info: '敵全体に万能属性で特大ダメージを与える',
+        info_short: '超特大（全）',
         relative: undefined,
     };
     // meihunotobira : Skill = {
@@ -71,6 +76,7 @@ export class AlmightSkill {
         hp: undefined,
         cp: 3,
         info: '敵のＨＰを吸い取り、自分のＨＰにする',
+        info_short: 'HP吸収',
         relative: undefined,
     };
     kyuma : Skill = {
@@ -79,6 +85,7 @@ export class AlmightSkill {
         hp: undefined,
         cp: 3,
         info: '敵のSPを吸い取り、自分のSPにする',
+        info_short: 'SP吸収',
         relative: undefined,
     };
     yodonda_toiki : Skill = {
@@ -87,6 +94,7 @@ export class AlmightSkill {
         hp: undefined,
         cp: 8,
         info: '敵１体を状態異常にかかりやすくさせる',
+        info_short: '状態異常UP（単）',
         relative: undefined,
     };
     yodonda_kuuki : Skill = {
@@ -95,6 +103,7 @@ export class AlmightSkill {
         hp: undefined,
         cp: 5,
         info: '敵味方全体を状態異常にかかりやすくさせる',
+        info_short: '状態異常UP（敵味方全体）',
         relative: undefined,
     };
     moujanonageki : Skill = {
@@ -103,6 +112,7 @@ export class AlmightSkill {
         hp: undefined,
         cp: 28,
         info: '恐怖状態の敵に即死効果を与える',
+        info_short: '恐怖即死（単/確）',
         relative: undefined,
     };
     almightSkillList = [

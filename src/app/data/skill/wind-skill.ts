@@ -19,6 +19,7 @@ export class WindSkill {
         hp: undefined,
         cp: 3,
         info: '敵１体に疾風属性で小ダメージを与える',
+        info_short: '小（単）',
         relative: undefined,
     };
     garura : Skill = {
@@ -27,6 +28,7 @@ export class WindSkill {
         hp: undefined,
         cp: 6,
         info: '敵１体に疾風属性で中ダメージを与える',
+        info_short: '中（単）',
         relative: undefined,
     };
     garudain : Skill = {
@@ -35,6 +37,7 @@ export class WindSkill {
         hp: undefined,
         cp: 10,
         info: '敵１体に疾風属性で大ダメージを与える',
+        info_short: '大（単）',
         relative: undefined,
     };
     mahagaru : Skill = {
@@ -43,6 +46,7 @@ export class WindSkill {
         hp: undefined,
         cp: 8,
         info: '敵全体に疾風属性で小ダメージを与える',
+        info_short: '小（全）',
         relative: undefined,
     };
     mahagarura : Skill = {
@@ -51,6 +55,7 @@ export class WindSkill {
         hp: undefined,
         cp: 14,
         info: '敵全体に疾風属性で中ダメージを与える',
+        info_short: '中（全）',
         relative: undefined,
     };
     mahagarudain : Skill = {
@@ -59,6 +64,7 @@ export class WindSkill {
         hp: undefined,
         cp: 20,
         info: '敵全体に疾風属性で大ダメージを与える',
+        info_short: '大（全）',
         relative: undefined,
     };
     bannbutu_ryuten : Skill = {
@@ -67,6 +73,7 @@ export class WindSkill {
         hp: undefined,
         cp: 42,
         info: '敵１体に疾風属性で特大ダメージを与える',
+        info_short: '特大（単）',
         relative: undefined,
     };
     shinkuha : Skill = {
@@ -75,6 +82,7 @@ export class WindSkill {
         hp: undefined,
         cp: 48,
         info: '敵全体に疾風属性で特大ダメージを与える',
+        info_short: '特大（全）',
         relative: undefined,
     };
 

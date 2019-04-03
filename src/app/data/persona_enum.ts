@@ -31,6 +31,7 @@ export interface Skill {
     hp: string;
     cp: number;
     relative: Array<Skill>;
+    info_short: string;
     // card:{
     //     drop:string;
     //     sacrifice:string;

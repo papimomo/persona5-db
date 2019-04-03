@@ -18,6 +18,7 @@ export class NuclearSkill {
         hp: undefined,
         cp: 4,
         info: '敵１体に核熱属性で小ダメージを与える。炎上凍結感電の敵に効果大',
+        info_short: '小（単）',
         relative: undefined,
     };
     fureira : Skill = {
@@ -26,6 +27,7 @@ export class NuclearSkill {
         hp: undefined,
         cp: 8,
         info: '敵１体に核熱属性で中ダメージを与える。炎上凍結感電の敵に効果大',
+        info_short: '中（単）',
         relative: undefined,
     };
     fureidain : Skill = {
@@ -34,6 +36,7 @@ export class NuclearSkill {
         hp: undefined,
         cp: 12,
         info: '敵１体に核熱属性で大ダメージを与える。炎上凍結感電の敵に効果大',
+        info_short: '大（単）',
         relative: undefined,
     };
     mahafurei : Skill = {
@@ -42,6 +45,7 @@ export class NuclearSkill {
         hp: undefined,
         cp: 10,
         info: '敵全体に核熱属性で小ダメージを与える。炎上凍結感電の敵に効果大',
+        info_short: '小（全）',
         relative: undefined,
     };
     mahafureira : Skill = {
@@ -50,6 +54,7 @@ export class NuclearSkill {
         hp: undefined,
         cp: 16,
         info: '敵全体に核熱属性で中ダメージを与える。炎上凍結感電の敵に効果大',
+        info_short: '中（全）',
         relative: undefined,
     };
     mahafureidain : Skill = {
@@ -58,6 +63,7 @@ export class NuclearSkill {
         hp: undefined,
         cp: 22,
         info: '敵全体に核熱属性の大ダメージを与える。炎上凍結感電の敵に効果大',
+        info_short: '大（全）',
         relative: undefined,
     };
     atmicfrea : Skill = {
@@ -66,6 +72,7 @@ export class NuclearSkill {
         hp: undefined,
         cp: 48,
         info: '敵１体に核熱属性で特大ダメージを与える。炎上凍結感電の敵に効果大',
+        info_short: '特大（単）',
         relative: undefined,
     };
     cozmicfrea : Skill = {
@@ -74,6 +81,7 @@ export class NuclearSkill {
         hp: undefined,
         cp: 54,
         info: '敵全体に核熱属性の特大ダメージを与える。炎上凍結感電の敵に効果大',
+        info_short: '特大（全）',
         relative: undefined,
     };
 

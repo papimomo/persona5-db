@@ -41,6 +41,10 @@ export class Tab2Page {
   support = new SupportSkill().supportSkillList;
   recovery = new RecoverySkill().recoverySkillList;
 
+  searchMode = false;
+  searchInput = '';
+  showSearchCancelButton = true;
+
 
   skillType = [
     {
@@ -147,5 +151,23 @@ export class Tab2Page {
     console.log(skill.name);
     this.router.navigateByUrl('/skill/' + skill.name);
 
+  }
+
+
+  change(input) {
+    console.log(input);
+
+    if (input === null) {
+      // this.personalist = this.personaArcanaList;
+      return;
+    }
+    console.log(input.target.value);
+    this.searchInput = input.target.value;
+
+  }
+  onCancel(input) {
+    console.log('cancel');
+    this.searchInput = '';
+    this.searchMode = false;
   }
 }

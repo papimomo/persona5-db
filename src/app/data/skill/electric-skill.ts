@@ -20,6 +20,7 @@ export class ElectricSkill {
         hp: undefined,
         cp: 4,
         info: '敵１体に電撃属性で小ダメージを与える。まれに敵を感電させる',
+        info_short: '小（単）',
         relative: undefined,
     };
     jionga : Skill = {
@@ -28,6 +29,7 @@ export class ElectricSkill {
         hp: undefined,
         cp: 8,
         info: '敵１体に電撃属性で中ダメージを与える。まれに敵を感電させる',
+        info_short: '中（単）',
         relative: undefined,
     };
     jiodain : Skill = {
@@ -36,6 +38,7 @@ export class ElectricSkill {
         hp: undefined,
         cp: 12,
         info: '敵１体に電撃属性で大ダメージを与える。まれに敵を感電させる',
+        info_short: '大（単）',
         relative: undefined,
     };
     mahajio : Skill = {
@@ -44,6 +47,7 @@ export class ElectricSkill {
         hp: undefined,
         cp: 10,
         info: '敵全体に電撃属性で小ダメージを与える。まれに敵を感電させる',
+        info_short: '小（全）',
         relative: undefined,
     };
     mahajionga : Skill = {
@@ -52,6 +56,7 @@ export class ElectricSkill {
         hp: undefined,
         cp: 16,
         info: '敵全体に電撃属性で中ダメージを与える。まれに敵を感電させる',
+        info_short: '中（全）',
         relative: undefined,
     };
     mahajiodain : Skill = {
@@ -60,6 +65,7 @@ export class ElectricSkill {
         hp: undefined,
         cp: 22,
         info: '敵全体に電撃属性で大ダメージを与える。まれに敵を感電させる',
+        info_short: '大（全）',
         relative: undefined,
     };
     shinrinokaminari : Skill = {
@@ -68,6 +74,7 @@ export class ElectricSkill {
         hp: undefined,
         cp: 48,
         info: '敵１体に電撃属性で特大ダメージを与える。まれに敵を感電させる',
+        info_short: '特大（単）',
         relative: undefined,
     };
     el_jihard : Skill = {
@@ -76,6 +83,7 @@ export class ElectricSkill {
         hp: undefined,
         cp: 54,
         info: '敵全体に電撃属性で特大ダメージを与える。まれに敵を感電させる',
+        info_short: '特大（全）',
         relative: undefined,
     };
 

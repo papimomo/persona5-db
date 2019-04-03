@@ -28,6 +28,7 @@ export class RecoverySkill {
         hp: undefined,
         cp: 3,
         info: '味方１体のHPを小回復する',
+        info_short: '小回復（単）',
         relative: undefined,
     };
     diarama : Skill = {
@@ -36,6 +37,7 @@ export class RecoverySkill {
         hp: undefined,
         cp: 6,
         info: '味方１体のＨＰを中回復する',
+        info_short: '中回復（単）',
         relative: undefined,
     };
     diarahan : Skill = {
@@ -44,6 +46,7 @@ export class RecoverySkill {
         hp: undefined,
         cp: 18,
         info: '味方１体のHPを全回復する',
+        info_short: '全回復（単）',
         relative: undefined,
     };
     media : Skill = {
@@ -52,6 +55,7 @@ export class RecoverySkill {
         hp: undefined,
         cp: 7,
         info: '味方全体のＨＰを小回復する',
+        info_short: '小回復（全）',
         relative: undefined,
     };
     medirama : Skill = {
@@ -60,6 +64,7 @@ export class RecoverySkill {
         hp: undefined,
         cp: 12,
         info: '味方全体のHPを中回復する',
+        info_short: '中回復（全）',
         relative: undefined,
     };
     mediarahan : Skill = {
@@ -68,6 +73,7 @@ export class RecoverySkill {
         hp: undefined,
         cp: 30,
         info: '味方全体のHPを全回復する',
+        info_short: '全回復（全）',
         relative: undefined,
     };
     meshiaraizer : Skill = {
@@ -76,6 +82,7 @@ export class RecoverySkill {
         hp: undefined,
         cp: 48,
         info: '味方全体のHPを全回復し、特殊なもの以外の状態異常も治療する',
+        info_short: '全回復（全）状態異常回復',
         relative: undefined,
     };
     rikamu : Skill = {
@@ -84,6 +91,7 @@ export class RecoverySkill {
         hp: undefined,
         cp: 8,
         info: '味方１体の戦闘不能状態をHP５０％で回復する',
+        info_short: 'HP50%で復帰',
         relative: undefined,
     };
     samrikamu : Skill = {
@@ -92,6 +100,7 @@ export class RecoverySkill {
         hp: undefined,
         cp: 18,
         info: '味方１体の戦闘不能状態をHP最大で回復する',
+        info_short: '全快で復帰',
         relative: undefined,
     };
     patra : Skill = {
@@ -100,6 +109,7 @@ export class RecoverySkill {
         hp: undefined,
         cp: 4,
         info: '味方１体の目眩・忘却・睡眠・空腹状態を治療する',
+        info_short: '目眩・忘却・睡眠・空腹治療（単）',
         relative: undefined,
     };
     mepatra : Skill = {
@@ -108,6 +118,7 @@ export class RecoverySkill {
         hp: undefined,
         cp: 8,
         info: '味方全体の目眩・忘却・睡眠・空腹状態を治療する',
+        info_short: '目眩・忘却・睡眠・空腹治療（全）',
         relative: undefined,
     };
     enazy_drop : Skill = {
@@ -116,6 +127,7 @@ export class RecoverySkill {
         hp: undefined,
         cp: 4,
         info: '味方１体の混乱・恐怖・絶望・激怒・洗脳状態を治療する',
+        info_short: '混乱・恐怖・絶望・激怒・洗脳治療（単）',
         relative: undefined,
     };
     enazy_syawa : Skill = {
@@ -124,6 +136,7 @@ export class RecoverySkill {
         hp: undefined,
         cp: 8,
         info: '味方全体の混乱・恐怖・絶望・激怒・洗脳状態を治療する',
+        info_short: '混乱・恐怖・絶望・激怒・洗脳治療（全）',
         relative: undefined,
     };
     bisedy : Skill = {
@@ -132,6 +145,7 @@ export class RecoverySkill {
         hp: undefined,
         cp: 4,
         info: '味方１体の炎上・凍結・感電状態を治療する',
+        info_short: '炎上・凍結・感電治療（単）',
         relative: undefined,
     };
     mahabisedy : Skill = {
@@ -140,6 +154,7 @@ export class RecoverySkill {
         hp: undefined,
         cp: 8,
         info: '味方全体の炎上・凍結・感電状態を治療する',
+        info_short: '炎上・凍結・感電治療（全）',
         relative: undefined,
     };
     amurita_drop : Skill = {
@@ -148,6 +163,7 @@ export class RecoverySkill {
         hp: undefined,
         cp: 6,
         info: '味方１体の特殊なもの以外の状態異常を治療する',
+        info_short: '状態異常治療（単）',
         relative: undefined,
     };
     amurita_syawa : Skill = {
@@ -156,6 +172,7 @@ export class RecoverySkill {
         hp: undefined,
         cp: 12,
         info: '味方全体の特殊なもの以外の状態異常を治療する',
+        info_short: '状態異常治療（全）',
         relative: undefined,
     };
 
