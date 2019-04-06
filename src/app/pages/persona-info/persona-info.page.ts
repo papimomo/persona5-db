@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { PersonaDb } from '../../data/personaDb';
-import { arcana } from "../../data/personaDb";
 
 @Component({
   selector: 'app-persona-info',
@@ -27,16 +26,11 @@ export class PersonaInfoPage implements OnInit {
       this.persona = this.personaList.find(persona => persona.name === this.title);
     });
   }
-
   isBigWidesize() {
     const width = window.parent.screen.width;
     return width > 700;
   }
 
-  isPortrait() {
-    const ori = screen.orientation;
-    return (ori.type === 'portrait-primary' || ori.type === 'portrait-secondary');
-  }
 
   fusion(){
     this.router.navigateByUrl('/fusion-list/' + this.persona.name);

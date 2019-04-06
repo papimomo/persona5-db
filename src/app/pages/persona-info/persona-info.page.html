@@ -17,17 +17,17 @@
       </div> -->
   <ion-grid>
     <ion-row>
-      <ion-col *ngIf="!isPortrait()" size="3">
+      <!-- <ion-col *ngIf="isBigWidesize()" size="3">
 
-      </ion-col>
-      <ion-col size="isPortrait()? 6: 3" class="row row-eq-height">
+      </ion-col> -->
+      <ion-col  class="row-eq-height">
         <div class="disp">
           <ion-card class="persona_img">
             <img src="assets/persona/{{persona.name}}.jpg" alt="">
           </ion-card>
         </div>
       </ion-col>
-      <ion-col size="isPortrait()? 6: 3" class="row row-eq-height">
+      <ion-col  class="row-eq-height">
         <ion-list class="status_list">
           <!-- <ion-item> -->
           <div class="status">
@@ -61,9 +61,9 @@
           </ion-item>
         </ion-list> -->
       </ion-col>
-      <ion-col *ngIf="!isPortrait()" size="3">
+      <!-- <ion-col *ngIf="isBigWidesize()" size="3">
 
-      </ion-col>
+      </ion-col> -->
     </ion-row>
   </ion-grid>
   <ion-grid>

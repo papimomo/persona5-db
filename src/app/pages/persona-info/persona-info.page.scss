@@ -16,12 +16,18 @@
 }
 .disp{
     // background-color: blue;
+    float: right;
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left:auto;
+    margin-right:0;
 }
 .status_list{
     margin:auto;
     margin-left: 0px;
     margin-right: 0px;
     width:100%;
+    max-width: 300px;
     // background-color: crimson;
 }
 .status{
@@ -44,8 +50,10 @@
 }
 
 .persona_img{
-    max-height: 500px;
-    max-width: 500px;
+    max-height: 200px;
+    max-width: 200px;
+    min-height: 100px;
+    min-width: 100px;
 }
 .row-eq-height {
     display: flex;
