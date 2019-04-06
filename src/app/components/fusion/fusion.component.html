@@ -1,29 +1,24 @@
 <ion-item class="base">
-<ion-grid>
-  <ion-row>
-    <ion-col size="6">
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngIf="isBigWidesize()" size="2">
 
-      <ion-card class="persona">
-          <ion-avatar class="avatar">
-            <img src="assets/persona/{{fusion.first.name}}.jpg" alt="">
-          </ion-avatar>
-          <div>
-              <p class="arcana">{{fusion.first.name}}</p>
-              <p class="arcana">{{fusion.first.arcana}} Lv:{{fusion.first.level}}</p>
-          </div>
-      </ion-card>
-    </ion-col>
-    <ion-col size="6">
-      <ion-card class="persona">
-        <ion-avatar class="avatar">
-          <img src="assets/persona/{{fusion.second.name}}.jpg" alt="">
-        </ion-avatar>
-        <div>
-            <p class="arcana">{{fusion.second.name}}</p>
-            <p class="arcana">{{fusion.second.arcana}} Lv:{{fusion.second.level}}</p>
-        </div>
-      </ion-card>
-    </ion-col>
-  </ion-row>
-</ion-grid>
+      </ion-col>
+      <ion-col auto>
+
+        <app-persona-horizontal [persona]=fusion.first (click)="onClickPersona(fusion.first)">
+        </app-persona-horizontal>
+      </ion-col>
+      <ion-col size="2" *ngIf="isBigWidesize()" class="kakeru">
+          ×
+      </ion-col>
+      <ion-col auto >
+        <app-persona-horizontal [persona]=fusion.second (click)="onClickPersona(fusion.second)">
+        </app-persona-horizontal>
+      </ion-col>
+      <ion-col size="2" *ngIf="isBigWidesize()">
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-item>

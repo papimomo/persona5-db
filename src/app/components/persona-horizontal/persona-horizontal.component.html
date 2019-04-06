@@ -6,7 +6,7 @@
     <div class="arcana">
       <p >{{persona.name}}</p>
       <p >{{persona.arcana}} Lv:{{persona.level}}</p>
-      <p >習得レベル Lv:{{skill.level}}</p>
+      <p *ngIf="skill !== undefined">習得レベル Lv:{{skill.level}}</p>
     </div>
   </div>
 </ion-card>

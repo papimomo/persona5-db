@@ -376,4 +376,14 @@ export class FusionListPage implements OnInit {
     return fusionList;
   }
 
+  isBigWidesize() {
+    const width = window.innerWidth;
+    return width > 800;
+  }
+
+  onClickPersona(name){
+    
+    this.router.navigateByUrl('/persona-info/' + name);
+
+  }
 }
