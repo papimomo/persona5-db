@@ -53,7 +53,7 @@
 
   <ion-list>
     <ion-list-header>覚えるペルソナ</ion-list-header>
-    <ion-item *ngFor="let persona of personaListHasSkill" class="persona">
+    <ion-item *ngFor="let persona of personaListHasSkill" class="persona" lines="none">
       <app-persona-horizontal [persona]=persona [skill]=getSkill(persona) (click)="onClickPersona(persona)">
       </app-persona-horizontal>
     </ion-item>

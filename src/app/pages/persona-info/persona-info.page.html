@@ -20,14 +20,14 @@
       <!-- <ion-col *ngIf="isBigWidesize()" size="3">
 
       </ion-col> -->
-      <ion-col  class="row-eq-height">
+      <ion-col class="row-eq-height">
         <div class="disp">
           <ion-card class="persona_img">
             <img src="assets/persona/{{persona.name}}.jpg" alt="">
           </ion-card>
         </div>
       </ion-col>
-      <ion-col  class="row-eq-height">
+      <ion-col class="row-eq-height">
         <ion-list class="status_list">
           <!-- <ion-item> -->
           <div class="status">
@@ -118,26 +118,29 @@
   <!-- <ion-item>
     スキル
   </ion-item> -->
-  <ion-list>
-    <div class="skill_card" *ngFor="let skill of persona.skill">
+  <div *ngIf="!isBigWidesize()">
+    <ion-list>
+      <div class="skill_card" *ngFor="let skill of persona.skill">
 
-      <app-skill [skill]=skill (click)="onClickSkill(skill)"></app-skill>
-    </div>
-  </ion-list>
-
-  <!-- <ion-grid *ngIf="isBigWidesize()">
-    <ion-row>
-      <ion-col size="6">
-          <div class="skill_card" *ngFor="let skill of persona.skill">
-            <ion-card >
-              <app-skill [skill]=skill></app-skill>
-            </ion-card>
+        <app-skill [skill]=skill (click)="onClickSkill(skill)"></app-skill>
+      </div>
+    </ion-list>
+  </div>
+  <div *ngIf="isBigWidesize()">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div class="skill_card" *ngFor="let skill of skillLower">
+            <app-skill [skill]=skill (click)="onClickSkill(skill)"></app-skill>
           </div>
-      </ion-col>
-      <ion-col size="6">
-        
-      </ion-col>
-    </ion-row>
-  </ion-grid> -->
+        </ion-col>
+        <ion-col>
+          <div class="skill_card" *ngFor="let skill of skillUpper">
+            <app-skill [skill]=skill (click)="onClickSkill(skill)"></app-skill>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 
 </ion-content>

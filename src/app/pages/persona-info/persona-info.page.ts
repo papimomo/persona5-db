@@ -18,17 +18,22 @@ export class PersonaInfoPage implements OnInit {
   title: string;
   persona: any;
   personaList = new PersonaDb().persona;
+  skillLower: Array<any>;
+  skillUpper: Array<any>;
 
   ngOnInit() {
     this.route.paramMap.subscribe((params: ParamMap) => {
       this.title = params.get('name');
       console.log(name);
       this.persona = this.personaList.find(persona => persona.name === this.title);
+
+      this.skillLower = this.persona.skill.filter((skill,index)=> index < 4);
+      this.skillUpper = this.persona.skill.filter((skill,index) => index >= 4);
     });
   }
   isBigWidesize() {
-    const width = window.parent.screen.width;
-    return width > 700;
+    const width = window.innerWidth;
+    return width > 800;
   }
 
 
