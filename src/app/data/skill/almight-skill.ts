@@ -89,25 +89,25 @@ export class AlmightSkill {
         relative: undefined,
     };
     yodonda_toiki : Skill = {
-        element: element.ab_state,
+        element: element.almight,
         name: almightSkillName.yodonda_toiki,
         hp: undefined,
         cp: 8,
         info: '敵１体を状態異常にかかりやすくさせる',
-        info_short: '状態異常UP（単）',
+        info_short: '状態異常付着率UP（単）',
         relative: undefined,
     };
     yodonda_kuuki : Skill = {
-        element: element.ab_state,
+        element: element.almight,
         name: almightSkillName.yodonda_kuuki,
         hp: undefined,
         cp: 5,
         info: '敵味方全体を状態異常にかかりやすくさせる',
-        info_short: '状態異常UP（敵味方全体）',
+        info_short: '状態異常付着率UP（敵味方全体）',
         relative: undefined,
     };
     moujanonageki : Skill = {
-        element: element.ab_state,
+        element: element.almight,
         name: almightSkillName.moujanonageki,
         hp: undefined,
         cp: 28,
