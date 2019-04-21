@@ -9,6 +9,7 @@ export class PersonaHorizontalComponent implements OnInit {
 
   @Input() persona: any;
   @Input() skill: any;
+  @Input() index: number;
   constructor() { }
 
   ngOnInit() {}
