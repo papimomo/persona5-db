@@ -24,18 +24,31 @@ export class SkillHomeComponent implements OnInit {
   }
   getSkillShortInfo(skill: Skill) {
     let info: string;
-    if ((skill.info_short.startsWith('小') ||
-      skill.info_short.startsWith('中') ||
-      skill.info_short.startsWith('大') ||
-      skill.info_short.startsWith('特大') ||
-      skill.info_short.startsWith('超特大')
-    ) && skill.info_short.indexOf('即死') === -1
-     && skill.info_short.indexOf('回復') === -1
-    ) {
+    if (this.isAttackSkill(skill)) {
       info = '威力 : ' + skill.info_short;
     } else {
       info = skill.info_short;
     }
     return info;
+  }
+
+  isAttackSkill(skill: Skill) {
+    switch (skill.element) {
+      case element.ab_state:
+      case element.auto:
+      case element.recovery:
+      case element.support:
+        return false;
+
+      default:
+        if (skill.info_short.indexOf('即死') === -1
+          && skill.info_short.indexOf('HP') === -1
+          && skill.info_short.indexOf('SP') === -1
+          && skill.info_short.indexOf('状態異常付着率') === -1) {
+          return true;
+        } else {
+          return false;
+        }
+    }
   }
 }
