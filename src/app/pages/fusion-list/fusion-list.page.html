@@ -29,30 +29,55 @@
       </ion-row>
     </ion-grid>
   </div>
-  <div class="fusion_info" *ngIf="!isBigWidesize()">
-    <ion-grid>
-      <ion-row>
-        <ion-col size="1">
 
-        </ion-col>
-        <ion-col size="4">
-          <ion-text color="tertiary">ペルソナ1</ion-text>
-        </ion-col>
-        <ion-col size="2">
-          <ion-text color="tertiary"> x</ion-text>
-        </ion-col>
-        <ion-col size="4">
-          <ion-text color="tertiary">ペルソナ2</ion-text>
-        </ion-col>
-        <ion-col size="1">
+  <div *ngIf="multiFusionList !== undefined && multiFusionList.length === 0">
 
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+    <div class="fusion_info" *ngIf="!isBigWidesize()">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="1">
+
+          </ion-col>
+          <ion-col size="4">
+            <ion-text color="tertiary">ペルソナ1</ion-text>
+          </ion-col>
+          <ion-col size="2">
+            <ion-text color="tertiary"> x</ion-text>
+          </ion-col>
+          <ion-col size="4">
+            <ion-text color="tertiary">ペルソナ2</ion-text>
+          </ion-col>
+          <ion-col size="1">
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <!-- <ion-list> -->
+    <div *ngFor="let fusion of fusionList" class="fusion">
+      <app-fusion [fusion]="fusion" (personaClicked)="onClickPersona($event)"></app-fusion>
+    </div>
+    <!-- </ion-list> -->
+
   </div>
-  <!-- <ion-list> -->
-  <div *ngFor="let fusion of fusionList" class="fusion">
-    <app-fusion [fusion]="fusion" (personaClicked)="onClickPersona($event)"></app-fusion>
+  <div *ngIf="multiFusionList !== undefined && multiFusionList.length > 0">
+
+    <ion-list>
+      <ion-list-header>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2">
+            </ion-col>
+            <ion-col auto>
+              <ion-text>複数合体</ion-text>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-list-header>
+      <ion-item *ngFor="let persona of multiFusionList let i = index" class="multi_persona" lines="none">
+        <app-persona-horizontal [persona]=persona [index]=i (click)="onClickPersona(persona.name)">
+        </app-persona-horizontal>
+      </ion-item>
+    </ion-list>
   </div>
-  <!-- </ion-list> -->
 </ion-content>
