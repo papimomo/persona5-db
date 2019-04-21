@@ -29,7 +29,7 @@ export class AbStateSkill {
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で目眩状態にする',
-        info_short: '目眩（高/単）',
+        info_short: '高目眩（単）',
         relative: undefined,
     };
     yamiyonosenkou : Skill = {
@@ -38,7 +38,7 @@ export class AbStateSkill {
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で目眩状態にする',
-        info_short: '目眩（中/全）',
+        info_short: '中目眩（全）',
         relative: undefined,
     };
     makajama : Skill = {
@@ -47,7 +47,7 @@ export class AbStateSkill {
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で忘却状態にする',
-        info_short: '忘却（高/単）',
+        info_short: '高忘却（単）',
         relative: undefined,
     };
     makajamaon : Skill = {
@@ -56,7 +56,7 @@ export class AbStateSkill {
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で忘却状態にする',
-        info_short: '忘却（中/全）',
+        info_short: '中忘却（全）',
         relative: undefined,
     };
     dorumina : Skill = {
@@ -65,7 +65,7 @@ export class AbStateSkill {
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で睡眠状態にする',
-        info_short: '睡眠（高/単）',
+        info_short: '高睡眠（単）',
         relative: undefined,
     };
     sleep_song : Skill = {
@@ -74,7 +74,7 @@ export class AbStateSkill {
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で睡眠状態にする',
-        info_short: '睡眠（中/全）',
+        info_short: '中睡眠（全）',
         relative: undefined,
     };
     prinpa : Skill = {
@@ -83,7 +83,7 @@ export class AbStateSkill {
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で混乱状態にする',
-        info_short: '混乱（高/単）',
+        info_short: '高混乱（単）',
         relative: undefined,
     };
     tentarahu : Skill = {
@@ -92,7 +92,7 @@ export class AbStateSkill {
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で混乱状態にする',
-        info_short: '混乱（中/全）',
+        info_short: '中混乱（全）',
         relative: undefined,
     };
     hukitunakotoba : Skill = {
@@ -101,7 +101,7 @@ export class AbStateSkill {
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で絶望状態にする',
-        info_short: '絶望（高/単）',
+        info_short: '高絶望（単）',
         relative: undefined,
     };
     narakunohadou : Skill = {
@@ -110,7 +110,7 @@ export class AbStateSkill {
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で絶望状態にする',
-        info_short: '絶望（中/全）',
+        info_short: '中絶望（全）',
         relative: undefined,
     };
     tyouhatu : Skill = {
@@ -119,7 +119,7 @@ export class AbStateSkill {
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で激怒状態にする',
-        info_short: '激怒（高/単）',
+        info_short: '高激怒（単）',
         relative: undefined,
     };
     sensenhukoku : Skill = {
@@ -128,7 +128,7 @@ export class AbStateSkill {
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で激怒状態にする',
-        info_short: '激怒（中/全）',
+        info_short: '中激怒（全）',
         relative: undefined,
     };
     marinkarin : Skill = {
@@ -137,7 +137,7 @@ export class AbStateSkill {
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で洗脳状態にする',
-        info_short: '洗脳（高/単）',
+        info_short: '高洗脳（単）',
         relative: undefined,
     };
     brain_jack : Skill = {
@@ -146,7 +146,7 @@ export class AbStateSkill {
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で洗脳状態にする',
-        info_short: '洗脳（中/全）',
+        info_short: '中洗脳（全）',
         relative: undefined,
     };
     devil_touch : Skill = {
@@ -155,7 +155,7 @@ export class AbStateSkill {
         hp: undefined,
         cp: 5,
         info: '敵１体を高確率で恐怖状態にする',
-        info_short: '恐怖（高/単）',
+        info_short: '高恐怖（単）',
         relative: undefined,
     };
     devil_smile : Skill = {
@@ -164,7 +164,7 @@ export class AbStateSkill {
         hp: undefined,
         cp: 12,
         info: '敵全体を中確率で恐怖状態にする',
-        info_short: '恐怖（中/全）',
+        info_short: '中恐怖（全）',
         relative: undefined,
     };
 
