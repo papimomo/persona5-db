@@ -428,6 +428,7 @@ export class PersonaDb {
             level: 49,
             name: 'バグス',
             arcana: arcana.gusya,
+            abnormal_fusion: true,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -483,7 +484,7 @@ export class PersonaDb {
             level: 50,
             name: '水晶髑髏',
             arcana: arcana.gusya,
-            gousei: false,
+            houma: true,
             element: {
                 physical: regist.regist,
                 gun: regist.none,
@@ -594,6 +595,7 @@ export class PersonaDb {
             level: 67,
             name: 'ジャアクフロスト',
             arcana: arcana.gusya,
+            abnormal_fusion: true,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -1334,6 +1336,7 @@ export class PersonaDb {
             level: 25,
             name: 'コ・イ・ヌール',
             arcana: arcana.kyoukou,
+            houma: true,
             element: {
                 physical: regist.regist,
                 gun: regist.regist,
@@ -1719,7 +1722,7 @@ export class PersonaDb {
             level: 15,
             name: '女王の首飾り',
             arcana: arcana.jotei,
-            gousei: false,
+            houma: true,
             element: {
                 physical: regist.regist,
                 gun: regist.weak,
@@ -2162,7 +2165,7 @@ export class PersonaDb {
             level: 10,
             name: 'リージェント',
             arcana: arcana.koutei,
-            gousei: false,
+            houma: true,
             element: {
                 physical: regist.regist,
                 gun: regist.regist,
@@ -3124,6 +3127,7 @@ export class PersonaDb {
             level: 76,
             name: 'コウリュウ',
             arcana: arcana.houou,
+            abnormal_fusion: true,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -4128,6 +4132,7 @@ export class PersonaDb {
             level: 86,
             name: 'シュウ',
             arcana: arcana.sensya,
+            abnormal_fusion: true,
             element: {
                     physical: regist.regist,
                     gun: regist.regist,
@@ -4505,6 +4510,7 @@ export class PersonaDb {
             level: 71,
             name: 'ソロネ',
             arcana: arcana.seigi,
+            abnormal_fusion: true,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -4615,6 +4621,7 @@ export class PersonaDb {
             level: 89,
             name: 'メタトロン',
             arcana: arcana.seigi,
+            abnormal_fusion: true,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -5149,6 +5156,7 @@ export class PersonaDb {
             level: 75,
             name: 'オンギョウキ',
             arcana: arcana.inja,
+            abnormal_fusion: true,
             element: {
                 physical: regist.regist,
                 gun: regist.regist,
@@ -5204,7 +5212,7 @@ export class PersonaDb {
             level: 20,
             name: 'スクーンの石',
             arcana: arcana.unmei,
-            gousei: false,
+            houma: true,
             element: {
                 physical: regist.none,
                 gun: regist.none,
@@ -5822,7 +5830,7 @@ export class PersonaDb {
             level: 30,
             name: 'オルロフ',
             arcana: arcana.gouki,
-            gousei: false,
+            houma: true,
             element: {
                 physical: regist.regist,
                 gun: regist.none,
@@ -6302,7 +6310,7 @@ export class PersonaDb {
             level: 35,
             name: '大帝の護符',
             arcana: arcana.keishisya,
-            gousei: false,
+            houma: true,
             element: {
                 physical: regist.regist,
                 gun: regist.none,
@@ -6472,6 +6480,7 @@ export class PersonaDb {
             level: 68,
             name: 'ヴァスキ',
             arcana: arcana.keishisya,
+            abnormal_fusion: true,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -6845,7 +6854,7 @@ export class PersonaDb {
             level: 40,
             name: 'ホープダイヤ',
             arcana: arcana.shinigami,
-            gousei: false,
+            houma: true,
             element: {
                 physical: regist.regist,
                 gun: regist.none,
@@ -7077,6 +7086,7 @@ export class PersonaDb {
         {
             level: 79,
             name: 'アリス',
+            abnormal_fusion: true,
             arcana: arcana.shinigami,
             element: {
                 physical: regist.normal,
@@ -7675,6 +7685,7 @@ export class PersonaDb {
             level: 84,
             name: 'アルダー',
             arcana: arcana.sessei,
+            abnormal_fusion: true,
             element: {
                 physical: regist.regist,
                 gun: regist.normal,
@@ -7828,6 +7839,7 @@ export class PersonaDb {
             level: 25,
             name: 'フラロウス',
             arcana: arcana.akuma,
+            abnormal_fusion: true,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -8390,6 +8402,7 @@ export class PersonaDb {
             level: 51,
             name: 'セト',
             arcana: arcana.tou,
+            abnormal_fusion: true,
             element: {
                 physical: regist.normal,
                 gun: regist.normal,
@@ -8551,6 +8564,7 @@ export class PersonaDb {
             level: 79,
             name: 'ヨシツネ',
             arcana: arcana.tou,
+            abnormal_fusion: true,
             element: {
                 physical: regist.none,
                 gun: regist.normal,
@@ -8771,6 +8785,7 @@ export class PersonaDb {
             level: 30,
             name: 'ネコショウグン',
             arcana: arcana.hoshi,
+            abnormal_fusion: true,
             element: {
                     physical: regist.regist,
                     gun: regist.normal,
@@ -9101,6 +9116,7 @@ export class PersonaDb {
             level: 80,
             name: 'スラオシャ',
             arcana: arcana.hoshi,
+            abnormal_fusion: true,
             element: {
                     physical: regist.normal,
                     gun: regist.normal,
@@ -9156,6 +9172,7 @@ export class PersonaDb {
             level: 93,
             name: 'ルシファー',
             arcana: arcana.hoshi,
+            abnormal_fusion: true,
             element: {
                     physical: regist.normal,
                     gun: regist.normal,
@@ -10103,6 +10120,7 @@ export class PersonaDb {
             level: 76,
             name: 'アスラおう',
             arcana: arcana.taiyou,
+            abnormal_fusion: true,
             element: {
                     physical: regist.normal,
                     gun: regist.normal,
@@ -10213,6 +10231,7 @@ export class PersonaDb {
             level: 59,
             name: 'トランペッター',
             arcana: arcana.shinpan,
+            abnormal_fusion: true,
             element: {
                     physical: regist.normal,
                     gun: regist.normal,
@@ -10380,6 +10399,7 @@ export class PersonaDb {
             level: 82,
             name: 'シヴァ',
             arcana: arcana.shinpan,
+            abnormal_fusion: true,
             element: {
                     physical: regist.normal,
                     gun: regist.normal,
@@ -10435,6 +10455,7 @@ export class PersonaDb {
             level: 87,
             name: 'ミカエル',
             arcana: arcana.shinpan,
+            abnormal_fusion: true,
             element: {
                     physical: regist.normal,
                     gun: regist.regist,
