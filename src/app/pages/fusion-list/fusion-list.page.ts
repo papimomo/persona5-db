@@ -49,18 +49,25 @@ export class FusionListPage implements OnInit {
       console.log(name);
       this.persona = this.personaList.find(persona => persona.name === name);
     });
+    
   }
 
-  ionViewDidEnter() {
+  ionViewWillEnter() {
 
     if (this.persona.abnormal_fusion) {
       this.multiFusion(this.persona).then(multiFusion => {
         this.multiFusionList = multiFusion;
+        console.log("multiFusion " );
+        console.log(this.multiFusion);
+        
+        
       })
     } else {
       this.getFusionList(this.persona)
         .then(fusionList => {
           this.fusionList = fusionList;
+          console.log("getFusionList " );
+          console.log(this.fusionList);
         })
     }
   }
@@ -646,6 +653,8 @@ export class FusionListPage implements OnInit {
       personaList.push(this.sinpanList.find(item => item.name === 'サタン'));
 
     }
+    console.log("multiFusion");
+    
     return personaList;
   }
 
