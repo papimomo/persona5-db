@@ -14,4 +14,11 @@ export class PersonaHorizontalComponent implements OnInit {
 
   ngOnInit() {}
 
+  getLearnLevel(){
+    if(this.skill.level === 0){
+      return '-';
+    }else{
+      return this.skill.level;
+    }
+  }
 }

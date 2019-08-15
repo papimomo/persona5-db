@@ -1,4 +1,4 @@
-<div *ngIf="index !== undefined" class="item">ペルソナ{{index}}</div>
+<div *ngIf="index !== undefined" class="item"></div>
 <ion-card class="persona">
   <div class="outer">
     <ion-avatar class="avatar">
@@ -6,8 +6,8 @@
     </ion-avatar>
     <div class="arcana">
       <p >{{persona.name}}</p>
-      <p >{{persona.arcana}} Lv:{{persona.level}}</p>
-      <p *ngIf="skill !== undefined">習得レベル Lv:{{skill.level}}</p>
+      <p >{{persona.arcana}} Lv: {{persona.level}}</p>
+      <p *ngIf="skill !== undefined">習得レベル Lv: {{getLearnLevel()}}</p>
     </div>
   </div>
 </ion-card>
